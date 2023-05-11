@@ -1,26 +1,13 @@
-import React from 'react';
-import logo from './logo.webp';
-import './App.css';
+import { MantineProvider, Title } from '@mantine/core';
+import { theme } from "./theme";
+import { CustomFonts } from './fonts/CustomFonts';
 
-function App() {
+export default function App() {
+  document.title = "RANCHEIROS MC";
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <MantineProvider withGlobalStyles withNormalizeCSS theme={{ ...theme}}>
+      <CustomFonts/>
+      <Title color='brand'>RANCHEIROS MC</Title>
+    </MantineProvider>
   );
 }
-
-export default App;
