@@ -8,7 +8,7 @@ export const theme: MantineThemeOverride = {
       "#D7C082",
       "#DCBA5E",
       "#E8B834",
-      "#FFBB04",
+      "#FFBB04", // <- primary shade color
       "#D29F17",
       "#AC8826",
       "#8F752E",
@@ -17,7 +17,7 @@ export const theme: MantineThemeOverride = {
     ],
   },
   primaryColor: 'brand',
-  primaryShade: 4,
+  primaryShade: 5,
   headings: {
     fontFamily: 'Nandaka Western, fantasy',
   },
