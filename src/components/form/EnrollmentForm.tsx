@@ -166,6 +166,7 @@ export default function EnrollmentForm(): ReactElement {
         body: data,
       };
       try {
+        console.log(process.env.REACT_APP_BACKEND_ADDRESS);
         const response = await fetch(
           process.env.REACT_APP_BACKEND_ADDRESS as string,
           config
