@@ -20,7 +20,7 @@ export default function App() {
             order={1}
             size={"10em"}
           >
-            RANCHEIROS
+            RANCHEIROS MC
           </Title>
         </Center>
       </AppShell>
