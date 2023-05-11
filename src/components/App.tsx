@@ -5,6 +5,7 @@ import { AppShell, Center, Title } from "@mantine/core";
 import { HeaderResponsive } from "./HeaderResponsive";
 
 export default function App() {
+  document.title = "RANCHEIROS MC";
   return (
     <MantineProvider theme={{ ...theme }} withGlobalStyles withNormalizeCSS>
       <CustomFonts />
