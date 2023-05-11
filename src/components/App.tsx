@@ -18,7 +18,6 @@ export default function App() {
             variant="gradient"
             gradient={{ from: "brand.6", to: "brand.2" }}
             order={1}
-            size={"3em"}
           >
             RANCHEIROS MC
           </Title>
