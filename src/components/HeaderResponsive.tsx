@@ -123,7 +123,7 @@ export function HeaderResponsive(): ReactElement {
   return (
     <Header height={HEADER_HEIGHT} className={classes.root}>
       <Container className={classes.header}>
-        <Title order={1} transform="uppercase" color='white'>
+        <Title order={2} transform="uppercase" color='white'>
           <Center>
             <img src={logo} alt="RANCHEIROS MC" height={36} />
             <Space w="xs" />

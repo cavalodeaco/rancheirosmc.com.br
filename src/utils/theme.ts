@@ -20,5 +20,6 @@ export const theme: MantineThemeOverride = {
   primaryShade: 5,
   headings: {
     fontFamily: 'Nandaka Western, fantasy',
+    fontWeight: 'normal',
   },
 };

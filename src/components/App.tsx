@@ -5,6 +5,7 @@ import { AppShell, Center, Title } from "@mantine/core";
 import { HeaderResponsive } from "./HeaderResponsive";
 
 export default function App() {
+  document.title = "RANCHEIROS MC";
   return (
     <MantineProvider theme={{ ...theme }} withGlobalStyles withNormalizeCSS>
       <CustomFonts />
@@ -18,7 +19,6 @@ export default function App() {
             variant="gradient"
             gradient={{ from: "brand.6", to: "brand.2" }}
             order={1}
-            size={"3em"}
           >
             RANCHEIROS MC
           </Title>
