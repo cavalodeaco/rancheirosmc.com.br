@@ -9,12 +9,16 @@ export default function App() {
     <MantineProvider theme={{ ...theme }} withGlobalStyles withNormalizeCSS>
       <CustomFonts />
       <AppShell header={<HeaderResponsive />} padding={0}>
-        <Center>
+        <Center
+          style={{
+            minHeight: "100%",
+          }}
+        >
           <Title
             variant="gradient"
             gradient={{ from: "brand.6", to: "brand.2" }}
             order={1}
-            size={"4em"}
+            size={"10em"}
           >
             RANCHEIROS
           </Title>
