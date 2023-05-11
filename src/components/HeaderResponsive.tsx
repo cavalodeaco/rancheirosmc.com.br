@@ -92,8 +92,8 @@ const useStyles = createStyles((theme) => ({
 
 const links = [
   {
-    link: '/#sobre',
-    label: 'Sobre',
+    link: '/#inscricao',
+    label: 'Inscreva-se',
     target: '_self',
   }
 ];

@@ -3,6 +3,8 @@ import { theme } from "../utils/theme";
 import { CustomFonts } from "../fonts/CustomFonts";
 import { AppShell, Center, Title } from "@mantine/core";
 import { HeaderResponsive } from "./HeaderResponsive";
+import Linkable from "./Linkable";
+import Enrollment from "./Enrollment";
 
 export default function App() {
   document.title = "RANCHEIROS MC";
@@ -10,19 +12,9 @@ export default function App() {
     <MantineProvider theme={{ ...theme }} withGlobalStyles withNormalizeCSS>
       <CustomFonts />
       <AppShell header={<HeaderResponsive />} padding={0}>
-        <Center
-          style={{
-            minHeight: "100%",
-          }}
-        >
-          <Title
-            variant="gradient"
-            gradient={{ from: "brand.6", to: "brand.2" }}
-            order={1}
-          >
-            RANCHEIROS MC
-          </Title>
-        </Center>
+        <Linkable id="inscricao">
+          <Enrollment />
+        </Linkable>
       </AppShell>
     </MantineProvider>
   );
