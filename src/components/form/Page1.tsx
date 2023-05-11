@@ -128,7 +128,6 @@ export default function Page1({
           label: classes.inputLabel,
         }}
         data={[
-          { value: "curitiba", label: "Curitiba" },
           { value: "maringa", label: "Maringá" },
           { value: "londrina", label: "Londrina" },
           { value: "cambira", label: "Cambira/Jandaia do Sul" },

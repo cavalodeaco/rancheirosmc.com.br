@@ -22,7 +22,7 @@ const useStyles = createStyles((theme) => ({
     padding: "5rem",
 
     [`@media (max-width: ${theme.breakpoints.sm}px)`]: {
-      padding: "3rem",
+      padding: '3rem 0.5rem',
     },
   },
 
@@ -75,8 +75,8 @@ export default function Enrollment(): ReactElement {
 
   return (
     <div className={classes.wrapper}>
-      <Title className={classes.title} my={30}>
-        Inscreva-se
+      <Title className={classes.title} my={30} order={3}>
+        Inscreva-se no Manobras para Vida
       </Title>
       <SimpleGrid
         cols={2}

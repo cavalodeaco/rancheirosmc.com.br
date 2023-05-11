@@ -67,7 +67,7 @@ const page1Schema = z.object({
   enroll: z.object({
     city: z.custom(
       (city) => {
-        const cities = ["curitiba", "maringa", "londrina", "cambira"];
+        const cities = ["maringa", "londrina", "cambira"];
         return cities.includes(city as string);
       },
       {
@@ -136,7 +136,7 @@ export default function EnrollmentForm(): ReactElement {
     initialValues: {
       enroll: {
         terms: {
-          authorization: true,
+          authorization: false,
           responsibility: false,
           lgpd: false,
         },

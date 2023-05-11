@@ -17,6 +17,7 @@ export default function Page1({
       <Switch.Group
         mt="md"
         label="Termo de Autorização"
+        withAsterisk
         value={[page3.values.enroll.terms.authorization.toString()]}
         error={page3.errors["enroll.terms.authorization"]}
         onChange={(values) => {
@@ -26,7 +27,7 @@ export default function Page1({
           <ScrollArea style={{ height: 60 }}>{authorization}</ScrollArea>
         }
       >
-        <Switch value="true" label="Li e concordo" radius={0} />
+        <Switch value="true" label="Li e concordo" />
       </Switch.Group>
       <Switch.Group
         mt="md"
@@ -44,7 +45,7 @@ export default function Page1({
           <ScrollArea style={{ height: 60 }}>{responsibility}</ScrollArea>
         }
       >
-        <Switch value="true" label="Li e concordo" radius={0} />
+        <Switch value="true" label="Li e concordo" />
       </Switch.Group>
 
       <Switch.Group
@@ -58,7 +59,7 @@ export default function Page1({
         }}
         description={<ScrollArea style={{ height: 60 }}>{lgpd}</ScrollArea>}
       >
-        <Switch value="true" label="Li e concordo" radius={0} />
+        <Switch value="true" label="Li e concordo" />
       </Switch.Group>
     </>
   );
