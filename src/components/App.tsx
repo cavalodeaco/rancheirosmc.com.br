@@ -5,6 +5,7 @@ import { AppShell, Center, Title } from "@mantine/core";
 import { HeaderResponsive } from "./HeaderResponsive";
 import Linkable from "./Linkable";
 import Enrollment from "./Enrollment";
+import Banner from "./Banner";
 
 export default function App() {
   document.title = "RANCHEIROS MC";
@@ -12,6 +13,7 @@ export default function App() {
     <MantineProvider theme={{ ...theme }} withGlobalStyles withNormalizeCSS>
       <CustomFonts />
       <AppShell header={<HeaderResponsive />} padding={0}>
+        <Banner />
         <Linkable id="inscricao">
           <Enrollment />
         </Linkable>
