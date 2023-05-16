@@ -92,10 +92,15 @@ const useStyles = createStyles((theme) => ({
 
 const links = [
   {
-    link: '/#inscricao',
-    label: 'Inscreva-se',
+    link: '/#sobre',
+    label: 'Sobre',
     target: '_self',
-  }
+  },
+  {
+    link: 'https://mpv.rancheirosmc.com.br/',
+    label: 'Manobras para Vida',
+    target: '_blank',
+  },
 ];
 
 export function HeaderResponsive(): ReactElement {
