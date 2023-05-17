@@ -56,7 +56,7 @@ import {
     },
     {
       icon: IconUserShield,
-      title: 'Autoridades',
+      title: 'Autoridade',
       description:
         'Honrar e respeitar toda autoridade sobre mim imposta, sendo íntegro e justo em minhas ações.',
     },
@@ -65,8 +65,6 @@ import {
   const useStyles = createStyles((theme) => ({
     title: {
       fontSize: rem(34),
-      fontWeight: 900,
-  
       [theme.fn.smallerThan('sm')]: {
         fontSize: rem(24),
       },
@@ -121,13 +119,13 @@ import {
     ));
   
     return (
-      <Container size="lg" py="xl">
-        <Group position="center">
+      <Container size="lg" py="xl" mt="xl">
+        {/* <Group position="center">
           <Badge variant="filled" size="lg">
             RANCHEIROS MC
           </Badge>
         </Group>
-  
+   */}
         <Title order={2} className={classes.title} ta="center" mt="sm">
           Compromisso do Rancheiro
         </Title>
