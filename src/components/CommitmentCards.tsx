@@ -6,8 +6,7 @@ import {
     Text,
     Card,
     SimpleGrid,
-    Container,
-    rem
+    Container
   } from '@mantine/core';
   import { IconHeartHandshake, IconMotorbike, IconUsersGroup, IconHeart, IconHelmet, IconUserShield, IconTrafficCone, IconSeeding } from '@tabler/icons-react';
   
@@ -64,9 +63,9 @@ import {
   
   const useStyles = createStyles((theme) => ({
     title: {
-      fontSize: rem(34),
+      fontSize: '2rem',
       [theme.fn.smallerThan('sm')]: {
-        fontSize: rem(24),
+        fontSize: '1.5rem',
       },
     },
   
@@ -78,8 +77,8 @@ import {
         content: '""',
         display: 'block',
         backgroundColor: theme.fn.primaryColor(),
-        width: rem(45),
-        height: rem(2),
+        width: '3rem',
+        height: '2px',
         marginTop: theme.spacing.sm,
         marginLeft: 'auto',
         marginRight: 'auto',
@@ -87,7 +86,7 @@ import {
     },
   
     card: {
-      border: `${rem(1)} solid ${
+      border: `1px solid ${
         theme.colorScheme === 'dark' ? theme.colors.dark[5] : theme.colors.gray[1]
       }`,
     },
@@ -97,8 +96,8 @@ import {
         content: '""',
         display: 'block',
         backgroundColor: theme.fn.primaryColor(),
-        width: rem(45),
-        height: rem(2),
+        width: '3rem',
+        height: '2px',
         marginTop: theme.spacing.sm,
       },
     },
@@ -108,7 +107,7 @@ import {
     const { classes, theme } = useStyles();
     const features = commitment.map((feature) => (
       <Card key={feature.title} shadow="md" radius="md" className={classes.card} >
-        <feature.icon size={rem(50)} stroke={2} color={theme.fn.primaryColor()} />
+        <feature.icon size={'3rem'} stroke={2} color={theme.fn.primaryColor()} />
         <Text fz="lg" fw={500} className={classes.cardTitle} mt="md">
           {feature.title}
         </Text>

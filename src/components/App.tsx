@@ -5,7 +5,7 @@ import { AppShell, Center, Title } from "@mantine/core";
 import { HeaderResponsive } from "./HeaderResponsive";
 import Linkable from "./Linkable";
 import Banner from "./Banner";
-import { About } from "../../../About";
+// import { About } from "../../../About";
 import { CommitmentCards } from "./CommitmentCards";
 
 export default function App() {
