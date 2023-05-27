@@ -13,8 +13,13 @@ export default function App() {
     <MantineProvider theme={{ ...theme }} withGlobalStyles withNormalizeCSS>
       <CustomFonts />
       <AppShell header={<HeaderResponsive />} padding={0}>
-        <Banner />
+        <Linkable id="">
+          <Banner />
+        </Linkable>
         <Linkable id="sobre">
+          <CommitmentCards />
+        </Linkable>
+        <Linkable id="compromisso">
           <CommitmentCards />
         </Linkable>
       </AppShell>

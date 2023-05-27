@@ -1,4 +1,4 @@
-import { ReactElement, useState } from 'react';
+import { ReactElement, useState } from "react";
 import {
   createStyles,
   Title,
@@ -11,20 +11,20 @@ import {
   Anchor,
   Center,
   Space,
-} from '@mantine/core';
-import { useDisclosure } from '@mantine/hooks';
-import logo from './img/logo.webp';
+} from "@mantine/core";
+import { useDisclosure } from "@mantine/hooks";
+import logo from "./img/logo.webp";
 
 const HEADER_HEIGHT = 60;
 
 const useStyles = createStyles((theme) => ({
   root: {
-    position: 'fixed',
+    position: "fixed",
     zIndex: 2,
   },
 
   dropdown: {
-    position: 'absolute',
+    position: "absolute",
     top: HEADER_HEIGHT,
     left: 0,
     right: 0,
@@ -32,59 +32,59 @@ const useStyles = createStyles((theme) => ({
     borderTopRightRadius: 0,
     borderTopLeftRadius: 0,
     borderTopWidth: 0,
-    overflow: 'hidden',
+    overflow: "hidden",
 
-    [theme.fn.largerThan('sm')]: {
-      display: 'none',
+    [theme.fn.largerThan("sm")]: {
+      display: "none",
     },
   },
 
   header: {
-    display: 'flex',
-    justifyContent: 'space-between',
-    alignItems: 'center',
-    height: '100%',
+    display: "flex",
+    justifyContent: "space-between",
+    alignItems: "center",
+    height: "100%",
   },
 
   links: {
-    [theme.fn.smallerThan('sm')]: {
-      display: 'none',
+    [theme.fn.smallerThan("sm")]: {
+      display: "none",
     },
   },
 
   burger: {
-    [theme.fn.largerThan('sm')]: {
-      display: 'none',
+    [theme.fn.largerThan("sm")]: {
+      display: "none",
     },
   },
 
   link: {
-    display: 'block',
+    display: "block",
     lineHeight: 1,
-    padding: '8px 12px',
+    padding: "8px 12px",
     borderRadius: theme.radius.sm,
-    textDecoration: 'none',
+    textDecoration: "none",
     color: theme.colors.dark[0],
     fontSize: theme.fontSizes.sm,
     fontWeight: 500,
 
-    '&:hover': {
+    "&:hover": {
       backgroundColor: theme.colors.dark[6],
     },
 
-    [theme.fn.smallerThan('sm')]: {
+    [theme.fn.smallerThan("sm")]: {
       borderRadius: 0,
       padding: theme.spacing.md,
     },
   },
 
   linkActive: {
-    '&, &:hover': {
+    "&, &:hover": {
       backgroundColor: theme.fn.variant({
-        variant: 'filled',
+        variant: "filled",
         color: theme.primaryColor,
       }).background,
-      color: theme.fn.variant({ variant: 'filled', color: theme.primaryColor })
+      color: theme.fn.variant({ variant: "filled", color: theme.primaryColor })
         .color,
     },
   },
@@ -92,20 +92,25 @@ const useStyles = createStyles((theme) => ({
 
 const links = [
   {
-    link: '/#sobre',
-    label: 'Sobre',
-    target: '_self',
+    link: "/#sobre",
+    label: "Sobre",
+    target: "_self",
   },
   {
-    link: 'https://mpv.rancheirosmc.com.br/',
-    label: 'Manobras para Vida',
-    target: '_blank',
+    link: "/#compromisso",
+    label: "Compromisso",
+    target: "_self",
+  },
+  {
+    link: "https://mpv.rancheirosmc.com.br/",
+    label: "Manobras para Vida",
+    target: "_blank",
   },
 ];
 
 export function HeaderResponsive(): ReactElement {
   const [opened, { toggle, close }] = useDisclosure(false);
-  const [active, setActive] = useState(links[0].link);
+  const [active, setActive] = useState(links[links.length - 1].link);
   const { classes, cx } = useStyles();
 
   const items = links.map((link) => (
@@ -128,13 +133,22 @@ export function HeaderResponsive(): ReactElement {
   return (
     <Header height={HEADER_HEIGHT} className={classes.root}>
       <Container className={classes.header}>
-        <Title order={2} transform="uppercase" color='white'>
-          <Center>
-            <img src={logo} alt="RANCHEIROS MC" height={36} />
-            <Space w="xs" />
-            RANCHEIROS MC
-          </Center>
-        </Title>
+        <Anchor
+          href="/#"
+          target="_self"
+          onClick={() => {
+            setActive(links[links.length - 1].link);
+            close();
+          }}
+        >
+          <Title order={2} transform="uppercase" color="white">
+            <Center>
+              <img src={logo} alt="RANCHEIROS MC" height={36} />
+              <Space w="xs" />
+              RANCHEIROS MC
+            </Center>
+          </Title>
+        </Anchor>
         <Group spacing={5} className={classes.links}>
           {items}
         </Group>
