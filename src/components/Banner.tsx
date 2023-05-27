@@ -8,13 +8,15 @@ const useStyles = createStyles((theme) => ({
     backgroundImage: `url(${banner})`,
     backgroundSize: "cover",
     backgroundPosition: "50% 100%",
-    paddingTop: "20%",
-    // filter: "sepia(1)"
+    display: "flex",
+    filter: "sepia(1)",
   },
-  blackground: { 
+  blackground: {
     backgroundColor: "#0000008c",
-    height: "100%"
-  }
+    width: "100%",
+    textAlign: "center",
+    alignSelf: "center",
+  },
 }));
 
 export default function Banner(): ReactElement {
@@ -23,16 +25,16 @@ export default function Banner(): ReactElement {
   return (
     <div className={classes.banner}>
       <div className={classes.blackground}>
-        <Center>
-          <MediaQuery
-            query="(min-width: 700px)"
-            styles={{
-              fontSize: "5rem",
-            }}
-          >
-            <Title color={"white"} size={"2.5rem"}>RANCHEIROS MC</Title>
-          </MediaQuery>
-        </Center>
+        <MediaQuery
+          query="(min-width: 700px)"
+          styles={{
+            fontSize: "5rem",
+          }}
+        >
+          <Title color={"white"} size={"2.5rem"}>
+            RANCHEIROS MC
+          </Title>
+        </MediaQuery>
       </div>
     </div>
   );
