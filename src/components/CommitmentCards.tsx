@@ -118,7 +118,7 @@ import {
     ));
   
     return (
-      <Container size="lg" py="xl" mt="xl">
+      <Container size="lg" mt="xl" pt={"60px"} pb={"xl"}>
         {/* <Group position="center">
           <Badge variant="filled" size="lg">
             RANCHEIROS MC

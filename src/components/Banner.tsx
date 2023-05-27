@@ -3,8 +3,12 @@ import { ReactElement } from "react";
 import banner from "./img/background.jpeg";
 
 const useStyles = createStyles((theme) => ({
-  banner: {
+  banner: { 
     minHeight: "calc(100vh - 60px)",
+    [`@media (max-width: 700px)`]: {
+      minHeight: '0',
+      aspectRatio: "1 / 1",
+    },
     backgroundImage: `url(${banner})`,
     backgroundSize: "cover",
     backgroundPosition: "50% 100%",
