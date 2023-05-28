@@ -24,15 +24,39 @@ import {
   IconLink,
 } from "@tabler/icons-react";
 import { theme } from "../utils/theme";
+import { ReactNode } from "react";
+
+export function RancheirosHighlight({
+  children,
+  highlight,
+}: {
+  children: string;
+  highlight: string[];
+}) {
+  return (
+    <Highlight
+      highlight={highlight}
+      highlightStyles={(theme) => ({
+        backgroundColor: theme.colors.brand[5],
+        fontWeight: 700,
+        WebkitBackgroundClip: "text",
+        WebkitTextFillColor: "transparent",
+      })}
+    >
+      {children}
+    </Highlight>
+  );
+}
 
 const useStyles = createStyles((theme) => ({
   highlight: {
     position: "relative",
     color: theme.colors.dark,
-    backgroundColor: theme.fn.variant({
-      variant: "dark",
-      color: theme.primaryColor,
-    }).background,
+    backgroundImage: theme.fn.linearGradient(
+      135,
+      theme.colors.brand[2],
+      theme.colors.brand[7]
+    ),
     borderRadius: theme.radius.xs,
     padding: `2px 6px`,
   },
@@ -76,24 +100,12 @@ export default function About() {
               </Text>
 
               <Text color="dimmed" mt="md">
-                <Highlight
-                  highlight={["RANCHEIROS", "Jesus"]}
-                  highlightStyles={(theme) => ({
-                    backgroundImage: theme.fn.linearGradient(
-                      45,
-                      theme.colors.orange[5],
-                      theme.colors.yellow[5]
-                    ),
-                    fontWeight: 700,
-                    WebkitBackgroundClip: "text",
-                    WebkitTextFillColor: "transparent",
-                  })}
-                >
+                <RancheirosHighlight highlight={["RANCHEIROS", "Jesus"]}>
                   Somos orgulhosamente conhecidos como os RANCHEIROS! Nossa
                   paixão pela cruz e nossa devoção a Jesus são a essência do que
                   nos define. Junte-se a nós e seja parte de um ambiente onde
                   compartilhamos nossa fé e a alegria de pilotar.
-                </Highlight>
+                </RancheirosHighlight>
               </Text>
             </Spoiler>
           </Grid.Col>
@@ -162,23 +174,11 @@ export default function About() {
               </Title>
               <p>
                 <Text fz={"lg"} align="center">
-                  <Highlight
-                    highlight={["juntos", "Deus"]}
-                    highlightStyles={(theme) => ({
-                      backgroundImage: theme.fn.linearGradient(
-                        45,
-                        theme.colors.orange[5],
-                        theme.colors.yellow[5]
-                      ),
-                      fontWeight: 700,
-                      WebkitBackgroundClip: "text",
-                      WebkitTextFillColor: "transparent",
-                    })}
-                  >
+                  <RancheirosHighlight highlight={["juntos", "Deus"]}>
                     Contribuir com a construção de uma sociedade onde todos
                     entendam a importância de caminhar juntos, reconciliados com
                     Deus, sentindo a completude que vem de Cristo.
-                  </Highlight>
+                  </RancheirosHighlight>
                 </Text>
               </p>
               <Title order={2} pt={"2rem"} align="center">
@@ -186,22 +186,10 @@ export default function About() {
               </Title>
               <p>
                 <Text fz={"lg"} align="center">
-                  <Highlight
-                    highlight={["Jesus", "vidas"]}
-                    highlightStyles={(theme) => ({
-                      backgroundImage: theme.fn.linearGradient(
-                        45,
-                        theme.colors.orange[5],
-                        theme.colors.yellow[5]
-                      ),
-                      fontWeight: 700,
-                      WebkitBackgroundClip: "text",
-                      WebkitTextFillColor: "transparent",
-                    })}
-                  >
+                  <RancheirosHighlight highlight={["Jesus", "vidas"]}>
                     Com Jesus, ensinar as pessoas a pilotarem com segurança,
                     otimismo e liberdade, suas motos e suas vidas.
-                  </Highlight>
+                  </RancheirosHighlight>
                 </Text>
               </p>
             </Box>
@@ -238,25 +226,15 @@ export default function About() {
                 oito famílias.
               </Text>
               <Text color="dimmed" mt="md">
-                <Highlight
+                <RancheirosHighlight
                   highlight={["RANCHEIROS MC", "apaixonados por Jesus Cristo"]}
-                  highlightStyles={(theme) => ({
-                    backgroundImage: theme.fn.linearGradient(
-                      45,
-                      theme.colors.orange[5],
-                      theme.colors.yellow[5]
-                    ),
-                    fontWeight: 700,
-                    WebkitBackgroundClip: "text",
-                    WebkitTextFillColor: "transparent",
-                  })}
                 >
                   Foi assim, no dia 06 de maio de 2023, que nasceu o RANCHEIROS
                   MC. Somos um amontoado de gente simples e trabalhadora,
                   motociclistas ou simpatizantes, que amam uma boa prosa e se
                   movem em comitiva, respeitando tradições. Mas acima de tudo,
                   somos apaixonados por Jesus Cristo.
-                </Highlight>
+                </RancheirosHighlight>
               </Text>
             </Spoiler>
           </Grid.Col>

@@ -4,20 +4,20 @@ export const theme: MantineThemeOverride = {
   colorScheme: "dark",
   colors: {
     brand: [
-      "#D8CAA3",
-      "#D7C082",
-      "#DCBA5E",
-      "#E8B834",
-      "#FFBB04", // <- primary shade color
-      "#D29F17",
-      "#AC8826",
-      "#8F752E",
-      "#786532",
-      "#665833"
-    ],
+      "#E7E2D9",
+      "#DAD1BD",
+      "#D2C2A0",
+      "#CFB682",
+      "#D2AD60", // <- primary shade color
+      "#BE9C55",
+      "#A88B50",
+      "#8F7B50",
+      "#7B6C4D",
+      "#6B604A",
+    ]
   },
   primaryColor: 'brand',
-  primaryShade: 5,
+  primaryShade: 4,
   headings: {
     fontFamily: 'Rye, cursive',
     fontWeight: 'normal',
