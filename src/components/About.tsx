@@ -9,6 +9,7 @@ import {
   Group,
   Highlight,
   List,
+  MantineProvider,
   Spoiler,
   Text,
   ThemeIcon,
@@ -21,6 +22,7 @@ import {
   IconCheck,
   IconLink,
 } from "@tabler/icons-react";
+import { theme } from "../utils/theme";
 
 const useStyles = createStyles((theme) => ({
   highlight: {
@@ -45,11 +47,7 @@ export default function About() {
       </Title>
       <Grid gutter={"xl"} grow={true}>
         <Grid.Col lg={6}>
-          <Spoiler
-            maxHeight={450}
-            showLabel="Mostrar mais"
-            hideLabel="Ocultar"
-          >
+          <Spoiler maxHeight={450} showLabel="Mostrar mais" hideLabel="Ocultar">
             <Text color="dimmed" mt="md">
               Somos um clube de motociclistas cristãos fundado em 2023 em
               Cambira, Paraná. Nosso objetivo principal é, com Jesus, ensinar as

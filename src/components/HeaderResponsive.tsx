@@ -141,7 +141,7 @@ export function HeaderResponsive(): ReactElement {
             close();
           }}
         >
-          <Title order={2} transform="uppercase" color="white">
+          <Title order={2} transform="uppercase" color="gray.2">
             <Center>
               <img src={logo} alt="RANCHEIROS MC" height={36} />
               <Space w="xs" />

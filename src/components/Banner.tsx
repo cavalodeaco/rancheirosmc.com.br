@@ -35,7 +35,7 @@ export default function Banner(): ReactElement {
             fontSize: "5rem",
           }}
         >
-          <Title color={"white"} size={"2.5rem"}>
+          <Title color={"gray.2"} size={"2.5rem"}>
             RANCHEIROS MC
           </Title>
         </MediaQuery>
