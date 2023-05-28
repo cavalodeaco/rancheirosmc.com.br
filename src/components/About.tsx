@@ -1,11 +1,25 @@
 import {
+  ActionIcon,
+  Anchor,
+  Button,
+  ButtonProps,
+  Center,
   Container,
   Grid,
+  Group,
   Highlight,
+  List,
   Text,
+  ThemeIcon,
   Title,
   createStyles,
 } from "@mantine/core";
+import {
+  IconBrandFacebook,
+  IconBrandInstagram,
+  IconCheck,
+  IconLink,
+} from "@tabler/icons-react";
 
 const useStyles = createStyles((theme) => ({
   highlight: {
@@ -24,12 +38,12 @@ export default function About() {
   const { classes } = useStyles();
   return (
     <Container py={"calc(60px + 2rem)"}>
-      <Grid>
+      <Title order={2}>
+        Boas-vindas ao <br />
+        <span className={classes.highlight}>RANCHEIROS Moto Clube!</span>
+      </Title>
+      <Grid gutter={"xl"}>
         <Grid.Col lg={6}>
-          <Title order={2}>
-            Boas-vindas ao <br />
-            <span className={classes.highlight}>RANCHEIROS Moto Clube!</span>
-          </Title>
           <Text color="dimmed" mt="md">
             Somos um clube de motociclistas cristãos fundado em 2023 em Cambira,
             Paraná. Nosso objetivo principal é, com Jesus, ensinar as pessoas a
@@ -72,10 +86,52 @@ export default function About() {
           </Text>
         </Grid.Col>
         <Grid.Col md={6}>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod
-          provident reiciendis hic nostrum, deserunt ratione voluptatum eos
-          consequuntur? Labore rerum veniam quam! Suscipit temporibus facilis
-          nobis reprehenderit cum rem debitis.
+          <List
+            mt={30}
+            spacing="xl"
+            size="md"
+            icon={
+              <ThemeIcon size={20} radius="xl">
+                <IconLink />
+              </ThemeIcon>
+            }
+          >
+            <List.Item>
+              Conheça nosso{" "}
+              <Anchor href="https://mpv.rancheirosmc.com.br/" target="_blank">
+                treinamento de pilotagem defensiva gratuito
+              </Anchor>
+            </List.Item>
+            <List.Item>
+              <Anchor href="https://wa.me/554195310076" target="_blank">
+                Entre em contato.
+              </Anchor>{" "}
+              Estamos ansiosos para conhecer você e compartilhar a estrada da
+              vida juntos.
+            </List.Item>
+            <List.Item>
+              Conecte-se conosco nas redes sociais onde compartilhamos nossos
+              eventos e mensagens de sabedoria e inspiração:
+              <Group my={"xl"} position={"center"} spacing={"xl"} noWrap>
+                <Anchor href="https://www.facebook.com/rancheirosmc" target="_blank">
+                  <ActionIcon size="lg">
+                    <IconBrandFacebook size="2rem" stroke={2} />
+                  </ActionIcon>
+                </Anchor>
+                <Anchor href="https://www.instagram.com/rancheirosmc/" target="_blank">
+                  <ActionIcon size="lg">
+                    <IconBrandInstagram size="2rem" stroke={2} />
+                  </ActionIcon>
+                </Anchor>
+              </Group>
+            </List.Item>
+          </List>
+          <Center>
+            <Title order={3}>
+              SOMOS RANCHEIROS! <br /> RANCHEIROS PELA CRUZ! <br /> RANCHEIROS
+              POR JESUS!
+            </Title>
+          </Center>
         </Grid.Col>
       </Grid>
     </Container>
