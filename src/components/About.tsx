@@ -100,7 +100,7 @@ export default function About() {
               </Text>
 
               <Text color="dimmed" mt="md">
-                <RancheirosHighlight highlight={["RANCHEIROS", "Jesus"]}>
+                <RancheirosHighlight highlight={["RANCHEIROS"]}>
                   Somos orgulhosamente conhecidos como os RANCHEIROS! Nossa
                   paixão pela cruz e nossa devoção a Jesus são a essência do que
                   nos define. Junte-se a nós e seja parte de um ambiente onde
@@ -166,15 +166,15 @@ export default function About() {
         </Grid>
       </Box>
       <Box py={"calc(60px + 2rem)"}>
-        <Grid gutter={"xl"} grow={true} align="center" justify="center">
+        <Grid gutter={"xl"} grow={true}>
           <Grid.Col lg={6}>
             <Box pb={"2rem"}>
               <Title order={2} align="center">
                 Visão
               </Title>
               <p>
-                <Text fz={"lg"} align="center">
-                  <RancheirosHighlight highlight={["juntos", "Deus"]}>
+                <Text align="center">
+                  <RancheirosHighlight highlight={["reconciliados com Deus"]}>
                     Contribuir com a construção de uma sociedade onde todos
                     entendam a importância de caminhar juntos, reconciliados com
                     Deus, sentindo a completude que vem de Cristo.
@@ -185,11 +185,34 @@ export default function About() {
                 Missão
               </Title>
               <p>
-                <Text fz={"lg"} align="center">
-                  <RancheirosHighlight highlight={["Jesus", "vidas"]}>
+                <Text align="center">
+                  <RancheirosHighlight highlight={["Com Jesus", "vidas"]}>
                     Com Jesus, ensinar as pessoas a pilotarem com segurança,
                     otimismo e liberdade, suas motos e suas vidas.
                   </RancheirosHighlight>
+                </Text>
+              </p>
+              <Title order={3} pt={"2rem"} align="center">
+                Curso de pilotagem defensiva: Manobras Para Vida
+              </Title>
+              <p>
+                <Text align="center">
+                  <RancheirosHighlight
+                    highlight={["gratuito", "pilotar mais seguro"]}
+                  >
+                    Curso gratuito, que visa dotar seus participantes de
+                    conhecimentos teóricos e práticos que possibilitem um
+                    pilotar mais seguro nos deslocamentos diários.
+                  </RancheirosHighlight>
+                  <Button
+                    mt={"md"}
+                    color="brand.6"
+                    component="a"
+                    href="https://mpv.rancheirosmc.com.br/#inscricao"
+                    target="_blank"
+                  >
+                    Inscreva-se
+                  </Button>
                 </Text>
               </p>
             </Box>
