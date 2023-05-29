@@ -26,25 +26,27 @@ import {
 import { theme } from "../utils/theme";
 import { ReactNode } from "react";
 
-export function RancheirosHighlight({
+export function RancheirosText({
   children,
-  highlight,
+  highlight = [],
 }: {
   children: string;
-  highlight: string[];
+  highlight?: string[];
 }) {
   return (
-    <Highlight
-      highlight={highlight}
-      highlightStyles={(theme) => ({
-        backgroundColor: theme.colors.brand[5],
-        fontWeight: 700,
-        WebkitBackgroundClip: "text",
-        WebkitTextFillColor: "transparent",
-      })}
-    >
-      {children}
-    </Highlight>
+    <Text color="dimmed" mt="md">
+      <Highlight
+        highlight={highlight}
+        highlightStyles={(theme) => ({
+          backgroundColor: theme.colors.brand[5],
+          fontWeight: 700,
+          WebkitBackgroundClip: "text",
+          WebkitTextFillColor: "transparent",
+        })}
+      >
+        {children}
+      </Highlight>
+    </Text>
   );
 }
 
@@ -52,11 +54,7 @@ const useStyles = createStyles((theme) => ({
   highlight: {
     position: "relative",
     color: theme.colors.dark,
-    backgroundImage: theme.fn.linearGradient(
-      135,
-      theme.colors.brand[2],
-      theme.colors.brand[7]
-    ),
+    backgroundColor: theme.colors.brand[5],
     borderRadius: theme.radius.xs,
     padding: `2px 6px`,
   },
@@ -71,47 +69,50 @@ export default function About() {
           Boas-vindas ao <br />
           <span className={classes.highlight}>RANCHEIROS Moto Clube!</span>
         </Title>
-        <Grid gutter={"xl"} grow={true}>
+        <Grid gutter={"xl"} grow={true} align="center" justify="center">
           <Grid.Col lg={6}>
             <Spoiler
               maxHeight={450}
               showLabel="Mostrar mais"
               hideLabel="Ocultar"
             >
-              <Text color="dimmed" mt="md">
+              <RancheirosText highlight={["com Jesus"]}>
                 Somos um clube de motociclistas cristãos fundado em 2023 em
                 Cambira, Paraná. Nosso objetivo principal é, com Jesus, ensinar
                 as pessoas a pilotarem com segurança, otimismo e liberdade suas
                 motos e suas vidas.
-              </Text>
-              <Text color="dimmed" mt="md">
+              </RancheirosText>
+              <RancheirosText highlight={["vida na vida"]}>
                 Vivemos o discipulado cristão, buscando verdadeiramente
                 partilhar vida na vida. Estamos comprometidos em ser parceiros
                 contínuos, não importa as circunstâncias que nos cercam.
                 Celebramos e agradecemos tanto os sucessos quanto os fracassos,
                 pois encontramos contentamento naquele que nos criou.
-              </Text>
-              <Text color="dimmed" mt="md">
+              </RancheirosText>
+              <RancheirosText highlight={["ministério da reconciliação"]}>
                 Nossa principal missão é seguir a ordem de Jesus Cristo de
                 sermos embaixadores Dele, trabalhando ativamente no ministério
                 da reconciliação. Acreditamos que, não por nossa própria força
                 ou poder, mas pelo Espírito Santo, somos capacitados a sermos
                 agentes na maravilhosa obra de espalhar o Evangelho de Cristo.
-              </Text>
-
-              <Text color="dimmed" mt="md">
-                <RancheirosHighlight highlight={["RANCHEIROS"]}>
-                  Somos orgulhosamente conhecidos como os RANCHEIROS! Nossa
-                  paixão pela cruz e nossa devoção a Jesus são a essência do que
-                  nos define. Junte-se a nós e seja parte de um ambiente onde
-                  compartilhamos nossa fé e a alegria de pilotar.
-                </RancheirosHighlight>
-              </Text>
+              </RancheirosText>
+              <RancheirosText highlight={["RANCHEIROS"]}>
+                Somos orgulhosamente conhecidos como os RANCHEIROS! Nossa
+                paixão pela cruz e nossa devoção a Jesus são a essência do que
+                nos define. Junte-se a nós e seja parte de um ambiente onde
+                compartilhamos nossa fé e a alegria de pilotar.
+              </RancheirosText>
             </Spoiler>
           </Grid.Col>
           <Grid.Col md={6}>
+            <Center>
+              <Title order={3}>
+                SOMOS RANCHEIROS! <br /> RANCHEIROS PELA CRUZ! <br /> RANCHEIROS
+                POR JESUS!
+              </Title>
+            </Center>
             <List
-              mt={30}
+              mt={"xl"}
               spacing="xl"
               size="md"
               icon={
@@ -141,27 +142,21 @@ export default function About() {
                     href="https://www.facebook.com/rancheirosmc"
                     target="_blank"
                   >
-                    <ActionIcon size="lg">
-                      <IconBrandFacebook size="2rem" stroke={2} />
+                    <ActionIcon size="xl" color="brand.4">
+                      <IconBrandFacebook size="2.5rem" stroke={2} />
                     </ActionIcon>
                   </Anchor>
                   <Anchor
                     href="https://www.instagram.com/rancheirosmc/"
                     target="_blank"
                   >
-                    <ActionIcon size="lg">
-                      <IconBrandInstagram size="2rem" stroke={2} />
+                    <ActionIcon size="xl" color="brand.4">
+                      <IconBrandInstagram size="2.5rem" stroke={2} />
                     </ActionIcon>
                   </Anchor>
                 </Group>
               </List.Item>
             </List>
-            <Center>
-              <Title order={3}>
-                SOMOS RANCHEIROS! <br /> RANCHEIROS PELA CRUZ! <br /> RANCHEIROS
-                POR JESUS!
-              </Title>
-            </Center>
           </Grid.Col>
         </Grid>
       </Box>
@@ -174,11 +169,11 @@ export default function About() {
               </Title>
               <p>
                 <Text align="center">
-                  <RancheirosHighlight highlight={["reconciliados com Deus"]}>
+                  <RancheirosText highlight={["reconciliados com Deus"]}>
                     Contribuir com a construção de uma sociedade onde todos
                     entendam a importância de caminhar juntos, reconciliados com
                     Deus, sentindo a completude que vem de Cristo.
-                  </RancheirosHighlight>
+                  </RancheirosText>
                 </Text>
               </p>
               <Title order={2} pt={"2rem"} align="center">
@@ -186,10 +181,10 @@ export default function About() {
               </Title>
               <p>
                 <Text align="center">
-                  <RancheirosHighlight highlight={["Com Jesus", "vidas"]}>
+                  <RancheirosText highlight={["Com Jesus", "vidas"]}>
                     Com Jesus, ensinar as pessoas a pilotarem com segurança,
                     otimismo e liberdade, suas motos e suas vidas.
-                  </RancheirosHighlight>
+                  </RancheirosText>
                 </Text>
               </p>
               <Title order={3} pt={"2rem"} align="center">
@@ -197,13 +192,13 @@ export default function About() {
               </Title>
               <p>
                 <Text align="center">
-                  <RancheirosHighlight
+                  <RancheirosText
                     highlight={["gratuito", "pilotar mais seguro"]}
                   >
                     Curso gratuito, que visa dotar seus participantes de
                     conhecimentos teóricos e práticos que possibilitem um
                     pilotar mais seguro nos deslocamentos diários.
-                  </RancheirosHighlight>
+                  </RancheirosText>
                   <Button
                     mt={"md"}
                     color="brand.6"
@@ -226,39 +221,20 @@ export default function About() {
               showLabel="Mostrar mais"
               hideLabel="Ocultar"
             >
-              <Text color="dimmed" mt="md">
-                Nossa história como RANCHEIROS é recente, mas nossa trajetória
-                até a sua criação já conta alguns anos. Inicialmente, éramos
-                membros de outro Moto Clube sediado em Curitiba. No ano de 2020,
-                em meio à pandemia do COVID-19, por uma direção de Deus, fomos
-                desafiados a sair daquela cidade e expandir a missão que já
-                realizávamos lá.
-              </Text>
-              <Text color="dimmed" mt="md">
-                Ao longo dos anos de 2020 a 2022, oito famílias foram se mudando
-                e se instalando na região de Cambira, no Paraná. Em setembro de
-                2022, realizamos o primeiro treinamento de pilotagem defensiva
-                de moto na cidade de Cambira e, no mês seguinte, em Maringá,
-                ainda como membros do Moto Clube da capital.
-              </Text>
-              <Text color="dimmed" mt="md">
-                No ano de 2023, continuamos cumprindo a missão confiada por
-                Deus. No entanto, devido a divergências em algumas visões
-                administrativas, decidimos caminhar de forma totalmente
-                independente, adotando o nome que revela o destino inicial das
-                oito famílias.
-              </Text>
-              <Text color="dimmed" mt="md">
-                <RancheirosHighlight
-                  highlight={["RANCHEIROS MC", "apaixonados por Jesus Cristo"]}
-                >
-                  Foi assim, no dia 06 de maio de 2023, que nasceu o RANCHEIROS
-                  MC. Somos um amontoado de gente simples e trabalhadora,
-                  motociclistas ou simpatizantes, que amam uma boa prosa e se
-                  movem em comitiva, respeitando tradições. Mas acima de tudo,
-                  somos apaixonados por Jesus Cristo.
-                </RancheirosHighlight>
-              </Text>
+              <RancheirosText highlight={["direção divina"]}>
+                A história do RANCHEIROS MC é relativamente recente, mas já percorremos um longo caminho.
+                Essa jornada teve início em 2020, na cidade de Curitiba,
+                quando, como membros de outro moto clube, guiados pela direção divina, decidimos expandir nossa missão para a cidade de Cambira, no interior do Paraná.
+                Aos poucos, oito famílias se mudaram para a região centro-norte do estado,
+                estabelecendo-se e dando continuidade aos treinamentos de pilotagem defensiva, que haviam iniciado na capital.
+                Ao longo de 2022 e 2023, as cidades de Cambira, Maringá e Jandaia do Sul foram contempladas com o treinamento.
+              </RancheirosText>
+              <RancheirosText highlight={["RANCHEIROS MC", "apaixonados por Jesus Cristo"]}>
+                Após divergências administrativas com o antigo clube, surge em 6 de maio de 2023 o RANCHEIROS MC.
+                O nome faz referência ao rancho, destino inicial das oito famílias que vieram de Curitiba. 
+                Somos uma reunião de pessoas simples e trabalhadoras, motociclistas ou simpatizantes, 
+                que amam uma prosa, se movem em comitiva, respeitando tradições e, acima de tudo, apaixonados por Jesus Cristo.
+              </RancheirosText>
             </Spoiler>
           </Grid.Col>
         </Grid>

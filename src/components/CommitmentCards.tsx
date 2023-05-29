@@ -27,7 +27,7 @@ import {
       icon: IconUsersGroup,
       title: 'Amizade',
       description:
-        'Apadrinhar as vidas que a mim forem confiadas, de forma que, possam ser reconhecidas como discípulas e discípulos chamadas de Cristo.',
+        'Apadrinhar as vidas que a mim forem confiadas, de forma que, possam ser reconhecidas como discípulos de Cristo.',
     },
     {
       icon: IconHeart,
