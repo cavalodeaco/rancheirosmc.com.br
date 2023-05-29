@@ -13,7 +13,7 @@ import {
   Space,
 } from "@mantine/core";
 import { useDisclosure } from "@mantine/hooks";
-import logo from "./img/logo.webp";
+import logo from "./img/icon.png";
 
 const HEADER_HEIGHT = 60;
 
