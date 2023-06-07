@@ -1,17 +1,23 @@
 import {
   ActionIcon,
   Anchor,
+  Avatar,
   Box,
   Button,
   ButtonProps,
+  Card,
   Center,
   Container,
+  Divider,
+  Flex,
   Grid,
   Group,
   Highlight,
   List,
   MantineProvider,
+  Paper,
   Spoiler,
+  Table,
   Text,
   ThemeIcon,
   Title,
@@ -58,6 +64,15 @@ const useStyles = createStyles((theme) => ({
     borderRadius: theme.radius.xs,
     padding: `2px 6px`,
   },
+  verticalText: {
+    writingMode: "vertical-rl",
+    textOrientation: "upright",
+  },
+  card: {
+    flexGrow: 1,
+    background: "radial-gradient(#FAE7AA, #B78E5E)",
+    color: theme.colors.dark,
+  },
 }));
 
 export default function About() {
@@ -97,9 +112,9 @@ export default function About() {
                 agentes na maravilhosa obra de espalhar o Evangelho de Cristo.
               </RancheirosText>
               <RancheirosText highlight={["RANCHEIROS"]}>
-                Somos orgulhosamente conhecidos como os RANCHEIROS! Nossa
-                paixão pela cruz e nossa devoção a Jesus são a essência do que
-                nos define. Junte-se a nós e seja parte de um ambiente onde
+                Somos orgulhosamente conhecidos como os RANCHEIROS! Nossa paixão
+                pela cruz e nossa devoção a Jesus são a essência do que nos
+                define. Junte-se a nós e seja parte de um ambiente onde
                 compartilhamos nossa fé e a alegria de pilotar.
               </RancheirosText>
             </Spoiler>
@@ -222,20 +237,172 @@ export default function About() {
               hideLabel="Ocultar"
             >
               <RancheirosText highlight={["direção divina"]}>
-                A história do RANCHEIROS MC é relativamente recente, mas já percorremos um longo caminho.
-                Essa jornada teve início em 2020, na cidade de Curitiba,
-                quando, como membros de outro moto clube, guiados pela direção divina, decidimos expandir nossa missão para a cidade de Cambira, no interior do Paraná.
-                Aos poucos, oito famílias se mudaram para a região centro-norte do estado,
-                estabelecendo-se e dando continuidade aos treinamentos de pilotagem defensiva, que haviam iniciado na capital.
-                Ao longo de 2022 e 2023, as cidades de Cambira, Maringá e Jandaia do Sul foram contempladas com o treinamento.
+                A história do RANCHEIROS MC é relativamente recente, mas já
+                percorremos um longo caminho. Essa jornada teve início em 2020,
+                na cidade de Curitiba, quando, como membros de outro moto clube,
+                guiados pela direção divina, decidimos expandir nossa missão
+                para a cidade de Cambira, no interior do Paraná. Aos poucos,
+                oito famílias se mudaram para a região centro-norte do estado,
+                estabelecendo-se e dando continuidade aos treinamentos de
+                pilotagem defensiva, que haviam iniciado na capital. Ao longo de
+                2022 e 2023, as cidades de Cambira, Maringá e Jandaia do Sul
+                foram contempladas com o treinamento.
               </RancheirosText>
-              <RancheirosText highlight={["RANCHEIROS MC", "apaixonados por Jesus Cristo"]}>
-                Após divergências administrativas com o antigo clube, surge em 6 de maio de 2023 o RANCHEIROS MC.
-                O nome faz referência ao rancho, destino inicial das oito famílias que vieram de Curitiba. 
-                Somos uma reunião de pessoas simples e trabalhadoras, motociclistas ou simpatizantes, 
-                que amam uma prosa, se movem em comitiva, respeitando tradições e, acima de tudo, apaixonados por Jesus Cristo.
+              <RancheirosText
+                highlight={["RANCHEIROS MC", "apaixonados por Jesus Cristo"]}
+              >
+                Após divergências administrativas com o antigo clube, surge em 6
+                de maio de 2023 o RANCHEIROS MC. O nome faz referência ao
+                rancho, destino inicial das oito famílias que vieram de
+                Curitiba. Somos uma reunião de pessoas simples e trabalhadoras,
+                motociclistas ou simpatizantes, que amam uma prosa, se movem em
+                comitiva, respeitando tradições e, acima de tudo, apaixonados
+                por Jesus Cristo.
               </RancheirosText>
             </Spoiler>
+          </Grid.Col>
+        </Grid>
+      </Box>
+      <Box py={"calc(60px + 2rem)"}>
+        <Grid gutter={"xl"} grow={true}>
+          <Grid.Col lg={6}>
+            <Group position="center">
+              <Title order={2} className={classes.verticalText}>
+                COMANDO
+              </Title>
+              <Paper className={classes.card} radius={"xl"}>
+                <Center>
+                  <Avatar
+                    src={null}
+                    alt="Paulo Quinelato"
+                    radius={"xl"}
+                    size={"xl"}
+                  >
+                    PQ
+                  </Avatar>
+                </Center>
+                <Title order={3} align="center">
+                  Paulo Quinelato
+                </Title>
+                <Text align="center">Presidente</Text>
+              </Paper>
+            </Group>
+          </Grid.Col>
+          <Grid.Col lg={6}>
+            <Group position="left" pb={"sm"}>
+              <Avatar
+                src={null}
+                component="span"
+                alt="Giovanna Fritsche"
+                radius="xl"
+                size="lg"
+              />
+              <Flex direction={"column"}>
+                <Title order={4}>Giovanna Fritsche</Title>
+                <Text>(Vice-presidente)</Text>
+              </Flex>
+            </Group>
+            <Divider pb={"sm"} />
+            <Group position="left" pb={"sm"}>
+              <Avatar
+                src={null}
+                component="span"
+                alt="Alex Rocha"
+                radius="xl"
+                size="lg"
+              />
+              <Flex direction={"column"}>
+                <Title order={4}>Alex Rocha</Title>
+                <Text>(Disciplina)</Text>
+              </Flex>
+            </Group>
+            <Divider pb={"sm"} />
+            <Group position="left">
+              <Avatar
+                src={null}
+                component="span"
+                alt="Pr. Vital"
+                radius="xl"
+                size="lg"
+              />
+              <Flex direction={"column"}>
+                <Title order={4}>Pr. Vital</Title>
+                <Text>(Brandeiro)</Text>
+              </Flex>
+            </Group>
+          </Grid.Col>
+        </Grid>
+      </Box>
+      <Box py={"calc(60px + 2rem)"}>
+        <Grid gutter={"xl"} grow={true}>
+          <Grid.Col lg={6}>
+            <Group position="center">
+              <Title order={2} className={classes.verticalText}>
+                CAMBIRA
+              </Title>
+              <Paper className={classes.card} radius={"xl"}>
+                <Center>
+                  <Avatar src={null} alt="Pinduca" radius={"xl"} size={"xl"}>
+                    PI
+                  </Avatar>
+                </Center>
+                <Title order={3} align="center">
+                  Pinduca
+                </Title>
+                <Text align="center">Presidente</Text>
+              </Paper>
+            </Group>
+          </Grid.Col>
+          <Grid.Col lg={6}>
+            <Group position="left" pb={"sm"}>
+              <Avatar
+                src={null}
+                component="span"
+                alt="Brito"
+                radius="xl"
+                size="md"
+              />
+              <Title order={4}>Brito</Title>
+              <Text>(Vice-presidente)</Text>
+            </Group>
+            <Divider pb={"sm"} />
+            <Group position="left" pb={"sm"}>
+              <Avatar
+                src={null}
+                component="span"
+                alt="Dai"
+                radius="xl"
+                size="md"
+              />
+              <Title order={4}>Dai</Title>
+              <Text>(Tesoureira)</Text>
+            </Group>
+            <Divider pb={"sm"} />
+            <Group position="left" pb={"sm"}>
+              <Avatar
+                src={null}
+                component="span"
+                alt="Josi"
+                radius="xl"
+                size="md"
+              />
+              <Title order={4}>Josi</Title>
+              <Text>(Secretária)</Text>
+            </Group>
+            <Divider pb={"sm"} />
+            <Group position="left" pb={"sm"}>
+              <Avatar
+                src={null}
+                component="span"
+                alt="Gisele"
+                radius="xl"
+                size="md"
+              />
+              <Title order={4}>Gisele</Title>
+              <Text>(Logística)</Text>
+            </Group>
+            <Divider pb={"sm"} />
+            
           </Grid.Col>
         </Grid>
       </Box>
