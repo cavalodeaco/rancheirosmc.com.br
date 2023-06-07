@@ -13,6 +13,7 @@ import {
   Grid,
   Group,
   Highlight,
+  Image,
   List,
   MantineProvider,
   Paper,
@@ -21,6 +22,7 @@ import {
   Text,
   ThemeIcon,
   Title,
+  clsx,
   createStyles,
 } from "@mantine/core";
 import {
@@ -31,6 +33,10 @@ import {
 } from "@tabler/icons-react";
 import { theme } from "../utils/theme";
 import { ReactNode } from "react";
+import paulo from "./img/paulo.webp";
+import pinduca from "./img/pinduca.webp";
+import giovanna from "./img/giovanna.webp";
+import alex from "./img/alex.webp";
 
 export function RancheirosText({
   children,
@@ -65,18 +71,31 @@ const useStyles = createStyles((theme) => ({
     padding: `2px 6px`,
   },
   verticalText: {
-    writingMode: "vertical-rl",
-    textOrientation: "upright",
+    transform: "rotate(-90deg)",
+  },
+  paulo: {
+    backgroundImage: `url(${paulo})`,
+  },
+  pinduca: {
+    backgroundImage: `url(${pinduca})`,
+  },
+  sepia: {
+    filter: "sepia(1)",
   },
   card: {
     flexGrow: 1,
-    background: "radial-gradient(#FAE7AA, #B78E5E)",
-    color: theme.colors.dark,
+    width: "50%",
+    aspectRatio: "1/1",
+    color: theme.colors.light,
+    backgroundSize: "cover",
+    display: "flex",
+    flexDirection: "column-reverse",
+    padding: theme.spacing.xs,
   },
 }));
 
 export default function About() {
-  const { classes } = useStyles();
+  const { classes, cx } = useStyles();
   return (
     <Container>
       <Box py={"calc(60px + 2rem)"}>
@@ -268,33 +287,23 @@ export default function About() {
           <Grid.Col lg={6}>
             <Group position="center">
               <Title order={2} className={classes.verticalText}>
-                COMANDO
+                COMANDO <br /> NACIONAL
               </Title>
-              <Paper className={classes.card} radius={"xl"}>
-                <Center>
-                  <Avatar
-                    src={null}
-                    alt="Paulo Quinelato"
-                    radius={"xl"}
-                    size={"xl"}
-                  >
-                    PQ
-                  </Avatar>
-                </Center>
+              <Paper className={cx(classes.card, classes.paulo)}>
+                <Text align="center">Presidente</Text>
                 <Title order={3} align="center">
                   Paulo Quinelato
                 </Title>
-                <Text align="center">Presidente</Text>
               </Paper>
             </Group>
           </Grid.Col>
           <Grid.Col lg={6}>
             <Group position="left" pb={"sm"}>
               <Avatar
-                src={null}
+                className={classes.sepia}
+                src={giovanna}
                 component="span"
                 alt="Giovanna Fritsche"
-                radius="xl"
                 size="lg"
               />
               <Flex direction={"column"}>
@@ -305,10 +314,10 @@ export default function About() {
             <Divider pb={"sm"} />
             <Group position="left" pb={"sm"}>
               <Avatar
-                src={null}
+                className={classes.sepia}
+                src={alex}
                 component="span"
                 alt="Alex Rocha"
-                radius="xl"
                 size="lg"
               />
               <Flex direction={"column"}>
@@ -338,18 +347,13 @@ export default function About() {
           <Grid.Col lg={6}>
             <Group position="center">
               <Title order={2} className={classes.verticalText}>
-                CAMBIRA
+                RANCHO <br /> CAMBIRA
               </Title>
-              <Paper className={classes.card} radius={"xl"}>
-                <Center>
-                  <Avatar src={null} alt="Pinduca" radius={"xl"} size={"xl"}>
-                    PI
-                  </Avatar>
-                </Center>
+              <Paper className={cx(classes.card, classes.pinduca)}>
+                <Text align="center">Diretor</Text>
                 <Title order={3} align="center">
                   Pinduca
                 </Title>
-                <Text align="center">Presidente</Text>
               </Paper>
             </Group>
           </Grid.Col>
@@ -363,7 +367,7 @@ export default function About() {
                 size="md"
               />
               <Title order={4}>Brito</Title>
-              <Text>(Vice-presidente)</Text>
+              <Text>(Vice-diretor)</Text>
             </Group>
             <Divider pb={"sm"} />
             <Group position="left" pb={"sm"}>
@@ -382,11 +386,11 @@ export default function About() {
               <Avatar
                 src={null}
                 component="span"
-                alt="Josi"
+                alt="Jane"
                 radius="xl"
                 size="md"
               />
-              <Title order={4}>Josi</Title>
+              <Title order={4}>Jane</Title>
               <Text>(Secretária)</Text>
             </Group>
             <Divider pb={"sm"} />
@@ -402,7 +406,6 @@ export default function About() {
               <Text>(Logística)</Text>
             </Group>
             <Divider pb={"sm"} />
-            
           </Grid.Col>
         </Grid>
       </Box>
