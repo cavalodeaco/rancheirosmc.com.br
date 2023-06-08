@@ -295,10 +295,12 @@ export default function About() {
                 COMANDO <br /> NACIONAL
               </Title>
               <Paper className={cx(classes.card, classes.paulo)}>
-                <Text align="center">Presidente</Text>
-                <Title order={3} align="center">
-                  Paulo Quinelato
-                </Title>
+                <Flex justify={"space-between"} align={"end"}>
+                  <Title order={3} align="center">
+                    Paulo
+                  </Title>
+                  <Text align="center">(Presidente)</Text>
+                </Flex>
               </Paper>
             </Group>
           </Grid.Col>
@@ -355,10 +357,12 @@ export default function About() {
                 RANCHO <br /> CAMBIRA
               </Title>
               <Paper className={cx(classes.card, classes.pinduca)}>
-                <Text align="center">Diretor</Text>
-                <Title order={3} align="center">
-                  Pinduca
-                </Title>
+                <Flex justify={"space-between"} align={"end"}>
+                  <Title order={3} align="center">
+                    Pinduca
+                  </Title>
+                  <Text align="center">(Diretor)</Text>
+                </Flex>
               </Paper>
             </Group>
           </Grid.Col>
