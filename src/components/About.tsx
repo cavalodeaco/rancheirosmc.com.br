@@ -37,6 +37,11 @@ import paulo from "./img/paulo.webp";
 import pinduca from "./img/pinduca.webp";
 import giovanna from "./img/giovanna.webp";
 import alex from "./img/alex.webp";
+import vital from "./img/vital.webp";
+import dai from "./img/dai.webp";
+import brito from "./img/brito.webp";
+import gisele from "./img/gisele.webp";
+import jane from "./img/jane.webp";
 
 export function RancheirosText({
   children,
@@ -284,7 +289,7 @@ export default function About() {
       </Box>
       <Box py={"calc(60px + 2rem)"}>
         <Grid gutter={"xl"} grow={true}>
-          <Grid.Col lg={6}>
+          <Grid.Col md={6}>
             <Group position="center">
               <Title order={2} className={classes.verticalText}>
                 COMANDO <br /> NACIONAL
@@ -297,14 +302,14 @@ export default function About() {
               </Paper>
             </Group>
           </Grid.Col>
-          <Grid.Col lg={6}>
+          <Grid.Col md={6}>
             <Group position="left" pb={"sm"}>
               <Avatar
                 className={classes.sepia}
                 src={giovanna}
                 component="span"
                 alt="Giovanna Fritsche"
-                size="lg"
+                size="xl"
               />
               <Flex direction={"column"}>
                 <Title order={4}>Giovanna Fritsche</Title>
@@ -318,7 +323,7 @@ export default function About() {
                 src={alex}
                 component="span"
                 alt="Alex Rocha"
-                size="lg"
+                size="xl"
               />
               <Flex direction={"column"}>
                 <Title order={4}>Alex Rocha</Title>
@@ -328,11 +333,11 @@ export default function About() {
             <Divider pb={"sm"} />
             <Group position="left">
               <Avatar
-                src={null}
+                className={classes.sepia}
+                src={vital}
                 component="span"
                 alt="Pr. Vital"
-                radius="xl"
-                size="lg"
+                size="xl"
               />
               <Flex direction={"column"}>
                 <Title order={4}>Pr. Vital</Title>
@@ -344,7 +349,7 @@ export default function About() {
       </Box>
       <Box py={"calc(60px + 2rem)"}>
         <Grid gutter={"xl"} grow={true}>
-          <Grid.Col lg={6}>
+          <Grid.Col md={6}>
             <Group position="center">
               <Title order={2} className={classes.verticalText}>
                 RANCHO <br /> CAMBIRA
@@ -357,14 +362,14 @@ export default function About() {
               </Paper>
             </Group>
           </Grid.Col>
-          <Grid.Col lg={6}>
+          <Grid.Col md={6}>
             <Group position="left" pb={"sm"}>
               <Avatar
-                src={null}
+                src={brito}
+                className={classes.sepia}
                 component="span"
                 alt="Brito"
-                radius="xl"
-                size="md"
+                size="lg"
               />
               <Title order={4}>Brito</Title>
               <Text>(Vice-diretor)</Text>
@@ -372,11 +377,11 @@ export default function About() {
             <Divider pb={"sm"} />
             <Group position="left" pb={"sm"}>
               <Avatar
-                src={null}
+                src={dai}
                 component="span"
                 alt="Dai"
-                radius="xl"
-                size="md"
+                className={classes.sepia}
+                size="lg"
               />
               <Title order={4}>Dai</Title>
               <Text>(Tesoureira)</Text>
@@ -384,11 +389,11 @@ export default function About() {
             <Divider pb={"sm"} />
             <Group position="left" pb={"sm"}>
               <Avatar
-                src={null}
+                src={jane}
                 component="span"
                 alt="Jane"
-                radius="xl"
-                size="md"
+                className={classes.sepia}
+                size="lg"
               />
               <Title order={4}>Jane</Title>
               <Text>(Secretária)</Text>
@@ -396,16 +401,15 @@ export default function About() {
             <Divider pb={"sm"} />
             <Group position="left" pb={"sm"}>
               <Avatar
-                src={null}
+                src={gisele}
                 component="span"
                 alt="Gisele"
-                radius="xl"
-                size="md"
+                className={classes.sepia}
+                size="lg"
               />
               <Title order={4}>Gisele</Title>
               <Text>(Logística)</Text>
             </Group>
-            <Divider pb={"sm"} />
           </Grid.Col>
         </Grid>
       </Box>
