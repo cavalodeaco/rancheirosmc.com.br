@@ -288,7 +288,8 @@ export default function About() {
         </Grid>
       </Box>
       <Box py={"calc(60px + 2rem)"}>
-        <Grid gutter={"xl"} grow={true}>
+        <Title order={2}>Estrutura de Comando</Title>
+        <Grid gutter={"xl"} mt={"xl"} grow={true}>
           <Grid.Col md={6}>
             <Group position="center">
               <Title order={2} className={classes.verticalText}>
