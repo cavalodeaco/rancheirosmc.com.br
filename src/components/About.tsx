@@ -385,7 +385,7 @@ export default function About() {
                 size="lg"
               />
               <Title order={4}>Dai</Title>
-              <Text>(Tesouraria)</Text>
+              <Text>(Financeiro)</Text>
             </Group>
             <Divider pb={"sm"} />
             <Group position="left" pb={"sm"}>
