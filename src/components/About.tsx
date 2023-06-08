@@ -389,7 +389,7 @@ export default function About() {
                 size="lg"
               />
               <Title order={4}>Dai</Title>
-              <Text>(Tesoureira)</Text>
+              <Text>(Tesouraria)</Text>
             </Group>
             <Divider pb={"sm"} />
             <Group position="left" pb={"sm"}>
@@ -401,7 +401,7 @@ export default function About() {
                 size="lg"
               />
               <Title order={4}>Jane</Title>
-              <Text>(Secretária)</Text>
+              <Text>(Secretaria)</Text>
             </Group>
             <Divider pb={"sm"} />
             <Group position="left" pb={"sm"}>
