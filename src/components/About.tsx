@@ -298,7 +298,7 @@ export default function About() {
               <Paper className={cx(classes.card, classes.paulo)}>
                 <Flex justify={"space-between"} align={"end"}>
                   <Title order={3} align="center">
-                    Paulo
+                    Capitão
                   </Title>
                   <Text align="center">(Presidente)</Text>
                 </Flex>
@@ -311,11 +311,11 @@ export default function About() {
                 className={classes.sepia}
                 src={giovanna}
                 component="span"
-                alt="Giovanna Fritsche"
+                alt="Giovanna"
                 size="5rem"
               />
               <Flex direction={"column"}>
-                <Title order={4}>Giovanna Fritsche</Title>
+                <Title order={4}>Giovanna</Title>
                 <Text>(Vice-presidente)</Text>
               </Flex>
             </Group>
@@ -325,11 +325,11 @@ export default function About() {
                 className={classes.sepia}
                 src={alex}
                 component="span"
-                alt="Alex Rocha"
+                alt="Alex"
                 size="5rem"
               />
               <Flex direction={"column"}>
-                <Title order={4}>Alex Rocha</Title>
+                <Title order={4}>Alex</Title>
                 <Text>(Disciplina)</Text>
               </Flex>
             </Group>
@@ -348,10 +348,6 @@ export default function About() {
               </Flex>
             </Group>
           </Grid.Col>
-        </Grid>
-      </Box>
-      <Box py={"calc(60px + 2rem)"}>
-        <Grid gutter={"xl"} grow={true}>
           <Grid.Col md={6}>
             <Group position="center">
               <Title order={2} className={classes.verticalText}>

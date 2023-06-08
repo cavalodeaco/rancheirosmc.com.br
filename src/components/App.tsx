@@ -13,7 +13,7 @@ import Linkable from "./Linkable";
 import Banner from "./Banner";
 import { CommitmentCards } from "./CommitmentCards";
 import About from "./About";
-import logo from "./img/icon.png";
+import rancheiro from "./img/rancheiro.webp";
 
 export default function App() {
   document.title = "RANCHEIROS MC";
@@ -27,7 +27,7 @@ export default function App() {
             <Container>
               <Title order={4} transform="uppercase" color="gray.4">
                 <Center>
-                  <img src={logo} alt="RANCHEIROS MC" height={18} />
+                  <img src={rancheiro} alt="RANCHEIROS MC" height={32} />
                   <Space w="xs" />
                   RANCHEIROS MC 
                 </Center>

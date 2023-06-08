@@ -13,7 +13,7 @@ import {
   Space,
 } from "@mantine/core";
 import { useDisclosure } from "@mantine/hooks";
-import logo from "./img/icon.png";
+import rancheiro from "./img/rancheiro.webp";
 
 const HEADER_HEIGHT = 60;
 
@@ -143,7 +143,7 @@ export function HeaderResponsive(): ReactElement {
         >
           <Title order={2} transform="uppercase" color="gray.2">
             <Center>
-              <img src={logo} alt="RANCHEIROS MC" height={36} />
+              <img src={rancheiro} alt="RANCHEIROS MC" height={48} />
               <Space w="xs" />
               RANCHEIROS MC
             </Center>
