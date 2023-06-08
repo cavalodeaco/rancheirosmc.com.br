@@ -309,7 +309,7 @@ export default function About() {
                 src={giovanna}
                 component="span"
                 alt="Giovanna Fritsche"
-                size="xl"
+                size="5rem"
               />
               <Flex direction={"column"}>
                 <Title order={4}>Giovanna Fritsche</Title>
@@ -323,7 +323,7 @@ export default function About() {
                 src={alex}
                 component="span"
                 alt="Alex Rocha"
-                size="xl"
+                size="5rem"
               />
               <Flex direction={"column"}>
                 <Title order={4}>Alex Rocha</Title>
@@ -337,7 +337,7 @@ export default function About() {
                 src={vital}
                 component="span"
                 alt="Pr. Vital"
-                size="xl"
+                size="5rem"
               />
               <Flex direction={"column"}>
                 <Title order={4}>Pr. Vital</Title>
