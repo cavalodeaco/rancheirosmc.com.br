@@ -356,7 +356,7 @@ export default function About() {
               <Paper className={cx(classes.card, classes.pinduca)}>
                 <Flex justify={"space-between"} align={"end"}>
                   <Title order={3} align="center">
-                    Pinduca
+                    Rogério
                   </Title>
                   <Text align="center">(Diretor)</Text>
                 </Flex>
