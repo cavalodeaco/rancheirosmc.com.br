@@ -117,23 +117,23 @@ export default function About() {
             >
               <RancheirosText highlight={["com Jesus"]}>
                 Somos um clube de motociclistas cristãos fundado em 2023 em
-                Cambira, Paraná. Nosso objetivo principal é, com Jesus, ensinar
-                as pessoas a pilotarem com segurança, otimismo e liberdade suas
+                Cambira, Paraná. Nosso propósito é, com Jesus, ensinar as
+                pessoas a pilotarem com segurança, otimismo e liberdade suas
                 motos e suas vidas.
               </RancheirosText>
               <RancheirosText highlight={["vida na vida"]}>
                 Vivemos o discipulado cristão, buscando verdadeiramente
                 partilhar vida na vida. Estamos comprometidos em ser parceiros
-                contínuos, não importa as circunstâncias que nos cercam.
+                contínuos, não importando as circunstâncias que nos cercam.
                 Celebramos e agradecemos tanto os sucessos quanto os fracassos,
                 pois encontramos contentamento naquele que nos criou.
               </RancheirosText>
               <RancheirosText highlight={["ministério da reconciliação"]}>
-                Nossa principal missão é seguir a ordem de Jesus Cristo de
-                sermos embaixadores Dele, trabalhando ativamente no ministério
-                da reconciliação. Acreditamos que, não por nossa própria força
-                ou poder, mas pelo Espírito Santo, somos capacitados a sermos
-                agentes na maravilhosa obra de espalhar o Evangelho de Cristo.
+                Rodamos seguindo a ordem de Jesus Cristo de sermos embaixadores
+                Dele, trabalhando ativamente no ministério da reconciliação.
+                Acreditamos que, não por nossa própria força ou poder, mas pelo
+                Espírito Santo, somos capacitados a sermos agentes na
+                maravilhosa obra de espalhar o Evangelho de Cristo.
               </RancheirosText>
               <RancheirosText highlight={["RANCHEIROS"]}>
                 Somos orgulhosamente conhecidos como os RANCHEIROS! Nossa paixão
@@ -261,16 +261,16 @@ export default function About() {
               hideLabel="Ocultar"
             >
               <RancheirosText highlight={["direção divina"]}>
-                A história do RANCHEIROS MC é relativamente recente, mas já
-                percorremos um longo caminho. Essa jornada teve início em 2020,
-                na cidade de Curitiba, quando, como membros de outro moto clube,
-                guiados pela direção divina, decidimos expandir nossa missão
-                para a cidade de Cambira, no interior do Paraná. Aos poucos,
-                oito famílias se mudaram para a região centro-norte do estado,
-                estabelecendo-se e dando continuidade aos treinamentos de
-                pilotagem defensiva, que haviam iniciado na capital. Ao longo de
-                2022 e 2023, as cidades de Cambira, Maringá e Jandaia do Sul
-                foram contempladas com o treinamento.
+                A história do RANCHEIROS MC é relativamente recente. Essa
+                jornada teve início em 2020, na cidade de Curitiba, quando, como
+                membros de outro moto clube, guiados pela direção divina,
+                decidimos expandir nossa missão para a cidade de Cambira, no
+                interior do Paraná. Aos poucos, oito famílias se mudaram para a
+                região centro-norte do estado, estabelecendo-se e dando
+                continuidade aos treinamentos de pilotagem defensiva, que haviam
+                iniciado na capital, ainda no ano de 2017. Ao longo de 2022 e
+                2023, as cidades de Cambira, Maringá e Jandaia do Sul foram
+                contempladas com o treinamento.
               </RancheirosText>
               <RancheirosText
                 highlight={["RANCHEIROS MC", "apaixonados por Jesus Cristo"]}
