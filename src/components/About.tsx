@@ -1,20 +1,28 @@
 import {
   ActionIcon,
   Anchor,
+  Avatar,
   Box,
   Button,
   ButtonProps,
+  Card,
   Center,
   Container,
+  Divider,
+  Flex,
   Grid,
   Group,
   Highlight,
+  Image,
   List,
   MantineProvider,
+  Paper,
   Spoiler,
+  Table,
   Text,
   ThemeIcon,
   Title,
+  clsx,
   createStyles,
 } from "@mantine/core";
 import {
@@ -25,6 +33,15 @@ import {
 } from "@tabler/icons-react";
 import { theme } from "../utils/theme";
 import { ReactNode } from "react";
+import paulo from "./img/paulo.webp";
+import pinduca from "./img/pinduca.webp";
+import giovanna from "./img/giovanna.webp";
+import alex from "./img/alex.webp";
+import vital from "./img/vital.webp";
+import dai from "./img/dai.webp";
+import brito from "./img/brito.webp";
+import gisele from "./img/gisele.webp";
+import jane from "./img/jane.webp";
 
 export function RancheirosText({
   children,
@@ -58,10 +75,32 @@ const useStyles = createStyles((theme) => ({
     borderRadius: theme.radius.xs,
     padding: `2px 6px`,
   },
+  verticalText: {
+    transform: "rotate(-90deg)",
+  },
+  paulo: {
+    backgroundImage: `url(${paulo})`,
+  },
+  pinduca: {
+    backgroundImage: `url(${pinduca})`,
+  },
+  sepia: {
+    filter: "sepia(1)",
+  },
+  card: {
+    flexGrow: 1,
+    width: "50%",
+    aspectRatio: "1/1",
+    color: theme.colors.light,
+    backgroundSize: "cover",
+    display: "flex",
+    flexDirection: "column-reverse",
+    padding: theme.spacing.xs,
+  },
 }));
 
 export default function About() {
-  const { classes } = useStyles();
+  const { classes, cx } = useStyles();
   return (
     <Container>
       <Box py={"calc(60px + 2rem)"}>
@@ -78,28 +117,28 @@ export default function About() {
             >
               <RancheirosText highlight={["com Jesus"]}>
                 Somos um clube de motociclistas cristãos fundado em 2023 em
-                Cambira, Paraná. Nosso objetivo principal é, com Jesus, ensinar
-                as pessoas a pilotarem com segurança, otimismo e liberdade suas
+                Cambira, Paraná. Nosso propósito é, com Jesus, ensinar as
+                pessoas a pilotarem com segurança, otimismo e liberdade suas
                 motos e suas vidas.
               </RancheirosText>
               <RancheirosText highlight={["vida na vida"]}>
                 Vivemos o discipulado cristão, buscando verdadeiramente
                 partilhar vida na vida. Estamos comprometidos em ser parceiros
-                contínuos, não importa as circunstâncias que nos cercam.
+                contínuos, não importando as circunstâncias que nos cercam.
                 Celebramos e agradecemos tanto os sucessos quanto os fracassos,
                 pois encontramos contentamento naquele que nos criou.
               </RancheirosText>
               <RancheirosText highlight={["ministério da reconciliação"]}>
-                Nossa principal missão é seguir a ordem de Jesus Cristo de
-                sermos embaixadores Dele, trabalhando ativamente no ministério
-                da reconciliação. Acreditamos que, não por nossa própria força
-                ou poder, mas pelo Espírito Santo, somos capacitados a sermos
-                agentes na maravilhosa obra de espalhar o Evangelho de Cristo.
+                Rodamos seguindo a ordem de Jesus Cristo de sermos embaixadores
+                Dele, trabalhando ativamente no ministério da reconciliação.
+                Acreditamos que, não por nossa própria força ou poder, mas pelo
+                Espírito Santo, somos capacitados a sermos agentes na
+                maravilhosa obra de espalhar o Evangelho de Cristo.
               </RancheirosText>
               <RancheirosText highlight={["RANCHEIROS"]}>
-                Somos orgulhosamente conhecidos como os RANCHEIROS! Nossa
-                paixão pela cruz e nossa devoção a Jesus são a essência do que
-                nos define. Junte-se a nós e seja parte de um ambiente onde
+                Somos orgulhosamente conhecidos como os RANCHEIROS! Nossa paixão
+                pela cruz e nossa devoção a Jesus são a essência do que nos
+                define. Junte-se a nós e seja parte de um ambiente onde
                 compartilhamos nossa fé e a alegria de pilotar.
               </RancheirosText>
             </Spoiler>
@@ -222,20 +261,156 @@ export default function About() {
               hideLabel="Ocultar"
             >
               <RancheirosText highlight={["direção divina"]}>
-                A história do RANCHEIROS MC é relativamente recente, mas já percorremos um longo caminho.
-                Essa jornada teve início em 2020, na cidade de Curitiba,
-                quando, como membros de outro moto clube, guiados pela direção divina, decidimos expandir nossa missão para a cidade de Cambira, no interior do Paraná.
-                Aos poucos, oito famílias se mudaram para a região centro-norte do estado,
-                estabelecendo-se e dando continuidade aos treinamentos de pilotagem defensiva, que haviam iniciado na capital.
-                Ao longo de 2022 e 2023, as cidades de Cambira, Maringá e Jandaia do Sul foram contempladas com o treinamento.
+                A história do RANCHEIROS MC é relativamente recente. Essa
+                jornada teve início em 2020, na cidade de Curitiba, quando, como
+                membros de outro moto clube, guiados pela direção divina,
+                decidimos expandir nossa missão para a cidade de Cambira, no
+                interior do Paraná. Aos poucos, oito famílias se mudaram para a
+                região centro-norte do estado, estabelecendo-se e dando
+                continuidade aos treinamentos de pilotagem defensiva, que haviam
+                iniciado na capital, ainda no ano de 2017. Ao longo de 2022 e
+                2023, as cidades de Cambira, Maringá e Jandaia do Sul foram
+                contempladas com o treinamento.
               </RancheirosText>
-              <RancheirosText highlight={["RANCHEIROS MC", "apaixonados por Jesus Cristo"]}>
-                Após divergências administrativas com o antigo clube, surge em 6 de maio de 2023 o RANCHEIROS MC.
-                O nome faz referência ao rancho, destino inicial das oito famílias que vieram de Curitiba. 
-                Somos uma reunião de pessoas simples e trabalhadoras, motociclistas ou simpatizantes, 
-                que amam uma prosa, se movem em comitiva, respeitando tradições e, acima de tudo, apaixonados por Jesus Cristo.
+              <RancheirosText
+                highlight={["RANCHEIROS MC", "apaixonados por Jesus Cristo"]}
+              >
+                Após divergências administrativas com o antigo clube, surge em 6
+                de maio de 2023 o RANCHEIROS MC. O nome faz referência ao
+                rancho, destino inicial das oito famílias que vieram de
+                Curitiba. Somos uma reunião de pessoas simples e trabalhadoras,
+                motociclistas ou simpatizantes, que amam uma prosa, se movem em
+                comitiva, respeitando tradições e, acima de tudo, apaixonados
+                por Jesus Cristo.
               </RancheirosText>
             </Spoiler>
+          </Grid.Col>
+        </Grid>
+      </Box>
+      <Box py={"calc(60px + 2rem)"}>
+        <Title order={2}>Estrutura de Comando</Title>
+        <Grid gutter={"xl"} mt={"xl"} grow={true}>
+          <Grid.Col md={6}>
+            <Group position="center">
+              <Title order={2} className={classes.verticalText}>
+                COMANDO <br /> NACIONAL
+              </Title>
+              <Paper className={cx(classes.card, classes.paulo)}>
+                <Flex justify={"space-between"} align={"end"}>
+                  <Title order={3} align="center">
+                    Capitão
+                  </Title>
+                  <Text align="center">(Presidente)</Text>
+                </Flex>
+              </Paper>
+            </Group>
+          </Grid.Col>
+          <Grid.Col md={6}>
+            <Group position="left" pb={"sm"}>
+              <Avatar
+                className={classes.sepia}
+                src={giovanna}
+                component="span"
+                alt="Giovanna"
+                size="5rem"
+              />
+              <Flex direction={"column"}>
+                <Title order={4}>Giovanna</Title>
+                <Text>(Vice-presidente)</Text>
+              </Flex>
+            </Group>
+            <Divider pb={"sm"} />
+            <Group position="left" pb={"sm"}>
+              <Avatar
+                className={classes.sepia}
+                src={alex}
+                component="span"
+                alt="Alex"
+                size="5rem"
+              />
+              <Flex direction={"column"}>
+                <Title order={4}>Alex</Title>
+                <Text>(Disciplina)</Text>
+              </Flex>
+            </Group>
+            <Divider pb={"sm"} />
+            <Group position="left">
+              <Avatar
+                className={classes.sepia}
+                src={vital}
+                component="span"
+                alt="Pr. Vital"
+                size="5rem"
+              />
+              <Flex direction={"column"}>
+                <Title order={4}>Pr. Vital</Title>
+                <Text>(Brandeiro)</Text>
+              </Flex>
+            </Group>
+          </Grid.Col>
+          <Grid.Col md={6}>
+            <Group position="center">
+              <Title order={2} className={classes.verticalText}>
+                RANCHO <br /> CAMBIRA
+              </Title>
+              <Paper className={cx(classes.card, classes.pinduca)}>
+                <Flex justify={"space-between"} align={"end"}>
+                  <Title order={3} align="center">
+                    Rogério
+                  </Title>
+                  <Text align="center">(Diretor)</Text>
+                </Flex>
+              </Paper>
+            </Group>
+          </Grid.Col>
+          <Grid.Col md={6}>
+            <Group position="left" pb={"sm"}>
+              <Avatar
+                src={brito}
+                className={classes.sepia}
+                component="span"
+                alt="Brito"
+                size="lg"
+              />
+              <Title order={4}>Brito</Title>
+              <Text>(Vice-diretor)</Text>
+            </Group>
+            <Divider pb={"sm"} />
+            <Group position="left" pb={"sm"}>
+              <Avatar
+                src={dai}
+                component="span"
+                alt="Dai"
+                className={classes.sepia}
+                size="lg"
+              />
+              <Title order={4}>Dai</Title>
+              <Text>(Financeiro)</Text>
+            </Group>
+            <Divider pb={"sm"} />
+            <Group position="left" pb={"sm"}>
+              <Avatar
+                src={jane}
+                component="span"
+                alt="Jane"
+                className={classes.sepia}
+                size="lg"
+              />
+              <Title order={4}>Jane</Title>
+              <Text>(Secretaria)</Text>
+            </Group>
+            <Divider pb={"sm"} />
+            <Group position="left" pb={"sm"}>
+              <Avatar
+                src={gisele}
+                component="span"
+                alt="Gisele"
+                className={classes.sepia}
+                size="lg"
+              />
+              <Title order={4}>Gisele</Title>
+              <Text>(Logística)</Text>
+            </Group>
           </Grid.Col>
         </Grid>
       </Box>
