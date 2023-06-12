@@ -167,7 +167,7 @@ export default function About() {
                 </Anchor>
               </List.Item>
               <List.Item>
-                <Anchor href="https://wa.me/554195310076" target="_blank">
+                <Anchor href="#contato">
                   Entre em contato.
                 </Anchor>{" "}
                 Estamos ansiosos para conhecer você e compartilhar a estrada da

@@ -97,8 +97,8 @@ const links = [
     target: "_self",
   },
   {
-    link: "/#compromisso",
-    label: "Compromisso",
+    link: "/#contato",
+    label: "Entre em Contato",
     target: "_self",
   },
   {

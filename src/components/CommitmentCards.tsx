@@ -126,7 +126,7 @@ export function CommitmentCards() {
   ));
 
   return (
-    <Container size="lg" mt="xl" pt={"60px"} pb={"xl"}>
+    <Container mt="xl" pt={"60px"} pb={"xl"}>
       {/* <Group position="center">
           <Badge variant="filled" size="lg">
             RANCHEIROS MC
