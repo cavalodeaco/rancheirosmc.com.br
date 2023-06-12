@@ -90,6 +90,7 @@ const useStyles = createStyles((theme) => ({
   card: {
     flexGrow: 1,
     width: "50%",
+    maxWidth: "50vw",
     aspectRatio: "1/1",
     color: theme.colors.light,
     backgroundSize: "cover",
@@ -290,7 +291,7 @@ export default function About() {
       <Box py={"calc(60px + 2rem)"}>
         <Title order={2}>Estrutura de Comando</Title>
         <Grid gutter={"xl"} mt={"xl"} grow={true}>
-          <Grid.Col md={6}>
+          <Grid.Col sm={6}>
             <Group position="center">
               <Title order={2} className={classes.verticalText}>
                 COMANDO <br /> NACIONAL
@@ -305,7 +306,7 @@ export default function About() {
               </Paper>
             </Group>
           </Grid.Col>
-          <Grid.Col md={6}>
+          <Grid.Col sm={6}>
             <Group position="left" pb={"sm"}>
               <Avatar
                 className={classes.sepia}
@@ -348,7 +349,7 @@ export default function About() {
               </Flex>
             </Group>
           </Grid.Col>
-          <Grid.Col md={6}>
+          {/* <Grid.Col sm={6}>
             <Group position="center">
               <Title order={2} className={classes.verticalText}>
                 RANCHO <br /> CAMBIRA
@@ -363,7 +364,7 @@ export default function About() {
               </Paper>
             </Group>
           </Grid.Col>
-          <Grid.Col md={6}>
+          <Grid.Col sm={6}>
             <Group position="left" pb={"sm"}>
               <Avatar
                 src={brito}
@@ -411,7 +412,7 @@ export default function About() {
               <Title order={4}>Gisele</Title>
               <Text>(Logística)</Text>
             </Group>
-          </Grid.Col>
+          </Grid.Col> */}
         </Grid>
       </Box>
     </Container>
