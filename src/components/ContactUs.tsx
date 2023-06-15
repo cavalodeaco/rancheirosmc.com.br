@@ -24,16 +24,15 @@ import {
 
 const useStyles = createStyles((theme) => ({
   wrapper: {
+    paddingTop: "60px",
     marginTop: theme.spacing.xl,
-    marginBottom: theme.spacing.xl,
     minHeight: 400,
     boxSizing: "border-box",
     backgroundImage: `linear-gradient(-60deg, ${
       theme.colors[theme.primaryColor][6]
     } 0%, ${theme.colors[theme.primaryColor][9]} 100%)`,
-    borderRadius: theme.radius.md,
     padding: `calc(${theme.spacing.xl} * 2.5)`,
-
+    color: theme.white,
     [theme.fn.smallerThan("sm")]: {
       padding: `calc(${theme.spacing.xl} * 1.5)`,
     },
@@ -56,8 +55,8 @@ export default function ContactUs() {
     },
   });
   return (
-    <Container pt={"60px"}>
-      <div className={classes.wrapper}>
+    <div className={classes.wrapper}>
+      <Container>
         <SimpleGrid
           cols={2}
           spacing={50}
@@ -80,32 +79,39 @@ export default function ContactUs() {
               }
             >
               <List.Item>
-                Conheça nosso{" "}
-                <Anchor href="https://mpv.rancheirosmc.com.br/" target="_blank">
-                  treinamento de pilotagem defensiva gratuito
-                </Anchor>
+                <Text color="white">
+                  Conheça nosso{" "}
+                  <Anchor
+                    href="https://mpv.rancheirosmc.com.br/"
+                    target="_blank"
+                  >
+                    treinamento de pilotagem defensiva gratuito
+                  </Anchor>
+                </Text>
               </List.Item>
               <List.Item>
-                Conecte-se conosco nas redes sociais onde compartilhamos nossos
-                eventos e mensagens de sabedoria e inspiração:
-                <Group my={"xl"} position={"center"} spacing={"xl"} noWrap>
-                  <Anchor
-                    href="https://www.facebook.com/rancheirosmc"
-                    target="_blank"
-                  >
-                    <ActionIcon size="xl" color="brand.4">
-                      <IconBrandFacebook size="2.5rem" stroke={2} />
-                    </ActionIcon>
-                  </Anchor>
-                  <Anchor
-                    href="https://www.instagram.com/rancheirosmc/"
-                    target="_blank"
-                  >
-                    <ActionIcon size="xl" color="brand.4">
-                      <IconBrandInstagram size="2.5rem" stroke={2} />
-                    </ActionIcon>
-                  </Anchor>
-                </Group>
+                <Text color="white">
+                  Conecte-se conosco nas redes sociais onde compartilhamos
+                  nossos eventos e mensagens de sabedoria e inspiração:
+                  <Group my={"xl"} position={"center"} spacing={"xl"} noWrap>
+                    <Anchor
+                      href="https://www.facebook.com/rancheirosmc"
+                      target="_blank"
+                    >
+                      <ActionIcon size="xl" color="brand.4">
+                        <IconBrandFacebook size="2.5rem" stroke={2} />
+                      </ActionIcon>
+                    </Anchor>
+                    <Anchor
+                      href="https://www.instagram.com/rancheirosmc/"
+                      target="_blank"
+                    >
+                      <ActionIcon size="xl" color="brand.4">
+                        <IconBrandInstagram size="2.5rem" stroke={2} />
+                      </ActionIcon>
+                    </Anchor>
+                  </Group>
+                </Text>
               </List.Item>
             </List>
           </div>
@@ -150,7 +156,7 @@ export default function ContactUs() {
             </form>
           </MantineProvider>
         </SimpleGrid>
-      </div>
-    </Container>
+      </Container>
+    </div>
   );
 }

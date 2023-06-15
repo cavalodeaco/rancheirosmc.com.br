@@ -31,17 +31,6 @@ import {
   IconCheck,
   IconLink,
 } from "@tabler/icons-react";
-import { theme } from "../utils/theme";
-import { ReactNode } from "react";
-import paulo from "./img/paulo.webp";
-import pinduca from "./img/pinduca.webp";
-import giovanna from "./img/giovanna.webp";
-import alex from "./img/alex.webp";
-import vital from "./img/vital.webp";
-import dai from "./img/dai.webp";
-import brito from "./img/brito.webp";
-import gisele from "./img/gisele.webp";
-import jane from "./img/jane.webp";
 
 export function RancheirosText({
   children,
@@ -75,33 +64,10 @@ const useStyles = createStyles((theme) => ({
     borderRadius: theme.radius.xs,
     padding: `2px 6px`,
   },
-  verticalText: {
-    transform: "rotate(-90deg)",
-  },
-  paulo: {
-    backgroundImage: `url(${paulo})`,
-  },
-  pinduca: {
-    backgroundImage: `url(${pinduca})`,
-  },
-  sepia: {
-    filter: "sepia(1)",
-  },
-  card: {
-    flexGrow: 1,
-    width: "50%",
-    maxWidth: "50vw",
-    aspectRatio: "1/1",
-    color: theme.colors.light,
-    backgroundSize: "cover",
-    display: "flex",
-    flexDirection: "column-reverse",
-    padding: theme.spacing.xs,
-  },
 }));
 
 export default function About() {
-  const { classes, cx } = useStyles();
+  const { classes } = useStyles();
   return (
     <Container>
       <Box py={"calc(60px + 2rem)"}>
@@ -286,133 +252,6 @@ export default function About() {
               </RancheirosText>
             </Spoiler>
           </Grid.Col>
-        </Grid>
-      </Box>
-      <Box py={"calc(60px + 2rem)"}>
-        <Title order={2}>Estrutura de Comando</Title>
-        <Grid gutter={"xl"} mt={"xl"} grow={true}>
-          <Grid.Col sm={6}>
-            <Group position="center">
-              <Title order={2} className={classes.verticalText}>
-                COMANDO <br /> NACIONAL
-              </Title>
-              <Paper className={cx(classes.card, classes.paulo)}>
-                <Flex justify={"space-between"} align={"end"}>
-                  <Title order={3} align="center">
-                    Capitão
-                  </Title>
-                  <Text align="center">(Presidente)</Text>
-                </Flex>
-              </Paper>
-            </Group>
-          </Grid.Col>
-          <Grid.Col sm={6}>
-            <Group position="left" pb={"sm"}>
-              <Avatar
-                className={classes.sepia}
-                src={giovanna}
-                component="span"
-                alt="Giovanna"
-                size="5rem"
-              />
-              <Flex direction={"column"}>
-                <Title order={4}>Giovanna</Title>
-                <Text>(Vice-presidente)</Text>
-              </Flex>
-            </Group>
-            <Divider pb={"sm"} />
-            <Group position="left" pb={"sm"}>
-              <Avatar
-                className={classes.sepia}
-                src={alex}
-                component="span"
-                alt="Alex"
-                size="5rem"
-              />
-              <Flex direction={"column"}>
-                <Title order={4}>Alex</Title>
-                <Text>(Disciplina)</Text>
-              </Flex>
-            </Group>
-            <Divider pb={"sm"} />
-            <Group position="left">
-              <Avatar
-                className={classes.sepia}
-                src={vital}
-                component="span"
-                alt="Pr. Vital"
-                size="5rem"
-              />
-              <Flex direction={"column"}>
-                <Title order={4}>Pr. Vital</Title>
-                <Text>(Brandeiro)</Text>
-              </Flex>
-            </Group>
-          </Grid.Col>
-          {/* <Grid.Col sm={6}>
-            <Group position="center">
-              <Title order={2} className={classes.verticalText}>
-                RANCHO <br /> CAMBIRA
-              </Title>
-              <Paper className={cx(classes.card, classes.pinduca)}>
-                <Flex justify={"space-between"} align={"end"}>
-                  <Title order={3} align="center">
-                    Rogério
-                  </Title>
-                  <Text align="center">(Diretor)</Text>
-                </Flex>
-              </Paper>
-            </Group>
-          </Grid.Col>
-          <Grid.Col sm={6}>
-            <Group position="left" pb={"sm"}>
-              <Avatar
-                src={brito}
-                className={classes.sepia}
-                component="span"
-                alt="Brito"
-                size="lg"
-              />
-              <Title order={4}>Brito</Title>
-              <Text>(Vice-diretor)</Text>
-            </Group>
-            <Divider pb={"sm"} />
-            <Group position="left" pb={"sm"}>
-              <Avatar
-                src={dai}
-                component="span"
-                alt="Dai"
-                className={classes.sepia}
-                size="lg"
-              />
-              <Title order={4}>Dai</Title>
-              <Text>(Financeiro)</Text>
-            </Group>
-            <Divider pb={"sm"} />
-            <Group position="left" pb={"sm"}>
-              <Avatar
-                src={jane}
-                component="span"
-                alt="Jane"
-                className={classes.sepia}
-                size="lg"
-              />
-              <Title order={4}>Jane</Title>
-              <Text>(Secretaria)</Text>
-            </Group>
-            <Divider pb={"sm"} />
-            <Group position="left" pb={"sm"}>
-              <Avatar
-                src={gisele}
-                component="span"
-                alt="Gisele"
-                className={classes.sepia}
-                size="lg"
-              />
-              <Title order={4}>Gisele</Title>
-              <Text>(Logística)</Text>
-            </Group>
-          </Grid.Col> */}
         </Grid>
       </Box>
     </Container>

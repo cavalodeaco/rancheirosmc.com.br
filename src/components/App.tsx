@@ -15,6 +15,7 @@ import { CommitmentCards } from "./CommitmentCards";
 import About from "./About";
 import rancheiro from "./img/rancheiro.webp";
 import ContactUs from "./ContactUs";
+import Command from "./Command";
 
 export default function App() {
   document.title = "RANCHEIROS MC";
@@ -46,6 +47,9 @@ export default function App() {
         </Linkable>
         <Linkable id="compromisso">
           <CommitmentCards />
+        </Linkable>
+        <Linkable id="comando">
+          <Command />
         </Linkable>
         <Linkable id="contato">
           <ContactUs />
