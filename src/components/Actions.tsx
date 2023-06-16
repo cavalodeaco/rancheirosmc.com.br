@@ -65,10 +65,9 @@ export default function Actions() {
             </Card.Section>
             <Card.Section p={"md"}>
               <Text color="dimmed" size={"sm"}>
-                Curso gratuito de pilotagem defensiva para motociclistas, com o
-                objetivo de fornecer conhecimentos teóricos e práticos que os
-                capacitem a pilotar com segurança durante seus deslocamentos
-                diários.{" "}
+                Curso gratuito, que visa dotar seus participantes de
+                conhecimentos teóricos e práticos que possibilitem um pilotar
+                mais seguro nos deslocamentos diários.{" "}
               </Text>
               <Anchor
                 href="https://mpv.rancheirosmc.com.br/#inscricao"
