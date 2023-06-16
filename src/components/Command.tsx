@@ -242,7 +242,10 @@ export default function Command() {
         </Container>
       </Modal>
 
-      <Flex justify={"center"} wrap={"wrap"} gap={"lg"}>
+
+      <Title order={2}>Ranchos</Title>
+
+      <Flex justify={"center"} wrap={"wrap"} gap={"lg"} pt={"xl"}>
         <Card padding="lg" shadow="lg" className={classes.ranch} onClick={open}>
           <div
             className={cx(classes.ranchImage, classes.sepia)}
