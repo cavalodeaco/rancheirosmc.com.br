@@ -16,6 +16,7 @@ import About from "./About";
 import rancheiro from "./img/rancheiro.webp";
 import ContactUs from "./ContactUs";
 import Command from "./Command";
+import Actions from "./Actions";
 
 export default function App() {
   document.title = "RANCHEIROS MC";
@@ -50,6 +51,9 @@ export default function App() {
         </Linkable>
         <Linkable id="comando">
           <Command />
+        </Linkable>
+        <Linkable id="acoes">
+          <Actions />
         </Linkable>
         <Linkable id="contato">
           <ContactUs />
