@@ -8,7 +8,7 @@ import {
   Title,
 } from "@mantine/core";
 import { ReactElement } from "react";
-import banner from "./img/background.jpeg";
+import banner from "./img/background.webp";
 import rancheirow_1209 from "./img/rancheiro/rancheiro_t3uzgw_c_scale,w_1209.webp";
 import rancheirow_1400 from "./img/rancheiro/rancheiro_t3uzgw_c_scale,w_1400.webp";
 import rancheirow_200 from "./img/rancheiro/rancheiro_t3uzgw_c_scale,w_200.webp";
