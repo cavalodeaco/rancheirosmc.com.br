@@ -17,7 +17,6 @@ import {
   rem,
 } from "@mantine/core";
 
-import paulo from "./img/paulo.webp";
 import pinduca from "./img/pinduca.webp";
 import giovanna from "./img/giovanna.webp";
 import alex from "./img/alex.webp";
@@ -33,7 +32,7 @@ const useStyles = createStyles((theme) => ({
     transform: "rotate(-90deg)",
   },
   paulo: {
-    backgroundImage: `url(${paulo})`,
+    backgroundImage: `url(https://res.cloudinary.com/ddmchwanw/image/upload/w_700/f_auto,q_auto/v1687040979/rancheirosmc.com.br/paulo_wbne9p.webp)`,
   },
   pinduca: {
     backgroundImage: `url(${pinduca})`,
