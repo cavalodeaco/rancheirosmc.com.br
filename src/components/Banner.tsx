@@ -8,12 +8,11 @@ import {
   Title,
 } from "@mantine/core";
 import { ReactElement } from "react";
-import banner from "./img/background.webp";
 
 const useStyles = createStyles((theme) => ({
   banner: {
     minHeight: "calc(min(100vh, 100vw) - 60px)",
-    backgroundImage: `url(${banner})`,
+    backgroundImage: `url(https://res.cloudinary.com/ddmchwanw/image/upload/w_1024/f_auto,q_auto/v1687040827/rancheirosmc.com.br/background_rnqaub.webp)`,
     backgroundSize: "cover",
     backgroundPosition: "50% 100%",
     display: "flex",
