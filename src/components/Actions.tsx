@@ -10,7 +10,9 @@ import {
   createStyles,
   rem,
 } from "@mantine/core";
-import prosa from "./img/prosa.webp";
+import prosaw_200 from "./img/prosa/prosa_nbupoz_c_scale,w_200.webp";
+import prosaw_487 from "./img/prosa/prosa_nbupoz_c_scale,w_487.webp";
+import prosaw_637 from "./img/prosa/prosa_nbupoz_c_scale,w_637.webp";
 import comitiva from "./img/comitiva.webp";
 import mpvw_1063 from "./img/mpv/mpv_jcjkgc_c_scale,w_1063.webp";
 import mpvw_1273 from "./img/mpv/mpv_jcjkgc_c_scale,w_1273.webp";
@@ -99,7 +101,15 @@ export default function Actions() {
             <Card.Section className={classes.cardImage}>
               <Image
                 className={classes.image}
-                src={prosa}
+                imageProps={{
+                  sizes: "280px",
+                  srcSet: `
+                    ${prosaw_200} 200w,
+                    ${prosaw_487} 487w,
+                    ${prosaw_637} 637w,
+                  `,
+                  src: prosaw_637,
+                }}
                 height={rem(280)}
                 alt="Prosa"
               />
