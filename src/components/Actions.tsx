@@ -12,7 +12,13 @@ import {
 } from "@mantine/core";
 import prosa from "./img/prosa.webp";
 import comitiva from "./img/comitiva.webp";
-import mpv from "./img/mpv.webp";
+import mpvw_1063 from "./img/mpv/mpv_jcjkgc_c_scale,w_1063.webp";
+import mpvw_1273 from "./img/mpv/mpv_jcjkgc_c_scale,w_1273.webp";
+import mpvw_1353 from "./img/mpv/mpv_jcjkgc_c_scale,w_1353.webp";
+import mpvw_1434 from "./img/mpv/mpv_jcjkgc_c_scale,w_1434.webp";
+import mpvw_200 from "./img/mpv/mpv_jcjkgc_c_scale,w_200.webp";
+import mpvw_596 from "./img/mpv/mpv_jcjkgc_c_scale,w_596.webp";
+import mpvw_944 from "./img/mpv/mpv_jcjkgc_c_scale,w_944.webp";
 
 const useStyles = createStyles((theme) => ({
   image: {
@@ -55,7 +61,19 @@ export default function Actions() {
             <Card.Section className={classes.cardImage}>
               <Image
                 className={classes.image}
-                src={mpv}
+                imageProps={{
+                  sizes: "280px",
+                  srcSet: `
+                    ${mpvw_1063} 1063w,
+                    ${mpvw_1273} 1273w,
+                    ${mpvw_1353} 1353w,
+                    ${mpvw_1434} 1434w,
+                    ${mpvw_200} 200w,
+                    ${mpvw_596} 596w,
+                    ${mpvw_944} 944w
+                  `,
+                  src: mpvw_1434,
+                }}
                 height={rem(280)}
                 alt="Manobras Para Vida"
               />
