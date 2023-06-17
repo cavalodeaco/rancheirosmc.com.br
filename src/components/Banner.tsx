@@ -56,7 +56,8 @@ export default function Banner(): ReactElement {
                 src: rancheirow_1400,
               }}
               alt={"RANCHEIROS MC"}
-              width={"calc(min(50vh, 50vw)"}
+              width={"min(50vh, 50vw)"}
+              height={"min(50vh, 50vw)"}
               fit="contain"
             >
               RANCHEIROS MC

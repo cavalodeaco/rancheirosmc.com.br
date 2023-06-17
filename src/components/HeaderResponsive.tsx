@@ -161,6 +161,7 @@ export function HeaderResponsive(): ReactElement {
                 src={rancheirow_1400}
                 alt="RANCHEIROS MC"
                 height={48}
+                width={45}
               />
               <Space w="xs" />
               RANCHEIROS MC

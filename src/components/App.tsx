@@ -47,7 +47,8 @@ export default function App() {
                     ${rancheirow_1400} 1400w`}
                     src={rancheirow_1400}
                     alt="RANCHEIROS MC"
-                    height={32}
+                    width={32}
+                    height={34}
                   />
                   <Space w="xs" />
                   RANCHEIROS MC
