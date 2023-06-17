@@ -26,7 +26,6 @@ import dai from "./img/dai.webp";
 import brito from "./img/brito.webp";
 import gisele from "./img/gisele.webp";
 import jane from "./img/jane.webp";
-import cambira from "./img/ranchoCambira.webp";
 import { useDisclosure, useMediaQuery } from "@mantine/hooks";
 
 const useStyles = createStyles((theme) => ({
@@ -73,7 +72,7 @@ const useStyles = createStyles((theme) => ({
   card: {
     flexGrow: 1,
     width: "50%",
-    maxWidth: "50vw",
+    maxWidth: "clamp(280px, 50vw, 350px)",
     aspectRatio: "1/1",
     color: theme.colors.light,
     backgroundSize: "cover",
@@ -103,13 +102,10 @@ export default function Command() {
   return (
     <Container>
       <Box py={"calc(60px + 2rem)"}>
-        <Title order={2}>Estrutura de Comando</Title>
+        <Title order={2}>COMANDO NACIONAL</Title>
         <Grid gutter={"xl"} mt={"xl"} grow={true}>
           <Grid.Col sm={6}>
             <Group position="center">
-              <Title order={2} className={classes.verticalText}>
-                COMANDO <br /> NACIONAL
-              </Title>
               <Paper className={cx(classes.card, classes.paulo)}>
                 <Flex justify={"space-between"} align={"end"}>
                   <Title order={3} align="center">
@@ -249,7 +245,7 @@ export default function Command() {
         <Card padding="lg" shadow="lg" className={classes.ranch} onClick={open}>
           <div
             className={cx(classes.ranchImage, classes.sepia)}
-            style={{ backgroundImage: `url(${cambira})` }}
+            style={{ backgroundImage: `url(https://res.cloudinary.com/ddmchwanw/image/upload/w_600/f_auto,q_auto/v1687039018/rancheirosmc.com.br/ranchoCambira.webp)` }}
           />
           <div className={classes.overlay} />
           <div className={classes.ranchContent}>

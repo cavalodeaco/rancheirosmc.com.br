@@ -13,13 +13,6 @@ import {
   Space,
 } from "@mantine/core";
 import { useDisclosure } from "@mantine/hooks";
-import rancheirow_1209 from "./img/rancheiro/rancheiro_t3uzgw_c_scale,w_1209.webp";
-import rancheirow_1400 from "./img/rancheiro/rancheiro_t3uzgw_c_scale,w_1400.webp";
-import rancheirow_200 from "./img/rancheiro/rancheiro_t3uzgw_c_scale,w_200.webp";
-import rancheirow_458 from "./img/rancheiro/rancheiro_t3uzgw_c_scale,w_458.webp";
-import rancheirow_656 from "./img/rancheiro/rancheiro_t3uzgw_c_scale,w_656.webp";
-import rancheirow_826 from "./img/rancheiro/rancheiro_t3uzgw_c_scale,w_826.webp";
-import rancheirow_966 from "./img/rancheiro/rancheiro_t3uzgw_c_scale,w_966.webp";
 
 const HEADER_HEIGHT = 60;
 
@@ -151,14 +144,8 @@ export function HeaderResponsive(): ReactElement {
             <Center>
               <img
                 sizes="48px"
-                srcSet={`${rancheirow_200} 200w,
-                    ${rancheirow_458} 458w,
-                    ${rancheirow_656} 656w,
-                    ${rancheirow_826} 826w,
-                    ${rancheirow_966} 966w,
-                    ${rancheirow_1209} 1209w,
-                    ${rancheirow_1400} 1400w`}
-                src={rancheirow_1400}
+                srcSet={`https://res.cloudinary.com/ddmchwanw/image/upload/w_90/f_auto,q_auto/v1687039538/rancheirosmc.com.br/rancheiro.webp 90w`}
+                src="https://res.cloudinary.com/ddmchwanw/image/upload/w_90/f_auto,q_auto/v1687039538/rancheirosmc.com.br/rancheiro.webp"
                 alt="RANCHEIROS MC"
                 height={48}
                 width={45}
