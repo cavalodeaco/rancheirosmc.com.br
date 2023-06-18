@@ -19,7 +19,6 @@ import {
 
 import pinduca from "./img/pinduca.webp";
 import giovanna from "./img/giovanna.webp";
-import alex from "./img/alex.webp";
 import vital from "./img/vital.webp";
 import dai from "./img/dai.webp";
 import brito from "./img/brito.webp";
@@ -133,7 +132,7 @@ export default function Command() {
             <Group position="left" pb={"sm"}>
               <Avatar
                 className={classes.sepia}
-                src={alex}
+                src="https://d2er8q8v25uk9z.cloudfront.net/alex_dWR4rku7Th.webp"
                 component="span"
                 alt="Alex"
                 size="5rem"

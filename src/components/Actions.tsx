@@ -86,15 +86,7 @@ export default function Actions() {
             <Card.Section className={classes.cardImage}>
               <Image
                 className={classes.image}
-                imageProps={{
-                  sizes: "280px",
-                  srcSet: `
-                    ${prosaw_200} 200w,
-                    ${prosaw_487} 487w,
-                    ${prosaw_637} 637w,
-                  `,
-                  src: prosaw_637,
-                }}
+                src="https://d2er8q8v25uk9z.cloudfront.net/prosa.webp"
                 height={rem(280)}
                 alt="Prosa"
               />
