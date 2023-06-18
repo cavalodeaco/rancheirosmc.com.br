@@ -132,7 +132,7 @@ export default function Command() {
             <Group position="left" pb={"sm"}>
               <Avatar
                 className={classes.sepia}
-                src="https://d2er8q8v25uk9z.cloudfront.net/alex_dWR4rku7Th.webp"
+                src="https://d2er8q8v25uk9z.cloudfront.net/alex_U1PnpCfAsy.webp"
                 component="span"
                 alt="Alex"
                 size="5rem"
