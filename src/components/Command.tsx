@@ -17,7 +17,6 @@ import {
   rem,
 } from "@mantine/core";
 
-import pinduca from "./img/pinduca.webp";
 import giovanna from "./img/giovanna.webp";
 import vital from "./img/vital.webp";
 import dai from "./img/dai.webp";
@@ -34,7 +33,7 @@ const useStyles = createStyles((theme) => ({
     backgroundImage: `url(https://res.cloudinary.com/ddmchwanw/image/upload/w_700/f_auto,q_auto/v1687040979/rancheirosmc.com.br/paulo_wbne9p.webp)`,
   },
   pinduca: {
-    backgroundImage: `url(${pinduca})`,
+    backgroundImage: `url(https://d2er8q8v25uk9z.cloudfront.net/pinduca.webp)`,
   },
   sepia: {
     filter: "sepia(1)",
