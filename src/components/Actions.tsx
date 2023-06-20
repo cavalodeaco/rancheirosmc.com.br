@@ -10,9 +10,6 @@ import {
   createStyles,
   rem,
 } from "@mantine/core";
-import prosaw_200 from "./img/prosa/prosa_nbupoz_c_scale,w_200.webp";
-import prosaw_487 from "./img/prosa/prosa_nbupoz_c_scale,w_487.webp";
-import prosaw_637 from "./img/prosa/prosa_nbupoz_c_scale,w_637.webp";
 import comitiva from "./img/comitiva.webp";
 
 const useStyles = createStyles((theme) => ({
@@ -56,11 +53,7 @@ export default function Actions() {
             <Card.Section className={classes.cardImage}>
               <Image
                 className={classes.image}
-                imageProps={{
-                  sizes: "280px",
-                  srcSet: `https://res.cloudinary.com/ddmchwanw/image/upload/w_600/f_auto,q_auto/v1687039527/rancheirosmc.com.br/mpv.webp 600w,`,
-                  src: 'https://res.cloudinary.com/ddmchwanw/image/upload/w_600/f_auto,q_auto/v1687039527/rancheirosmc.com.br/mpv.webp',
-                }}
+                src="https://d2er8q8v25uk9z.cloudfront.net/mpv.webp"
                 height={rem(280)}
                 alt="Manobras Para Vida"
               />
