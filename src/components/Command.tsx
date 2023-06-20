@@ -17,11 +17,6 @@ import {
   rem,
 } from "@mantine/core";
 
-import vital from "./img/vital.webp";
-import dai from "./img/dai.webp";
-import brito from "./img/brito.webp";
-import gisele from "./img/gisele.webp";
-import jane from "./img/jane.webp";
 import { useDisclosure, useMediaQuery } from "@mantine/hooks";
 
 const useStyles = createStyles((theme) => ({
@@ -144,7 +139,7 @@ export default function Command() {
             <Group position="left">
               <Avatar
                 className={classes.sepia}
-                src={vital}
+                src="https://d2er8q8v25uk9z.cloudfront.net/vital.webp"
                 component="span"
                 alt="Pr. Vital"
                 size="5rem"
@@ -184,7 +179,7 @@ export default function Command() {
             <Grid.Col sm={6}>
               <Group position="left" pb={"sm"}>
                 <Avatar
-                  src={brito}
+                  src="https://d2er8q8v25uk9z.cloudfront.net/brito.webp"
                   className={classes.sepia}
                   component="span"
                   alt="Brito"
@@ -196,7 +191,7 @@ export default function Command() {
               <Divider pb={"sm"} />
               <Group position="left" pb={"sm"}>
                 <Avatar
-                  src={dai}
+                  src="https://d2er8q8v25uk9z.cloudfront.net/dai.webp"
                   component="span"
                   alt="Dai"
                   className={classes.sepia}
@@ -208,7 +203,7 @@ export default function Command() {
               <Divider pb={"sm"} />
               <Group position="left" pb={"sm"}>
                 <Avatar
-                  src={jane}
+                  src="https://d2er8q8v25uk9z.cloudfront.net/jane.webp"
                   component="span"
                   alt="Jane"
                   className={classes.sepia}
@@ -220,7 +215,7 @@ export default function Command() {
               <Divider pb={"sm"} />
               <Group position="left" pb={"sm"}>
                 <Avatar
-                  src={gisele}
+                  src="https://d2er8q8v25uk9z.cloudfront.net/gisele.webp"
                   component="span"
                   alt="Gisele"
                   className={classes.sepia}

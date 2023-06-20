@@ -10,7 +10,6 @@ import {
   createStyles,
   rem,
 } from "@mantine/core";
-import comitiva from "./img/comitiva.webp";
 
 const useStyles = createStyles((theme) => ({
   image: {
@@ -99,7 +98,7 @@ export default function Actions() {
             <Card.Section className={classes.cardImage}>
               <Image
                 className={classes.image}
-                src={comitiva}
+                src="https://d2er8q8v25uk9z.cloudfront.net/comitiva.webp"
                 height={rem(280)}
                 alt="Comitiva"
               />
