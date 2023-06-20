@@ -13,7 +13,9 @@ import Linkable from "./Linkable";
 import Banner from "./Banner";
 import { CommitmentCards } from "./CommitmentCards";
 import About from "./About";
-import rancheiro from "./img/rancheiro.webp";
+import ContactUs from "./ContactUs";
+import Command from "./Command";
+import Actions from "./Actions";
 
 export default function App() {
   document.title = "RANCHEIROS MC";
@@ -27,9 +29,15 @@ export default function App() {
             <Container>
               <Title order={4} transform="uppercase" color="gray.4">
                 <Center>
-                  <img src={rancheiro} alt="RANCHEIROS MC" height={32} />
+                  <img
+                    sizes="32px"
+                    src="https://d2er8q8v25uk9z.cloudfront.net/rancheiro/rancheiro_w64.webp"
+                    alt="RANCHEIROS MC"
+                    width={32}
+                    height={34}
+                  />
                   <Space w="xs" />
-                  RANCHEIROS MC 
+                  RANCHEIROS MC
                 </Center>
               </Title>
             </Container>
@@ -45,6 +53,15 @@ export default function App() {
         </Linkable>
         <Linkable id="compromisso">
           <CommitmentCards />
+        </Linkable>
+        <Linkable id="comando">
+          <Command />
+        </Linkable>
+        <Linkable id="acoes">
+          <Actions />
+        </Linkable>
+        <Linkable id="contato">
+          <ContactUs />
         </Linkable>
       </AppShell>
     </MantineProvider>

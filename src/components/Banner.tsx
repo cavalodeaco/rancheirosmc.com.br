@@ -8,13 +8,11 @@ import {
   Title,
 } from "@mantine/core";
 import { ReactElement } from "react";
-import banner from "./img/background.jpeg";
-import rancheiro from "./img/rancheiro.webp";
 
 const useStyles = createStyles((theme) => ({
   banner: {
     minHeight: "calc(min(100vh, 100vw) - 60px)",
-    backgroundImage: `url(${banner})`,
+    backgroundImage: `url(https://d2er8q8v25uk9z.cloudfront.net/background_rnqaub.webp)`,
     backgroundSize: "cover",
     backgroundPosition: "50% 100%",
     display: "flex",
@@ -29,16 +27,26 @@ export default function Banner(): ReactElement {
 
   return (
     <div className={classes.banner}>
-      <Grid align="center" gutter={"xs"} pt={"calc(60px + 1rem)"} className={classes.grid}>
+      <Grid
+        align="center"
+        gutter={"xs"}
+        pt={"calc(60px + 1rem)"}
+        className={classes.grid}
+      >
         <Grid.Col md={6}>
           <Center>
             <Image
-              src={rancheiro}
+              imageProps={{
+                sizes: "(max-width: 100vh) 50vw, 50vh",
+                srcSet: [256, 840, 1150, 1400, 1499, 1700, 1880, 2048].reduce((acc, val) => {
+                  acc += `https://d2er8q8v25uk9z.cloudfront.net/rancheiro/rancheiro_w${val}.webp ${val}w,`;
+                  return acc;
+                }, ""),
+                src: "https://d2er8q8v25uk9z.cloudfront.net/rancheiro/rancheiro_w2048.webp",
+              }}
               alt={"RANCHEIROS MC"}
-              width={"min(50vw, 50vh)"}
-              height={"min(50vw, 50vh)"}
-              maw={"50vw"}
-              mah={"50vh"}
+              width={"min(50vh, 50vw)"}
+              height={"min(50vh, 50vw)"}
               fit="contain"
             >
               RANCHEIROS MC
