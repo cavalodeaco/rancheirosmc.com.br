@@ -12,7 +12,7 @@ import { ReactElement } from "react";
 const useStyles = createStyles((theme) => ({
   banner: {
     minHeight: "calc(min(100vh, 100vw) - 60px)",
-    backgroundImage: `url(https://res.cloudinary.com/ddmchwanw/image/upload/w_1024/f_auto,q_auto/v1687040827/rancheirosmc.com.br/background_rnqaub.webp)`,
+    backgroundImage: `url(https://d2er8q8v25uk9z.cloudfront.net/background_rnqaub.webp)`,
     backgroundSize: "cover",
     backgroundPosition: "50% 100%",
     display: "flex",

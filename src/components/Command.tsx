@@ -29,7 +29,7 @@ const useStyles = createStyles((theme) => ({
     transform: "rotate(-90deg)",
   },
   paulo: {
-    backgroundImage: `url(https://res.cloudinary.com/ddmchwanw/image/upload/w_700/f_auto,q_auto/v1687040979/rancheirosmc.com.br/paulo_wbne9p.webp)`,
+    backgroundImage: `url(https://d2er8q8v25uk9z.cloudfront.net/paulo_wbne9p.webp)`,
   },
   pinduca: {
     backgroundImage: `url(https://d2er8q8v25uk9z.cloudfront.net/pinduca.webp)`,
@@ -241,7 +241,7 @@ export default function Command() {
         <Card padding="lg" shadow="lg" className={classes.ranch} onClick={open}>
           <div
             className={cx(classes.ranchImage, classes.sepia)}
-            style={{ backgroundImage: `url(https://res.cloudinary.com/ddmchwanw/image/upload/w_600/f_auto,q_auto/v1687039018/rancheirosmc.com.br/ranchoCambira.webp)` }}
+            style={{ backgroundImage: `url(https://d2er8q8v25uk9z.cloudfront.net/ranchoCambira_nk9c4p.webp)` }}
           />
           <div className={classes.overlay} />
           <div className={classes.ranchContent}>
