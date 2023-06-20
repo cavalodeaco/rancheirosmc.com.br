@@ -11,6 +11,7 @@ import {
   rem,
 } from "@mantine/core";
 import comitiva from "./img/comitiva.webp";
+import prosa from "./img/prosa.webp";
 
 const useStyles = createStyles((theme) => ({
   image: {
@@ -79,7 +80,7 @@ export default function Actions() {
             <Card.Section className={classes.cardImage}>
               <Image
                 className={classes.image}
-                src="https://d2er8q8v25uk9z.cloudfront.net/prosa.webp"
+                src="https://d2er8q8v25uk9z.cloudfront.net/prosa_y6mjVyDp9wqS.webp"
                 height={rem(280)}
                 alt="Prosa"
               />
