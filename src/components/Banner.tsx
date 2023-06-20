@@ -38,11 +38,11 @@ export default function Banner(): ReactElement {
             <Image
               imageProps={{
                 sizes: "(max-width: 100vh) 50vw, 50vh",
-                srcSet: [256, 840, 1150, 1400].reduce((acc, val) => {
-                  acc += `https://res.cloudinary.com/ddmchwanw/image/upload/w_${val}/f_auto,q_auto/v1687039538/rancheirosmc.com.br/rancheiro.webp ${val}w,`;
+                srcSet: [256, 840, 1150, 1400, 1499, 1700, 1880, 2048].reduce((acc, val) => {
+                  acc += `https://d2er8q8v25uk9z.cloudfront.net/rancheiro/rancheiro_w${val}.webp ${val}w,`;
                   return acc;
                 }, ""),
-                src: "https://res.cloudinary.com/ddmchwanw/image/upload/w_1400/f_auto,q_auto/v1687039538/rancheirosmc.com.br/rancheiro.webp",
+                src: "https://d2er8q8v25uk9z.cloudfront.net/rancheiro/rancheiro_w2048.webp",
               }}
               alt={"RANCHEIROS MC"}
               width={"min(50vh, 50vw)"}

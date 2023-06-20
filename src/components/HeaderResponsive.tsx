@@ -143,9 +143,7 @@ export function HeaderResponsive(): ReactElement {
           <Title order={2} transform="uppercase" color="gray.2">
             <Center>
               <img
-                sizes="48px"
-                srcSet={`https://res.cloudinary.com/ddmchwanw/image/upload/w_90/f_auto,q_auto/v1687039538/rancheirosmc.com.br/rancheiro.webp 90w`}
-                src="https://res.cloudinary.com/ddmchwanw/image/upload/w_90/f_auto,q_auto/v1687039538/rancheirosmc.com.br/rancheiro.webp"
+                src="https://d2er8q8v25uk9z.cloudfront.net/rancheiro/rancheiro_w90.webp"
                 alt="RANCHEIROS MC"
                 height={48}
                 width={45}

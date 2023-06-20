@@ -31,8 +31,7 @@ export default function App() {
                 <Center>
                   <img
                     sizes="32px"
-                    srcSet={`https://res.cloudinary.com/ddmchwanw/image/upload/w_64/f_auto,q_auto/v1687039538/rancheirosmc.com.br/rancheiro.webp 64w`}
-                    src="https://res.cloudinary.com/ddmchwanw/image/upload/w_64/f_auto,q_auto/v1687039538/rancheirosmc.com.br/rancheiro.webp"
+                    src="https://d2er8q8v25uk9z.cloudfront.net/rancheiro/rancheiro_w64.webp"
                     alt="RANCHEIROS MC"
                     width={32}
                     height={34}

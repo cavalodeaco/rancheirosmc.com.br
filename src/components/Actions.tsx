@@ -11,7 +11,6 @@ import {
   rem,
 } from "@mantine/core";
 import comitiva from "./img/comitiva.webp";
-import prosa from "./img/prosa.webp";
 
 const useStyles = createStyles((theme) => ({
   image: {
