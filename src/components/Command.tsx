@@ -241,7 +241,7 @@ export default function Command() {
           <div className={classes.overlay} />
           <div className={classes.ranchContent}>
             <Title size="lg" className={classes.ranchTitle} weight={500}>
-              RANCHO CAMBIRA
+              RANCHO CAMBIRA/PR
             </Title>
             <Anchor>Saiba mais</Anchor>
           </div>
