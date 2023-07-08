@@ -16,6 +16,7 @@ import About from "./About";
 import ContactUs from "./ContactUs";
 import Command from "./Command";
 import Actions from "./Actions";
+import MPVAlert from "./MPVAlert";
 
 export default function App() {
   document.title = "RANCHEIROS MC";
@@ -45,6 +46,7 @@ export default function App() {
         }
         padding={0}
       >
+        <MPVAlert/>
         <Linkable id="">
           <Banner />
         </Linkable>
