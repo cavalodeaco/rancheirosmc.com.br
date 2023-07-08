@@ -1,10 +1,4 @@
-import {
-  Box,
-  Container,
-  Flex,
-  Table,
-  Title,
-} from "@mantine/core";
+import { Box, Container, Flex, Table, Title } from "@mantine/core";
 import schedule from "../data/schedule";
 
 export default function Schedule() {
@@ -27,7 +21,7 @@ export default function Schedule() {
                       fz={32}
                       sx={(theme) => ({
                         lineHeight: "40px",
-                        color: theme.colors.brand[6]
+                        color: theme.colors.brand[6],
                       })}
                     >
                       {new Date(event.date).toLocaleDateString("pt-BR", {
