@@ -17,6 +17,7 @@ import ContactUs from "./ContactUs";
 import Command from "./Command";
 import Actions from "./Actions";
 import MPVAlert from "./MPVAlert";
+import Schedule from "./Schedule";
 
 export default function App() {
   document.title = "RANCHEIROS MC";
@@ -46,7 +47,7 @@ export default function App() {
         }
         padding={0}
       >
-        <MPVAlert/>
+        <MPVAlert />
         <Linkable id="">
           <Banner />
         </Linkable>
@@ -61,6 +62,7 @@ export default function App() {
         </Linkable>
         <Linkable id="acoes">
           <Actions />
+          <Schedule />
         </Linkable>
         <Linkable id="contato">
           <ContactUs />
