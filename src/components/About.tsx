@@ -134,11 +134,9 @@ export default function About() {
                 </Anchor>
               </List.Item>
               <List.Item>
-                <Anchor href="#contato">
-                  Entre em contato.
-                </Anchor>{" "}
-                Estamos ansiosos para conhecer você e compartilhar a estrada da
-                vida juntos.
+                <Anchor href="#contato">Entre em contato.</Anchor> Estamos
+                ansiosos para conhecer você e compartilhar a estrada da vida
+                juntos.
               </List.Item>
               <List.Item>
                 Conecte-se conosco nas redes sociais onde compartilhamos nossos
@@ -173,49 +171,46 @@ export default function About() {
               <Title order={2} align="center">
                 Visão
               </Title>
-              <p>
-                <Text align="center">
-                  <RancheirosText highlight={["reconciliados com Deus"]}>
-                    Contribuir com a construção de uma sociedade onde todos
-                    entendam a importância de caminhar juntos, reconciliados com
-                    Deus, sentindo a completude que vem de Cristo.
-                  </RancheirosText>
-                </Text>
-              </p>
+
+              <Text align="center">
+                <RancheirosText highlight={["reconciliados com Deus"]}>
+                  Contribuir com a construção de uma sociedade onde todos
+                  entendam a importância de caminhar juntos, reconciliados com
+                  Deus, sentindo a completude que vem de Cristo.
+                </RancheirosText>
+              </Text>
+
               <Title order={2} pt={"2rem"} align="center">
                 Missão
               </Title>
-              <p>
-                <Text align="center">
-                  <RancheirosText highlight={["Com Jesus", "vidas"]}>
-                    Com Jesus, ensinar as pessoas a pilotarem com segurança,
-                    otimismo e liberdade, suas motos e suas vidas.
-                  </RancheirosText>
-                </Text>
-              </p>
+
+              <Text align="center">
+                <RancheirosText highlight={["Com Jesus", "vidas"]}>
+                  Com Jesus, ensinar as pessoas a pilotarem com segurança,
+                  otimismo e liberdade, suas motos e suas vidas.
+                </RancheirosText>
+              </Text>
+
               <Title order={3} pt={"2rem"} align="center">
                 Curso de pilotagem defensiva: Manobras Para Vida
               </Title>
-              <p>
-                <Text align="center">
-                  <RancheirosText
-                    highlight={["gratuito", "pilotar mais seguro"]}
-                  >
-                    Curso gratuito, que visa dotar seus participantes de
-                    conhecimentos teóricos e práticos que possibilitem um
-                    pilotar mais seguro nos deslocamentos diários.
-                  </RancheirosText>
-                  <Button
-                    mt={"md"}
-                    color="brand.6"
-                    component="a"
-                    href="https://mpv.rancheirosmc.com.br/#inscricao"
-                    target="_blank"
-                  >
-                    Inscreva-se
-                  </Button>
-                </Text>
-              </p>
+
+              <Text align="center">
+                <RancheirosText highlight={["gratuito", "pilotar mais seguro"]}>
+                  Curso gratuito, que visa dotar seus participantes de
+                  conhecimentos teóricos e práticos que possibilitem um pilotar
+                  mais seguro nos deslocamentos diários.
+                </RancheirosText>
+                <Button
+                  mt={"md"}
+                  color="brand.6"
+                  component="a"
+                  href="https://mpv.rancheirosmc.com.br/#inscricao"
+                  target="_blank"
+                >
+                  Inscreva-se
+                </Button>
+              </Text>
             </Box>
           </Grid.Col>
           <Grid.Col lg={6}>
