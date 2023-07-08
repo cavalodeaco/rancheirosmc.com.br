@@ -25,9 +25,10 @@ export default function Schedule() {
                   >
                     <Box
                       fz={32}
-                      sx={{
+                      sx={(theme) => ({
                         lineHeight: "40px",
-                      }}
+                        color: theme.colors.brand[6]
+                      })}
                     >
                       {new Date(event.date).toLocaleDateString("pt-BR", {
                         day: "2-digit",
