@@ -1,15 +1,15 @@
 const schedule = [
-  { date: "2023-03-11 12:00:00 GMT", description: "Manobras para Vida em Maringá (especial mulheres)" },
-  { date: "2023-04-15 12:00:00 GMT", description: "Manobras para Vida em Cambira/Jandaia do Sul" },
-  { date: "2023-05-20 12:00:00 GMT", description: "Manobras para Vida em Londrina" },
-  { date: "2023-06-17 12:00:00 GMT", description: "Manobras para Vida em Maringá" },
-  { date: "2023-07-15 12:00:00 GMT", description: "Manobras para Vida em Cambira/Jandaia do Sul" },
-  { date: "2023-08-12 12:00:00 GMT", description: "Manobras para Vida em Londrina" },
-  { date: "2023-09-02 12:00:00 GMT", description: "Manobras para Vida em Maringá" },
-  { date: "2023-09-30 12:00:00 GMT", description: "Manobras para Vida em Cambira/Jandaia do Sul" },
-  { date: "2023-10-21 12:00:00 GMT", description: "Manobras para Vida em Londrina" },
-  { date: "2023-11-11 12:00:00 GMT", description: "Manobras para Vida em Maringá" },
-  { date: "2023-12-15 12:00:00 GMT", description: "Término das atividades" }
+  { date: { day: "11", month: "MARÇO" }, description: "Manobras para Vida em Maringá (especial mulheres)" },
+  { date: { day: "15", month: "ABRIL" }, description: "Manobras para Vida em Cambira/Jandaia do Sul" },
+  { date: { day: "20", month: "MAIO" }, description: "Manobras para Vida em Londrina" },
+  { date: { day: "17", month: "JUNHO" }, description: "Manobras para Vida em Maringá" },
+  { date: { day: "15", month: "JULHO" }, description: "Manobras para Vida em Cambira/Jandaia do Sul" },
+  { date: { day: "12", month: "AGOSTO" }, description: "Manobras para Vida em Londrina" },
+  { date: { day: "02", month: "SETEMBRO" }, description: "Manobras para Vida em Maringá" },
+  { date: { day: "30", month: "SETEMBRO" }, description: "Manobras para Vida em Cambira/Jandaia do Sul" },
+  { date: { day: "21", month: "OUTUBRO" }, description: "Manobras para Vida em Londrina" },
+  { date: { day: "11", month: "NOVEMBRO" }, description: "Manobras para Vida em Maringá" },
+  { date: { day: "15", month: "DEZEMBRO" }, description: "Término das atividades" }
 ]
 
 export default schedule;
