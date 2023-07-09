@@ -24,18 +24,9 @@ export default function Schedule() {
                         color: theme.colors.brand[6],
                       })}
                     >
-                      {new Date(event.date).toLocaleDateString("pt-BR", {
-                        day: "2-digit",
-                      })}
+                      {event.date.day}
                     </Box>
-                    <Box fz={16}>
-                      {" "}
-                      {new Date(event.date)
-                        .toLocaleDateString("pt-BR", {
-                          month: "long",
-                        })
-                        .toLocaleUpperCase()}
-                    </Box>
+                    <Box fz={16}>{event.date.month}</Box>
                   </Flex>
                 </td>
                 <td>
