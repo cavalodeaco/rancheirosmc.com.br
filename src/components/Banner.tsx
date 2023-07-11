@@ -3,9 +3,7 @@ import {
   createStyles,
   Grid,
   Image,
-  MediaQuery,
-  Text,
-  Title,
+  Title
 } from "@mantine/core";
 import { ReactElement } from "react";
 

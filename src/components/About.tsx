@@ -1,60 +1,24 @@
 import {
   ActionIcon,
   Anchor,
-  Avatar,
   Box,
   Button,
-  ButtonProps,
-  Card,
   Center,
-  Container,
-  Divider,
-  Flex,
   Grid,
   Group,
-  Highlight,
-  Image,
   List,
-  MantineProvider,
-  Paper,
   Spoiler,
-  Table,
   Text,
   ThemeIcon,
   Title,
-  clsx,
-  createStyles,
+  createStyles
 } from "@mantine/core";
 import {
   IconBrandFacebook,
   IconBrandInstagram,
-  IconCheck,
-  IconLink,
+  IconLink
 } from "@tabler/icons-react";
-
-export function RancheirosText({
-  children,
-  highlight = [],
-}: {
-  children: string;
-  highlight?: string[];
-}) {
-  return (
-    <Text color="dimmed" mt="md">
-      <Highlight
-        highlight={highlight}
-        highlightStyles={(theme) => ({
-          backgroundColor: theme.colors.brand[5],
-          fontWeight: 700,
-          WebkitBackgroundClip: "text",
-          WebkitTextFillColor: "transparent",
-        })}
-      >
-        {children}
-      </Highlight>
-    </Text>
-  );
-}
+import RancheirosText from "./RancheirosText";
 
 const useStyles = createStyles((theme) => ({
   highlight: {
@@ -69,7 +33,7 @@ const useStyles = createStyles((theme) => ({
 export default function About() {
   const { classes } = useStyles();
   return (
-    <Container>
+    <>
       <Box py={"calc(60px + 2rem)"}>
         <Title order={2}>
           Boas-vindas ao <br />
@@ -249,6 +213,6 @@ export default function About() {
           </Grid.Col>
         </Grid>
       </Box>
-    </Container>
+    </>
   );
 }

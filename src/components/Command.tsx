@@ -1,20 +1,16 @@
 import {
-  Anchor,
   Avatar,
   Box,
-  Card,
-  Container,
   Divider,
   Flex,
   Grid,
   Group,
-  Modal,
   Paper,
   Text,
   Title,
   createStyles,
   getStylesRef,
-  rem,
+  rem
 } from "@mantine/core";
 
 import { useDisclosure, useMediaQuery } from "@mantine/hooks";
@@ -91,162 +87,65 @@ export default function Command() {
   const isMobile = useMediaQuery("(max-width: 600px)");
 
   return (
-    <Container>
-      <Box py={"calc(60px + 2rem)"}>
-        <Title order={2}>COMANDO NACIONAL</Title>
-        <Grid gutter={"xl"} mt={"xl"} grow={true}>
-          <Grid.Col sm={6}>
-            <Group position="center">
-              <Paper className={cx(classes.card, classes.paulo)}>
-                <Flex justify={"space-between"} align={"end"}>
-                  <Title order={3} align="center">
-                    Capitão
-                  </Title>
-                  <Text align="center">(Presidente)</Text>
-                </Flex>
-              </Paper>
-            </Group>
-          </Grid.Col>
-          <Grid.Col sm={6}>
-            <Group position="left" pb={"sm"}>
-              <Avatar
-                className={classes.sepia}
-                src="https://d2er8q8v25uk9z.cloudfront.net/giovanna_eNFVjKYbC3XT.webp"
-                component="span"
-                alt="Giovanna"
-                size="5rem"
-              />
-              <Flex direction={"column"}>
-                <Title order={4}>Giovanna</Title>
-                <Text>(Vice-presidente)</Text>
-              </Flex>
-            </Group>
-            <Divider pb={"sm"} />
-            <Group position="left" pb={"sm"}>
-              <Avatar
-                className={classes.sepia}
-                src="https://d2er8q8v25uk9z.cloudfront.net/alex_47qrhnHgQsGv.webp"
-                component="span"
-                alt="Alex"
-                size="5rem"
-              />
-              <Flex direction={"column"}>
-                <Title order={4}>Alex</Title>
-                <Text>(Disciplina)</Text>
-              </Flex>
-            </Group>
-            <Divider pb={"sm"} />
-            <Group position="left">
-              <Avatar
-                className={classes.sepia}
-                src="https://d2er8q8v25uk9z.cloudfront.net/vital.webp"
-                component="span"
-                alt="Pr. Vital"
-                size="5rem"
-              />
-              <Flex direction={"column"}>
-                <Title order={4}>Pr. Vital</Title>
-                <Text>(Brandeiro)</Text>
-              </Flex>
-            </Group>
-          </Grid.Col>
-        </Grid>
-      </Box>
-
-      <Modal
-        opened={opened}
-        onClose={close}
-        fullScreen={isMobile}
-        size={"xl"}
-      >
-        <Container>
-          <Grid gutter={"xl"} mt={"xl"} grow={true}>
-            <Grid.Col sm={6}>
-              <Group position="center">
-                <Title order={2} className={classes.verticalText}>
-                  RANCHO <br /> CAMBIRA
+    <Box py={"calc(60px + 2rem)"}>
+      <Title order={2}>COMANDO NACIONAL</Title>
+      <Grid gutter={"xl"} mt={"xl"} grow={true}>
+        <Grid.Col sm={6}>
+          <Group position="center">
+            <Paper className={cx(classes.card, classes.paulo)}>
+              <Flex justify={"space-between"} align={"end"}>
+                <Title order={3} align="center">
+                  Capitão
                 </Title>
-                <Paper className={cx(classes.card, classes.pinduca)}>
-                  <Flex justify={"space-between"} align={"end"}>
-                    <Title order={3} align="center">
-                      Rogério
-                    </Title>
-                    <Text align="center">(Diretor)</Text>
-                  </Flex>
-                </Paper>
-              </Group>
-            </Grid.Col>
-            <Grid.Col sm={6}>
-              <Group position="left" pb={"sm"}>
-                <Avatar
-                  src="https://d2er8q8v25uk9z.cloudfront.net/brito.webp"
-                  className={classes.sepia}
-                  component="span"
-                  alt="Brito"
-                  size="lg"
-                />
-                <Title order={4}>Brito</Title>
-                <Text>(Vice-diretor)</Text>
-              </Group>
-              <Divider pb={"sm"} />
-              <Group position="left" pb={"sm"}>
-                <Avatar
-                  src="https://d2er8q8v25uk9z.cloudfront.net/dai.webp"
-                  component="span"
-                  alt="Dai"
-                  className={classes.sepia}
-                  size="lg"
-                />
-                <Title order={4}>Dai</Title>
-                <Text>(Financeiro)</Text>
-              </Group>
-              <Divider pb={"sm"} />
-              <Group position="left" pb={"sm"}>
-                <Avatar
-                  src="https://d2er8q8v25uk9z.cloudfront.net/jane.webp"
-                  component="span"
-                  alt="Jane"
-                  className={classes.sepia}
-                  size="lg"
-                />
-                <Title order={4}>Jane</Title>
-                <Text>(Secretaria)</Text>
-              </Group>
-              <Divider pb={"sm"} />
-              <Group position="left" pb={"sm"}>
-                <Avatar
-                  src="https://d2er8q8v25uk9z.cloudfront.net/gisele.webp"
-                  component="span"
-                  alt="Gisele"
-                  className={classes.sepia}
-                  size="lg"
-                />
-                <Title order={4}>Gisele</Title>
-                <Text>(Logística)</Text>
-              </Group>
-            </Grid.Col>
-          </Grid>
-        </Container>
-      </Modal>
-
-
-      <Title order={2}>Ranchos</Title>
-
-      <Flex justify={"center"} wrap={"wrap"} gap={"lg"} pt={"xl"}>
-        <Card padding="lg" shadow="lg" className={classes.ranch} onClick={open}>
-          <div
-            className={cx(classes.ranchImage, classes.sepia)}
-            style={{ backgroundImage: `url(https://d2er8q8v25uk9z.cloudfront.net/ranchoCambira_nk9c4p.webp)` }}
-          />
-          <div className={classes.overlay} />
-          <div className={classes.ranchContent}>
-            <Title size="lg" className={classes.ranchTitle} weight={500}>
-              RANCHO CAMBIRA/PR
-            </Title>
-            <Anchor>Saiba mais</Anchor>
-          </div>
-        </Card>
-      </Flex>
-    </Container>
+                <Text align="center">(Presidente)</Text>
+              </Flex>
+            </Paper>
+          </Group>
+        </Grid.Col>
+        <Grid.Col sm={6}>
+          <Group position="left" pb={"sm"}>
+            <Avatar
+              className={classes.sepia}
+              src="https://d2er8q8v25uk9z.cloudfront.net/giovanna_eNFVjKYbC3XT.webp"
+              component="span"
+              alt="Giovanna"
+              size="5rem"
+            />
+            <Flex direction={"column"}>
+              <Title order={4}>Giovanna</Title>
+              <Text>(Vice-presidente)</Text>
+            </Flex>
+          </Group>
+          <Divider pb={"sm"} />
+          <Group position="left" pb={"sm"}>
+            <Avatar
+              className={classes.sepia}
+              src="https://d2er8q8v25uk9z.cloudfront.net/alex_47qrhnHgQsGv.webp"
+              component="span"
+              alt="Alex"
+              size="5rem"
+            />
+            <Flex direction={"column"}>
+              <Title order={4}>Alex</Title>
+              <Text>(Disciplina)</Text>
+            </Flex>
+          </Group>
+          <Divider pb={"sm"} />
+          <Group position="left">
+            <Avatar
+              className={classes.sepia}
+              src="https://d2er8q8v25uk9z.cloudfront.net/vital.webp"
+              component="span"
+              alt="Pr. Vital"
+              size="5rem"
+            />
+            <Flex direction={"column"}>
+              <Title order={4}>Pr. Vital</Title>
+              <Text>(Brandeiro)</Text>
+            </Flex>
+          </Group>
+        </Grid.Col>
+      </Grid>
+    </Box>
   );
 }

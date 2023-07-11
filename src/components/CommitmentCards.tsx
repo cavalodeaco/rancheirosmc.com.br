@@ -1,22 +1,20 @@
 import {
-  createStyles,
-  Badge,
-  Group,
-  Title,
-  Text,
+  Box,
   Card,
   SimpleGrid,
-  Container,
+  Text,
+  Title,
+  createStyles
 } from "@mantine/core";
 import {
-  IconHeartHandshake,
-  IconMotorbike,
-  IconUsersGroup,
   IconHeart,
+  IconHeartHandshake,
   IconHelmet,
-  IconUserShield,
-  IconTrafficCone,
+  IconMotorbike,
   IconSeeding,
+  IconTrafficCone,
+  IconUserShield,
+  IconUsersGroup,
 } from "@tabler/icons-react";
 
 const commitment = [
@@ -126,13 +124,7 @@ export function CommitmentCards() {
   ));
 
   return (
-    <Container mt="xl" pt={"60px"} pb={"xl"}>
-      {/* <Group position="center">
-          <Badge variant="filled" size="lg">
-            RANCHEIROS MC
-          </Badge>
-        </Group>
-   */}
+    <Box mt="xl" pt={"60px"} pb={"xl"}>
       <Title order={2} className={classes.title} ta="center" mt="sm">
         Compromisso do Rancheiro
       </Title>
@@ -150,6 +142,6 @@ export function CommitmentCards() {
       >
         {features}
       </SimpleGrid>
-    </Container>
+    </Box>
   );
 }
