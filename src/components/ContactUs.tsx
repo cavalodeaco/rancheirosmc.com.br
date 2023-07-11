@@ -14,13 +14,13 @@ import {
   Title,
   createStyles,
 } from "@mantine/core";
-import { theme } from "../utils/theme";
 import { useForm } from "@mantine/form";
 import {
   IconBrandFacebook,
   IconBrandInstagram,
   IconLink,
 } from "@tabler/icons-react";
+import { theme } from "../utils/theme";
 
 const useStyles = createStyles((theme) => ({
   wrapper: {

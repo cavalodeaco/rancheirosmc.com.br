@@ -1,35 +1,23 @@
 import {
   ActionIcon,
   Anchor,
-  Avatar,
   Box,
   Button,
-  ButtonProps,
-  Card,
   Center,
-  Container,
-  Divider,
-  Flex,
   Grid,
   Group,
   Highlight,
-  Image,
   List,
-  MantineProvider,
-  Paper,
   Spoiler,
-  Table,
   Text,
   ThemeIcon,
   Title,
-  clsx,
-  createStyles,
+  createStyles
 } from "@mantine/core";
 import {
   IconBrandFacebook,
   IconBrandInstagram,
-  IconCheck,
-  IconLink,
+  IconLink
 } from "@tabler/icons-react";
 
 export function RancheirosText({

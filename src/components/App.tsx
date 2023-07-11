@@ -1,17 +1,18 @@
+import { AppShell, Container } from "@mantine/core";
 import { MantineProvider } from "@mantine/styles";
 import { theme } from "../utils/theme";
-import { AppShell, Container } from "@mantine/core";
+import About from "./About";
+import Actions from "./Actions";
+import Banner from "./Banner";
+import Command from "./Command";
+import { CommitmentCards } from "./CommitmentCards";
+import ContactUs from "./ContactUs";
 import { HeaderResponsive } from "./HeaderResponsive";
 import Linkable from "./Linkable";
-import Banner from "./Banner";
-import { CommitmentCards } from "./CommitmentCards";
-import About from "./About";
-import ContactUs from "./ContactUs";
-import Command from "./Command";
-import Actions from "./Actions";
 import MPVAlert from "./MPVAlert";
-import Schedule from "./Schedule";
 import RancheirosFooter from "./RancheirosFooter";
+import Ranchos from "./Ranchos";
+import Schedule from "./Schedule";
 
 export default function App() {
   document.title = "RANCHEIROS MC";
@@ -20,7 +21,7 @@ export default function App() {
     { id: "compromisso", component: <CommitmentCards /> },
     { id: "comando", component: <Command /> },
     { id: "acoes", component: <Actions /> },
-    // { id: "ranchos", component: <Command /> },
+    { id: "ranchos", component: <Ranchos /> },
     { id: "agenda", component: <Schedule /> },
   ];
   return (

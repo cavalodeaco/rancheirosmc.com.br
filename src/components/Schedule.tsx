@@ -1,4 +1,4 @@
-import { Box, Container, Flex, Table, Title } from "@mantine/core";
+import { Box, Flex, Table, Title } from "@mantine/core";
 import schedule from "../data/schedule";
 
 export default function Schedule() {

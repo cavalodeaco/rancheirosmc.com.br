@@ -1,18 +1,18 @@
-import { ReactElement, useState } from "react";
 import {
-  createStyles,
-  Title,
-  Header,
+  Anchor,
+  Burger,
+  Center,
   Container,
   Group,
-  Burger,
+  Header,
   Paper,
-  Transition,
-  Anchor,
-  Center,
   Space,
+  Title,
+  Transition,
+  createStyles,
 } from "@mantine/core";
 import { useDisclosure } from "@mantine/hooks";
+import { ReactElement, useState } from "react";
 
 const HEADER_HEIGHT = 60;
 

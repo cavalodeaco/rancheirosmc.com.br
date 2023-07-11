@@ -1,20 +1,16 @@
 import {
-  Anchor,
   Avatar,
   Box,
-  Card,
-  Container,
   Divider,
   Flex,
   Grid,
   Group,
-  Modal,
   Paper,
   Text,
   Title,
   createStyles,
   getStylesRef,
-  rem,
+  rem
 } from "@mantine/core";
 
 import { useDisclosure, useMediaQuery } from "@mantine/hooks";

@@ -1,23 +1,20 @@
 import {
-  createStyles,
-  Badge,
-  Group,
-  Title,
-  Text,
+  Box,
   Card,
   SimpleGrid,
-  Container,
-  Box,
+  Text,
+  Title,
+  createStyles
 } from "@mantine/core";
 import {
-  IconHeartHandshake,
-  IconMotorbike,
-  IconUsersGroup,
   IconHeart,
+  IconHeartHandshake,
   IconHelmet,
-  IconUserShield,
-  IconTrafficCone,
+  IconMotorbike,
   IconSeeding,
+  IconTrafficCone,
+  IconUserShield,
+  IconUsersGroup,
 } from "@tabler/icons-react";
 
 const commitment = [

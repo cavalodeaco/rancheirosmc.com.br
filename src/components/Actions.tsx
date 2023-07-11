@@ -2,13 +2,12 @@ import {
   Anchor,
   Box,
   Card,
-  Container,
   Flex,
   Image,
   Text,
   Title,
   createStyles,
-  rem,
+  rem
 } from "@mantine/core";
 
 const useStyles = createStyles((theme) => ({
