@@ -1,13 +1,6 @@
 import { MantineProvider } from "@mantine/styles";
 import { theme } from "../utils/theme";
-import {
-  AppShell,
-  Center,
-  Container,
-  Footer,
-  Space,
-  Title,
-} from "@mantine/core";
+import { AppShell, Container } from "@mantine/core";
 import { HeaderResponsive } from "./HeaderResponsive";
 import Linkable from "./Linkable";
 import Banner from "./Banner";
@@ -18,54 +11,37 @@ import Command from "./Command";
 import Actions from "./Actions";
 import MPVAlert from "./MPVAlert";
 import Schedule from "./Schedule";
+import RancheirosFooter from "./RancheirosFooter";
 
 export default function App() {
   document.title = "RANCHEIROS MC";
+  const sections = [
+    { id: "sobre", component: <About /> },
+    { id: "compromisso", component: <CommitmentCards /> },
+    { id: "comando", component: <Command /> },
+    { id: "acoes", component: <Actions /> },
+    // { id: "ranchos", component: <Command /> },
+    { id: "agenda", component: <Schedule /> },
+  ];
   return (
     <MantineProvider theme={{ ...theme }} withGlobalStyles withNormalizeCSS>
       <AppShell
         fixed={false}
         header={<HeaderResponsive />}
-        footer={
-          <Footer height={"100%"} py={"xl"}>
-            <Container>
-              <Title order={4} transform="uppercase" color="gray.4">
-                <Center>
-                  <img
-                    sizes="32px"
-                    src="https://d2er8q8v25uk9z.cloudfront.net/rancheiro/rancheiro_w64.webp"
-                    alt="RANCHEIROS MC"
-                    width={32}
-                    height={34}
-                  />
-                  <Space w="xs" />
-                  RANCHEIROS MC
-                </Center>
-              </Title>
-            </Container>
-          </Footer>
-        }
+        footer={<RancheirosFooter />}
         padding={0}
       >
         <MPVAlert />
         <Linkable id="">
           <Banner />
         </Linkable>
-        <Linkable id="sobre">
-          <About />
-        </Linkable>
-        <Linkable id="compromisso">
-          <CommitmentCards />
-        </Linkable>
-        <Linkable id="comando">
-          <Command />
-        </Linkable>
-        <Linkable id="acoes">
-          <Actions />
-          <Schedule />
-        </Linkable>
+        <Container>
+          {sections.map((section) => (
+            <Linkable id={section.id}>{section.component}</Linkable>
+          ))}
+        </Container>
         <Linkable id="contato">
-          <ContactUs />
+          <ContactUs />{" "}
         </Linkable>
       </AppShell>
     </MantineProvider>

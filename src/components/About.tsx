@@ -69,7 +69,7 @@ const useStyles = createStyles((theme) => ({
 export default function About() {
   const { classes } = useStyles();
   return (
-    <Container>
+    <>
       <Box py={"calc(60px + 2rem)"}>
         <Title order={2}>
           Boas-vindas ao <br />
@@ -249,6 +249,6 @@ export default function About() {
           </Grid.Col>
         </Grid>
       </Box>
-    </Container>
+    </>
   );
 }

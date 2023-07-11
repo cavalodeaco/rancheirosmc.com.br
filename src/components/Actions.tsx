@@ -44,79 +44,77 @@ const useStyles = createStyles((theme) => ({
 export default function Actions() {
   const { classes } = useStyles();
   return (
-    <Container>
-      <Box py={"calc(60px + 2rem)"}>
-        <Title order={2}>Atividades</Title>
-        <Flex justify={"center"} gap={"xl"} wrap={"wrap"} mt={"xl"}>
-          <Card shadow="xl" className={classes.card} padding={"md"} withBorder>
-            <Card.Section className={classes.cardImage}>
-              <Image
-                className={classes.image}
-                src="https://d2er8q8v25uk9z.cloudfront.net/mpv.webp"
-                height={rem(280)}
-                alt="Manobras Para Vida"
-              />
-              <div className={classes.overlay}>
-                <Title order={3}>Manobras Para Vida</Title>
-              </div>
-            </Card.Section>
-            <Card.Section p={"md"}>
-              <Text color="dimmed" size={"sm"}>
-                Curso gratuito, que visa dotar seus participantes de
-                conhecimentos teóricos e práticos que possibilitem um pilotar
-                mais seguro nos deslocamentos diários.{" "}
-              </Text>
-              <Anchor
-                href="https://mpv.rancheirosmc.com.br/#inscricao"
-                target="_blank"
-              >
-                Inscreva-se!
-              </Anchor>
-            </Card.Section>
-          </Card>
-          <Card shadow="xl" className={classes.card} padding={"md"} withBorder>
-            <Card.Section className={classes.cardImage}>
-              <Image
-                className={classes.image}
-                src="https://d2er8q8v25uk9z.cloudfront.net/prosa_y6mjVyDp9wqS.webp"
-                height={rem(280)}
-                alt="Prosa"
-              />
-              <div className={classes.overlay}>
-                <Title order={3}>Prosa</Title>
-              </div>
-            </Card.Section>
-            <Card.Section p={"md"}>
-              <Text color="dimmed" size={"sm"}>
-                Encontro semanal de confraternização entre membros e amigos, que
-                inclui um estudo bíblico, momentos de comunhão e cuidado mútuo.{" "}
-              </Text>
-              <Anchor href="#contato">Entre em contato e participe!</Anchor>
-            </Card.Section>
-          </Card>
-          <Card shadow="xl" className={classes.card} padding={"md"} withBorder>
-            <Card.Section className={classes.cardImage}>
-              <Image
-                className={classes.image}
-                src="https://d2er8q8v25uk9z.cloudfront.net/comitiva.webp"
-                height={rem(280)}
-                alt="Comitiva"
-              />
-              <div className={classes.overlay}>
-                <Title order={3}>Comitiva</Title>
-              </div>
-            </Card.Section>
-            <Card.Section p={"md"}>
-              <Text color="dimmed" size={"sm"}>
-                Realizamos viagens com o objetivo de impactar positivamente a
-                vida das pessoas. Visitamos cidades, locais e eventos, incluindo
-                igrejas de diferentes denominações, para momentos de culto e
-                celebração a Deus.
-              </Text>
-            </Card.Section>
-          </Card>
-        </Flex>
-      </Box>
-    </Container>
+    <Box py={"calc(60px + 2rem)"}>
+      <Title order={2}>Atividades</Title>
+      <Flex justify={"center"} gap={"xl"} wrap={"wrap"} mt={"xl"}>
+        <Card shadow="xl" className={classes.card} padding={"md"} withBorder>
+          <Card.Section className={classes.cardImage}>
+            <Image
+              className={classes.image}
+              src="https://d2er8q8v25uk9z.cloudfront.net/mpv.webp"
+              height={rem(280)}
+              alt="Manobras Para Vida"
+            />
+            <div className={classes.overlay}>
+              <Title order={3}>Manobras Para Vida</Title>
+            </div>
+          </Card.Section>
+          <Card.Section p={"md"}>
+            <Text color="dimmed" size={"sm"}>
+              Curso gratuito, que visa dotar seus participantes de conhecimentos
+              teóricos e práticos que possibilitem um pilotar mais seguro nos
+              deslocamentos diários.{" "}
+            </Text>
+            <Anchor
+              href="https://mpv.rancheirosmc.com.br/#inscricao"
+              target="_blank"
+            >
+              Inscreva-se!
+            </Anchor>
+          </Card.Section>
+        </Card>
+        <Card shadow="xl" className={classes.card} padding={"md"} withBorder>
+          <Card.Section className={classes.cardImage}>
+            <Image
+              className={classes.image}
+              src="https://d2er8q8v25uk9z.cloudfront.net/prosa_y6mjVyDp9wqS.webp"
+              height={rem(280)}
+              alt="Prosa"
+            />
+            <div className={classes.overlay}>
+              <Title order={3}>Prosa</Title>
+            </div>
+          </Card.Section>
+          <Card.Section p={"md"}>
+            <Text color="dimmed" size={"sm"}>
+              Encontro semanal de confraternização entre membros e amigos, que
+              inclui um estudo bíblico, momentos de comunhão e cuidado mútuo.{" "}
+            </Text>
+            <Anchor href="#contato">Entre em contato e participe!</Anchor>
+          </Card.Section>
+        </Card>
+        <Card shadow="xl" className={classes.card} padding={"md"} withBorder>
+          <Card.Section className={classes.cardImage}>
+            <Image
+              className={classes.image}
+              src="https://d2er8q8v25uk9z.cloudfront.net/comitiva.webp"
+              height={rem(280)}
+              alt="Comitiva"
+            />
+            <div className={classes.overlay}>
+              <Title order={3}>Comitiva</Title>
+            </div>
+          </Card.Section>
+          <Card.Section p={"md"}>
+            <Text color="dimmed" size={"sm"}>
+              Realizamos viagens com o objetivo de impactar positivamente a vida
+              das pessoas. Visitamos cidades, locais e eventos, incluindo
+              igrejas de diferentes denominações, para momentos de culto e
+              celebração a Deus.
+            </Text>
+          </Card.Section>
+        </Card>
+      </Flex>
+    </Box>
   );
 }

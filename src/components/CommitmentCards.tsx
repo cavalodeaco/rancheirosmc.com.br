@@ -7,6 +7,7 @@ import {
   Card,
   SimpleGrid,
   Container,
+  Box,
 } from "@mantine/core";
 import {
   IconHeartHandshake,
@@ -126,13 +127,7 @@ export function CommitmentCards() {
   ));
 
   return (
-    <Container mt="xl" pt={"60px"} pb={"xl"}>
-      {/* <Group position="center">
-          <Badge variant="filled" size="lg">
-            RANCHEIROS MC
-          </Badge>
-        </Group>
-   */}
+    <Box mt="xl" pt={"60px"} pb={"xl"}>
       <Title order={2} className={classes.title} ta="center" mt="sm">
         Compromisso do Rancheiro
       </Title>
@@ -150,6 +145,6 @@ export function CommitmentCards() {
       >
         {features}
       </SimpleGrid>
-    </Container>
+    </Box>
   );
 }

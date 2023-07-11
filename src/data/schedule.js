@@ -9,6 +9,6 @@ const schedule = [
   { date: { day: "30", month: "SETEMBRO" }, description: "Manobras para Vida em Cambira/Jandaia do Sul" },
   { date: { day: "21", month: "OUTUBRO" }, description: "Manobras para Vida em Londrina" },
   { date: { day: "11", month: "NOVEMBRO" }, description: "Manobras para Vida em Maringá" },
-]
+];
 
 export default schedule;
