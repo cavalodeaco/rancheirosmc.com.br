@@ -6,7 +6,6 @@ import {
   Center,
   Grid,
   Group,
-  Highlight,
   List,
   Spoiler,
   Text,
@@ -19,30 +18,7 @@ import {
   IconBrandInstagram,
   IconLink
 } from "@tabler/icons-react";
-
-export function RancheirosText({
-  children,
-  highlight = [],
-}: {
-  children: string;
-  highlight?: string[];
-}) {
-  return (
-    <Text color="dimmed" mt="md">
-      <Highlight
-        highlight={highlight}
-        highlightStyles={(theme) => ({
-          backgroundColor: theme.colors.brand[5],
-          fontWeight: 700,
-          WebkitBackgroundClip: "text",
-          WebkitTextFillColor: "transparent",
-        })}
-      >
-        {children}
-      </Highlight>
-    </Text>
-  );
-}
+import RancheirosText from "./RancheirosText";
 
 const useStyles = createStyles((theme) => ({
   highlight: {
