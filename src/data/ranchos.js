@@ -34,6 +34,14 @@ const ranchos = [{
     name: "Pr. Vital",
     photo: "https://d2er8q8v25uk9z.cloudfront.net/vital.webp",
   }
+}, {
+  name: "Medianeira-PR",
+  contact: {
+    tel: "+554591078235",
+    label: "+55 45 9107-8235",
+    name: "Dudu",
+    photo: "https://d2er8q8v25uk9z.cloudfront.net/dudu.webp",
+  }
 }]
 
 export default ranchos;
