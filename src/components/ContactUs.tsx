@@ -24,17 +24,17 @@ import { theme } from "../utils/theme";
 
 const useStyles = createStyles((theme) => ({
   wrapper: {
-    paddingTop: "60px",
+    paddingTop: "calc(60px + 2rem)",
+    paddingBottom: `calc(${theme.spacing.xl} * 2.5)`,
     marginTop: theme.spacing.xl,
     minHeight: 400,
     boxSizing: "border-box",
     backgroundImage: `linear-gradient(-60deg, ${
       theme.colors[theme.primaryColor][6]
     } 0%, ${theme.colors[theme.primaryColor][9]} 100%)`,
-    padding: `calc(${theme.spacing.xl} * 2.5)`,
     color: theme.white,
     [theme.fn.smallerThan("sm")]: {
-      padding: `calc(${theme.spacing.xl} * 1.5)`,
+      paddingBottom: `calc(${theme.spacing.xl}  * 1.5)`,
     },
   },
   form: {

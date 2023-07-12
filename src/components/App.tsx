@@ -42,7 +42,7 @@ export default function App() {
           ))}
         </Container>
         <Linkable id="contato">
-          <ContactUs />{" "}
+          <ContactUs />
         </Linkable>
       </AppShell>
     </MantineProvider>

@@ -89,7 +89,7 @@ export default function Actions() {
               Encontro semanal de confraternização entre membros e amigos, que
               inclui um estudo bíblico, momentos de comunhão e cuidado mútuo.{" "}
             </Text>
-            <Anchor href="#contato">Entre em contato e participe!</Anchor>
+            <Anchor href="#ranchos">Entre em contato e participe!</Anchor>
           </Card.Section>
         </Card>
         <Card shadow="xl" className={classes.card} padding={"md"} withBorder>
