@@ -3,8 +3,8 @@ const ranchos = [{
   name: "Cambira-PR",
   prosa: { day: "Toda segunda", time: "20h", address: "Av. Itália, 175" },
   contact: {
-    tel: "+554188435201",
-    label: "+55 41 8843-5201",
+    tel: "+5541988435201",
+    label: "(41) 98843-5201",
     name: "Rogério",
     photo: "https://d2er8q8v25uk9z.cloudfront.net/pinduca.webp",
   }
@@ -12,8 +12,8 @@ const ranchos = [{
   name: "Maringá-PR",
   prosa: { day: "Toda terça", time: "20h", address: "Rua Evaristo da Veiga, 143" },
   contact: {
-    tel: "+554198048668",
-    label: "+55 41 9804-8668",
+    tel: "+5541998048668",
+    label: "(41) 99804-8668",
     name: "Roberto",
     photo: "https://d2er8q8v25uk9z.cloudfront.net/robo.webp",
   }
@@ -21,27 +21,27 @@ const ranchos = [{
   name: "Londrina-PR",
   prosa: { day: "Todo sábado", time: "18h", address: "Rua Joaquina de Oliveira Perfeito, 416" },
   contact: {
-    tel: "+554199175424",
-    label: "+55 41 9917-5424",
+    tel: "+5541999175424",
+    label: "(41) 99917-5424",
     name: "Marcelo",
     photo: "https://d2er8q8v25uk9z.cloudfront.net/rapa.webp",
   }
 }, {
   name: "Faxinal-PR",
   contact: {
-    tel: "+554396117505",
-    label: "+55 43 9611-7505",
+    tel: "+5543996117505",
+    label: "(43) 99611-7505",
     name: "Pr. Vital",
     photo: "https://d2er8q8v25uk9z.cloudfront.net/vital.webp",
   }
 }, {
   name: "Medianeira-PR",
   contact: {
-    tel: "+554591078235",
-    label: "+55 45 9107-8235",
+    tel: "+5545991078235",
+    label: "(45) 99107-8235",
     name: "Dudu",
     photo: "https://d2er8q8v25uk9z.cloudfront.net/dudu.webp",
   }
-}]
+}];
 
 export default ranchos;
