@@ -22,7 +22,7 @@ import ranchos from "../data/ranchos";
 export default function Ranchos() {
   return (
     <Box py={"calc(60px + 2rem)"}>
-      <Title order={2}>Ranchos</Title>
+      <Title order={2}>Ranchos (sedes)</Title>
       <Flex mt={"xl"} gap={".5rem"} justify={"center"} wrap={"wrap"}>
         {ranchos.map(({ name, prosa, contact }) => (
           <Card withBorder sx={{ width: "300px" }}>
