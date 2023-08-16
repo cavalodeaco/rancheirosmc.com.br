@@ -98,11 +98,12 @@ export function CarouselCard({
     const f = async () => {
       const config = {
         method: "GET",
-        headers: { "Content-Type": "application/json" }
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({'id': id})
       };
 
       const response = await fetch(
-        `${process.env.REACT_APP_BACKEND_ADDRESS}/photos/?id=${id}` as string, // remove local
+        `${process.env.REACT_APP_BACKEND_ADDRESS}/photos` as string, // remove local
         config
       );
       const body = await response.json();
