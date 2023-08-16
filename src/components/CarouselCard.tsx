@@ -102,7 +102,7 @@ export function CarouselCard({
       };
 
       const response = await fetch(
-        `${process.env.REACT_APP_BACKEND_ADDRESS}?id=${id}` as string,
+        `${process.env.REACT_APP_BACKEND_ADDRESS}/photos/?id=${id}` as string, // remove local
         config
       );
       const body = await response.json();
