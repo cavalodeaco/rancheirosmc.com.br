@@ -90,12 +90,20 @@ export function CarouselCard({
   description,
 }: CarouselCardProps) {
   const { classes, cx } = useStyles();
-  const [images, setImages] = useState<string[]>(["https://d2er8q8v25uk9z.cloudfront.net/rancheiro/rancheiro_w2048.webp"]);
+  const [images, setImages] = useState<string[]>([
+    "https://d2er8q8v25uk9z.cloudfront.net/rancheiro/rancheiro_w2048.webp",
+  ]);
 
   useEffect(() => {
     const f = async () => {
+      const config = {
+        method: "GET",
+        headers: { "Content-Type": "application/json" }
+      };
+
       const response = await fetch(
-        `${process.env.REACT_APP_BACKEND_ADDRESS}?id=${id}` as string
+        `${process.env.REACT_APP_BACKEND_ADDRESS}?id=${id}` as string,
+        config
       );
       const body = await response.json();
       setImages(body);
