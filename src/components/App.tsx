@@ -13,6 +13,7 @@ import MPVAlert from "./MPVAlert";
 import RancheirosFooter from "./RancheirosFooter";
 import Ranchos from "./Ranchos";
 import Schedule from "./Schedule";
+import Foto from "./Foto";
 
 export default function App() {
   document.title = "RANCHEIROS MC";
@@ -22,6 +23,7 @@ export default function App() {
     { id: "comando", component: <Command /> },
     { id: "acoes", component: <Actions /> },
     { id: "ranchos", component: <Ranchos /> },
+    { id: "foto", component: <Foto /> },
     { id: "agenda", component: <Schedule /> },
   ];
   return (
