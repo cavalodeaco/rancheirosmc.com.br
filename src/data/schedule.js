@@ -7,7 +7,6 @@ const schedule = [
   { date: { day: "12", month: "AGOSTO" }, description: "Manobras para Vida em Londrina" },
   { date: { day: "02", month: "SETEMBRO" }, description: "Manobras para Vida em Maringá" },
   { date: { day: "23", month: "SETEMBRO" }, description: "Encerramento semana Nacional do Trânsito - Mandaguari" },
-  { date: { day: "24", month: "SETEMBRO" }, description: "Culto em Faxinal-PR" },
   { date: { day: "30", month: "SETEMBRO" }, description: "Manobras para Vida em Cambira/Jandaia do Sul" },
   { date: { day: "12", month: "OUTUBRO" }, description: "Evento dia das Crianças - Igreja Metodista em Cambira" },
   { date: { day: "21", month: "OUTUBRO" }, description: "Manobras para Vida em Londrina" },
