@@ -42,6 +42,14 @@ const ranchos = [{
     name: "Dudu",
     photo: "https://d2er8q8v25uk9z.cloudfront.net/dudu.webp",
   }
+}, {
+  name: "São José dos Pinhais-PR",
+  contact: {
+    tel: "+5541991170055",
+    label: "(41) 99117-0055",
+    name: "Daniel",
+    photo: "",
+  }
 }];
 
 export default ranchos;
