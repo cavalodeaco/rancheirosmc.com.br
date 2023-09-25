@@ -9,6 +9,11 @@ const albuns = [{
   name: "Manobras Para a Vida",
   date: "2023-08-12",
   description: "Londrina - PR."
+},{
+  id: "wHkpvtzcfbcc7viq6",
+  name: "Manobras Para a Vida",
+  date: "2023-09-02",
+  description: "Maringá - PR."
 }];
 
 export default albuns;
