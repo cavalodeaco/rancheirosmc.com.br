@@ -22,7 +22,7 @@ const albuns = [{
 },{
   id: "xTjRJN4rhfaAM4oKA",
   name: "Manobras Para a Vida",
-  date: "2023-10-23",
+  date: "2023-10-21",
   description: "Londrina - PR."
 }];
 
