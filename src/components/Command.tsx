@@ -20,7 +20,7 @@ const useStyles = createStyles((theme) => ({
     transform: "rotate(-90deg)",
   },
   paulo: {
-    backgroundImage: `url(https://d2er8q8v25uk9z.cloudfront.net/Paulo.webp)`,
+    backgroundImage: `url(https://d2er8q8v25uk9z.cloudfront.net/paulo_Tp7F25pXEKyA.webp)`,
   },
   pinduca: {
     backgroundImage: `url(https://d2er8q8v25uk9z.cloudfront.net/pinduca.webp)`,
