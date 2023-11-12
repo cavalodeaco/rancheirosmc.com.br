@@ -20,7 +20,7 @@ const useStyles = createStyles((theme) => ({
     transform: "rotate(-90deg)",
   },
   paulo: {
-    backgroundImage: `url(https://d2er8q8v25uk9z.cloudfront.net/paulo_wbne9p.webp)`,
+    backgroundImage: `url(https://d2er8q8v25uk9z.cloudfront.net/paulo_Tp7F25pXEKyA.webp)`,
   },
   pinduca: {
     backgroundImage: `url(https://d2er8q8v25uk9z.cloudfront.net/pinduca.webp)`,
@@ -93,7 +93,7 @@ export default function Command() {
         <Grid.Col sm={6}>
           <Group position="center">
             <Paper className={cx(classes.card, classes.paulo)}>
-              <Flex justify={"space-between"} align={"end"}>
+              <Flex justify={"space-between"} direction={"column"} align={"end"}>
                 <Title order={3} align="center">
                   Capitão
                 </Title>
