@@ -1,5 +1,5 @@
 import { Box, Flex, ScrollArea, Table, Title } from "@mantine/core";
-import schedule from "../data/schedule";
+import schedule from "../data/schedule2024";
 
 export default function Schedule() {
   return (
