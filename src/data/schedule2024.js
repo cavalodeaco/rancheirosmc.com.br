@@ -46,17 +46,17 @@ const schedule = [
   },
   {
     "date": {
-      "day": "17",
-      "month": "MARÇO"
-    },
-    "description": "Comitiva à Igrejas"
-  },
-  {
-    "date": {
       "day": "23",
       "month": "MARÇO"
     },
     "description": "MPV Medianeira-PR"
+  },
+  {
+    "date": {
+      "day": "07",
+      "month": "ABRIL"
+    },
+    "description": "Comitiva à igreja Geração com Palavra em Maringá - PR"
   },
   {
     "date": {
@@ -84,7 +84,7 @@ const schedule = [
       "day": "11",
       "month": "MAIO"
     },
-    "description": "MPV Maringá-PR"
+    "description": "MPV Londrina - PR"
   },
   {
     "date": {
@@ -119,7 +119,7 @@ const schedule = [
       "day": "15",
       "month": "JUNHO"
     },
-    "description": "MPV Londrina-PR"
+    "description": "MPV Arapongas - PR"
   },
   {
     "date": {
