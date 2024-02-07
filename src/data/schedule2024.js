@@ -35,7 +35,7 @@ const schedule = [
       "day": "09",
       "month": "MARÇO"
     },
-    "description": "MPV Mulheres em Jandaia do Sul-PR"
+    "description": "MPV Mulheres em Jandaia do Sul/Cambira"
   },
   {
     "date": {
@@ -140,7 +140,7 @@ const schedule = [
       "day": "06",
       "month": "JULHO"
     },
-    "description": "MPV Jandaia do Sul-PR"
+    "description": "MPV Jandaia do Sul/Cambira"
   },
   {
     "date": {
@@ -210,7 +210,7 @@ const schedule = [
       "day": "21",
       "month": "SETEMBRO"
     },
-    "description": "MPV Jandaia do Sul-PR (especial de 50 anos Auto Escola Jandaia)"
+    "description": "MPV Jandaia do Sul/Cambira (especial de 50 anos Auto Escola Jandaia)"
   },
   {
     "date": {
@@ -273,7 +273,7 @@ const schedule = [
       "day": "30",
       "month": "NOVEMBRO"
     },
-    "description": "MPV Jandaia do Sul-PR"
+    "description": "MPV Jandaia do Sul/Cambira"
   }
 ];
 
