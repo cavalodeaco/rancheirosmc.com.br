@@ -19,12 +19,12 @@ const ranchos = [{
   }
 }, {
   name: "Londrina",
-  prosa: { day: "Todo sábado", time: "18h", address: "Rua Joaquina de Oliveira Perfeito, 416" },
+  prosa: { day: "Toda terça", time: "20h", address: "Rua Deputado Nilson Ribas, 551" },
   contact: {
-    tel: "+5541999175424",
-    label: "(41) 99917-5424",
-    name: "Marcelo",
-    photo: "https://d2er8q8v25uk9z.cloudfront.net/rapa.webp",
+    tel: "+5543999218270",
+    label: "(43) 99921-8270",
+    name: "Pr. Joao Vitor",
+    photo: "https://d2er8q8v25uk9z.cloudfront.net/prjoao.webp",
   }
 }, {
   name: "Faxinal",
