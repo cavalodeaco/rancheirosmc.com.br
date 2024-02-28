@@ -23,7 +23,7 @@ const ranchos = [{
   contact: {
     tel: "+5543999218270",
     label: "(43) 99921-8270",
-    name: "Pr. Joao Vitor",
+    name: "Pr. João Vitor",
     photo: "https://d2er8q8v25uk9z.cloudfront.net/prjoao.webp",
   }
 }, {
@@ -49,6 +49,14 @@ const ranchos = [{
     label: "(41) 99117-0055",
     name: "Daniel",
     photo: "https://d2er8q8v25uk9z.cloudfront.net/daniel.webp",
+  }
+}, {
+  name: "Cornélio Procópio",
+  contact: {
+    tel: "+5543988518880",
+    label: "(43) 98851-8880",
+    name: "Douglas",
+    photo: "https://d2er8q8v25uk9z.cloudfront.net/douglas.webp",
   }
 }];
 
