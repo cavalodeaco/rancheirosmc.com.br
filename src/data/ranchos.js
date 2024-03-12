@@ -58,7 +58,7 @@ const ranchos = [{
     name: "Douglas e Gabi",
     photo: "https://d2er8q8v25uk9z.cloudfront.net/douglas_gabi.webp",
   },
-  prosa: { day: "Toda segunda", time: "19h30", address: "Espírito Santo, 255" },
+  prosa: { day: "Toda segunda", time: "19h30", address: "Rua Espírito Santo, 255" },
 }];
 
 export default ranchos;
