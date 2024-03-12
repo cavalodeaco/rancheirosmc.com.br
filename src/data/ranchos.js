@@ -53,12 +53,12 @@ const ranchos = [{
 }, {
   name: "Cornélio Procópio",
   contact: {
-    tel: "+5543988518880",
-    label: ["(43) 98851-8880", "(43) 99912-7881"],
-    name: "Douglas e Gabi",
+    tel: "+5543999127881",
+    label: ["(43) 99912-7881", "(43) 98851-8880"],
+    name: "Gabi e Douglas",
     photo: "https://d2er8q8v25uk9z.cloudfront.net/douglas_gabi.webp",
   },
-  prosa: { day: "Toda segunda", time: "19h30", address: "Rua Espírito Santo, 255" },
+  prosa: { day: "Toda sexta", time: "19h30", address: "Rua Espírito Santo, 255" },
 }];
 
 export default ranchos;
