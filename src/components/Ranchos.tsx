@@ -5,6 +5,7 @@ import {
   Card,
   Flex,
   Grid,
+  Stack,
   Text,
   ThemeIcon,
   Title,
@@ -18,6 +19,19 @@ import {
 } from "@tabler/icons-react";
 import RancheirosText from "./RancheirosText";
 import ranchos from "../data/ranchos";
+
+function ContactLabel({ label }: { label: string | string[] }) {
+  if (typeof label === "string") {
+    label = [label];
+  }
+  return (
+    <Stack spacing="xs">
+      {label.map((i) => (
+        <span>{i}</span>
+      ))}
+    </Stack>
+  );
+}
 
 export default function Ranchos() {
   return (
@@ -41,8 +55,10 @@ export default function Ranchos() {
                 <IconUser size={"2rem"} />
               </Avatar>
               <Flex direction={"column"}>
-                <Anchor href={`tel:${contact.tel}`}>{contact.label}</Anchor>
-                <Text>({contact.name})</Text>
+                <Anchor href={`tel:${contact.tel}`}>
+                  <ContactLabel label={contact.label} />
+                </Anchor>
+                <Text mt={"xs"}>({contact.name})</Text>
               </Flex>
             </Flex>
             {prosa ? (
