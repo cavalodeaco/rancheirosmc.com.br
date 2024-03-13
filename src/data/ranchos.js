@@ -59,6 +59,14 @@ const ranchos = [{
     photo: "https://d2er8q8v25uk9z.cloudfront.net/douglas_gabi.webp",
   },
   prosa: { day: "Toda sexta", time: "19h30", address: "Rua Espírito Santo, 255" },
+}, {
+  name: "Nampula (Moçambique)",
+  contact: {
+    tel: "+5544998081276",
+    label: "(44) 99808-1276",
+    name: "Pr. Tiago",
+    photo: "https://d2er8q8v25uk9z.cloudfront.net/tiago.webp",
+  }
 }];
 
 export default ranchos;
