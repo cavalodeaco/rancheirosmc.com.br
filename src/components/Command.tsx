@@ -10,10 +10,12 @@ import {
   Title,
   createStyles,
   getStylesRef,
-  rem
+  rem,
 } from "@mantine/core";
 
 import { useDisclosure, useMediaQuery } from "@mantine/hooks";
+import comando from "../data/comando";
+import React from "react";
 
 const useStyles = createStyles((theme) => ({
   verticalText: {
@@ -81,10 +83,34 @@ const useStyles = createStyles((theme) => ({
   },
 }));
 
+interface CommandItemType {
+  img: string;
+  name: string;
+  role: string;
+}
+
+function CommandItem({ item }: { item: CommandItemType }) {
+  const { img, name, role } = item;
+  const { classes, cx } = useStyles();
+  return (
+    <Group position="left" pb={"sm"}>
+      <Avatar
+        className={classes.sepia}
+        src={img}
+        component="span"
+        alt={name}
+        size="4rem"
+      />
+      <Flex direction={"column"}>
+        <Title order={4}>{name}</Title>
+        <Text>({role})</Text>
+      </Flex>
+    </Group>
+  );
+}
+
 export default function Command() {
   const { classes, cx } = useStyles();
-  const [opened, { open, close }] = useDisclosure(false);
-  const isMobile = useMediaQuery("(max-width: 600px)");
 
   return (
     <Box py={"calc(60px + 2rem)"}>
@@ -93,7 +119,11 @@ export default function Command() {
         <Grid.Col sm={6}>
           <Group position="center">
             <Paper className={cx(classes.card, classes.paulo)}>
-              <Flex justify={"space-between"} direction={"column"} align={"end"}>
+              <Flex
+                justify={"space-between"}
+                direction={"column"}
+                align={"end"}
+              >
                 <Title order={3} align="center">
                   Capitão
                 </Title>
@@ -103,47 +133,12 @@ export default function Command() {
           </Group>
         </Grid.Col>
         <Grid.Col sm={6}>
-          <Group position="left" pb={"sm"}>
-            <Avatar
-              className={classes.sepia}
-              src="https://d2er8q8v25uk9z.cloudfront.net/giovanna_eNFVjKYbC3XT.webp"
-              component="span"
-              alt="Giovanna"
-              size="5rem"
-            />
-            <Flex direction={"column"}>
-              <Title order={4}>Giovanna</Title>
-              <Text>(Vice-presidente)</Text>
-            </Flex>
-          </Group>
-          <Divider pb={"sm"} />
-          <Group position="left" pb={"sm"}>
-            <Avatar
-              className={classes.sepia}
-              src="https://d2er8q8v25uk9z.cloudfront.net/alex_47qrhnHgQsGv.webp"
-              component="span"
-              alt="Alex"
-              size="5rem"
-            />
-            <Flex direction={"column"}>
-              <Title order={4}>Alex</Title>
-              <Text>(Disciplina)</Text>
-            </Flex>
-          </Group>
-          <Divider pb={"sm"} />
-          <Group position="left">
-            <Avatar
-              className={classes.sepia}
-              src="https://d2er8q8v25uk9z.cloudfront.net/vital.webp"
-              component="span"
-              alt="Pr. Vital"
-              size="5rem"
-            />
-            <Flex direction={"column"}>
-              <Title order={4}>Pr. Vital</Title>
-              <Text>(Brandeiro)</Text>
-            </Flex>
-          </Group>
+          {comando.map((item, index) => (
+            <React.Fragment key={index}>
+              <CommandItem item={item} />
+              {index < comando.length - 1 && <Divider pb={"sm"} />}
+            </React.Fragment>
+          ))}
         </Grid.Col>
       </Grid>
     </Box>
