@@ -67,6 +67,15 @@ const ranchos = [{
     name: "Pr. Tiago",
     photo: "https://d2er8q8v25uk9z.cloudfront.net/tiago.webp",
   }
+}, {
+  name: "Arapongas",
+  contact: {
+    tel: "+5543991008645",
+    label: "(43) 99100-8645",
+    name: "Bia",
+    photo: "https://d2er8q8v25uk9z.cloudfront.net/bia.webp",
+  },
+  prosa: { day: "Toda segunda (a partir de 8 de abril)", time: "20h", address: "Rua Pica Pau, 1833 (Espaço P Priorize-se)" },
 }];
 
 export default ranchos;

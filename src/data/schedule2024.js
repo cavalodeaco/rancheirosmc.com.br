@@ -112,7 +112,7 @@ const schedule = [
       "day": "09",
       "month": "JUNHO"
     },
-    "description": "Comitiva Mapy"
+    "description": "Comitiva Igreja Metodista em Arapongas"
   },
   {
     "date": {
