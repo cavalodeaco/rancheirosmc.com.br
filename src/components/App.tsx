@@ -14,6 +14,8 @@ import RancheirosFooter from "./RancheirosFooter";
 import Ranchos from "./Ranchos";
 import Schedule from "./Schedule";
 import Foto from "./Foto";
+import { DatesProvider } from "@mantine/dates";
+import 'dayjs/locale/pt-br';
 
 export default function App() {
   document.title = "RANCHEIROS MC";
@@ -28,25 +30,32 @@ export default function App() {
   ];
   return (
     <MantineProvider theme={{ ...theme }} withGlobalStyles withNormalizeCSS>
-      <AppShell
-        fixed={false}
-        header={<HeaderResponsive />}
-        footer={<RancheirosFooter />}
-        padding={0}
+      <DatesProvider
+        settings={{
+          locale: "pt-br",
+          firstDayOfWeek: 0,
+        }}
       >
-        <MPVAlert />
-        <Linkable id="">
-          <Banner />
-        </Linkable>
-        <Container>
-          {sections.map((section) => (
-            <Linkable id={section.id}>{section.component}</Linkable>
-          ))}
-        </Container>
-        <Linkable id="contato">
-          <ContactUs />
-        </Linkable>
-      </AppShell>
+        <AppShell
+          fixed={false}
+          header={<HeaderResponsive />}
+          footer={<RancheirosFooter />}
+          padding={0}
+        >
+          <MPVAlert />
+          <Linkable id="">
+            <Banner />
+          </Linkable>
+          <Container>
+            {sections.map((section) => (
+              <Linkable id={section.id}>{section.component}</Linkable>
+            ))}
+          </Container>
+          <Linkable id="contato">
+            <ContactUs />
+          </Linkable>
+        </AppShell>
+      </DatesProvider>
     </MantineProvider>
   );
 }

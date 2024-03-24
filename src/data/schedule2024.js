@@ -1,280 +1,48 @@
 const schedule = [
-  { date: { day: "15", month: "JANEIRO" }, description: "Prosa - Cambira - toda segunda-feira 20h" },
-  { date: { day: "16", month: "JANEIRO" }, description: "Prosa - Maringá - toda terça-feira 20h" },
-  { date: { day: "20", month: "JANEIRO" }, description: "Prosa - Londrina - toda sábado 18h" },
   {
-    "date": {
-      "day": "03",
-      "month": "FEVEREIRO"
-    },
-    "description": "Treinamento de formação de Instrutores para o MPV"
+    "date": { "day": "15", "month": "JANEIRO", "fulldate": "2024-01-15" },
+    "description": "Prosa - Cambira - toda segunda-feira 20h"
   },
-  {
-    "date": {
-      "day": "11",
-      "month": "FEVEREIRO"
-    },
-    "description": "Comitiva Mapy (divulgação MPV)"
-  },
-  {
-    "date": {
-      "day": "17",
-      "month": "FEVEREIRO"
-    },
-    "description": "MPV Londrina-PR"
-  },
-  {
-    "date": {
-      "day": "24",
-      "month": "FEVEREIRO"
-    },
-    "description": "Comitiva para Cornélio Procópio"
-  },
-  {
-    "date": {
-      "day": "09",
-      "month": "MARÇO"
-    },
-    "description": "MPV Mulheres em Jandaia do Sul/Cambira"
-  },
-  {
-    "date": {
-      "day": "10",
-      "month": "MARÇO"
-    },
-    "description": "Comitiva Mapy"
-  },
-  {
-    "date": {
-      "day": "23",
-      "month": "MARÇO"
-    },
-    "description": "MPV Medianeira-PR"
-  },
-  {
-    "date": {
-      "day": "07",
-      "month": "ABRIL"
-    },
-    "description": "Comitiva à igreja Geração com Palavra em Maringá - PR"
-  },
-  {
-    "date": {
-      "day": "14",
-      "month": "ABRIL"
-    },
-    "description": "Comitiva Mapy"
-  },
-  {
-    "date": {
-      "day": "20",
-      "month": "ABRIL"
-    },
-    "description": "MPV Medianeira-PR"
-  },
-  {
-    "date": {
-      "day": "04",
-      "month": "MAIO"
-    },
-    "description": "Aniversário de 03 anos do MC"
-  },
-  {
-    "date": {
-      "day": "11",
-      "month": "MAIO"
-    },
-    "description": "MPV Londrina - PR"
-  },
-  {
-    "date": {
-      "day": "19",
-      "month": "MAIO"
-    },
-    "description": "Arena Mapy"
-  },
-  {
-    "date": {
-      "day": "25",
-      "month": "MAIO"
-    },
-    "description": "MPV Medianeira-PR"
-  },
-  {
-    "date": {
-      "day": "30",
-      "month": "MAIO"
-    },
-    "description": "Comitiva de casais"
-  },
-  {
-    "date": {
-      "day": "09",
-      "month": "JUNHO"
-    },
-    "description": "Comitiva Igreja Metodista em Arapongas"
-  },
-  {
-    "date": {
-      "day": "15",
-      "month": "JUNHO"
-    },
-    "description": "MPV Arapongas - PR"
-  },
-  {
-    "date": {
-      "day": "22",
-      "month": "JUNHO"
-    },
-    "description": "MPV Medianeira-PR"
-  },
-  {
-    "date": {
-      "day": "30",
-      "month": "JUNHO"
-    },
-    "description": "Comitiva à Igrejas"
-  },
-  {
-    "date": {
-      "day": "06",
-      "month": "JULHO"
-    },
-    "description": "MPV Jandaia do Sul/Cambira"
-  },
-  {
-    "date": {
-      "day": "14",
-      "month": "JULHO"
-    },
-    "description": "Comitiva Mapy"
-  },
-  {
-    "date": {
-      "day": "20",
-      "month": "JULHO"
-    },
-    "description": "MPV Medianeira-PR"
-  },
-  {
-    "date": {
-      "day": "27",
-      "month": "JULHO"
-    },
-    "description": "Comitiva para o Dia do Motociclista"
-  },
-  {
-    "date": {
-      "day": "03",
-      "month": "AGOSTO"
-    },
-    "description": "MPV Maringá-PR"
-  },
-  {
-    "date": {
-      "day": "11",
-      "month": "AGOSTO"
-    },
-    "description": "Comitiva Mapy"
-  },
-  {
-    "date": {
-      "day": "17",
-      "month": "AGOSTO"
-    },
-    "description": "Comitiva Guarapuava (Jantar PMPR)"
-  },
-  {
-    "date": {
-      "day": "24",
-      "month": "AGOSTO"
-    },
-    "description": "MPV Medianeira-PR"
-  },
-  {
-    "date": {
-      "day": "31",
-      "month": "AGOSTO"
-    },
-    "description": "MPV Londrina-PR"
-  },
-  {
-    "date": {
-      "day": "08",
-      "month": "SETEMBRO"
-    },
-    "description": "Comitiva Mapy"
-  },
-  {
-    "date": {
-      "day": "21",
-      "month": "SETEMBRO"
-    },
-    "description": "MPV Jandaia do Sul/Cambira (especial de 50 anos Auto Escola Jandaia)"
-  },
-  {
-    "date": {
-      "day": "21",
-      "month": "SETEMBRO"
-    },
-    "description": "MPV Medianeira-PR"
-  },
-  {
-    "date": {
-      "day": "29",
-      "month": "SETEMBRO"
-    },
-    "description": "Comitiva à Igrejas"
-  },
-  {
-    "date": {
-      "day": "13",
-      "month": "OUTUBRO"
-    },
-    "description": "Comitiva Mapy"
-  },
-  {
-    "date": {
-      "day": "19",
-      "month": "OUTUBRO"
-    },
-    "description": "MPV Maringá-PR"
-  },
-  {
-    "date": {
-      "day": "19",
-      "month": "OUTUBRO"
-    },
-    "description": "MPV Medianeira-PR"
-  },
-  {
-    "date": {
-      "day": "09",
-      "month": "NOVEMBRO"
-    },
-    "description": "MPV Londrina-PR"
-  },
-  {
-    "date": {
-      "day": "10",
-      "month": "NOVEMBRO"
-    },
-    "description": "Comitiva Mapy"
-  },
-  {
-    "date": {
-      "day": "23",
-      "month": "NOVEMBRO"
-    },
-    "description": "MPV Medianeira-PR"
-  },
-  {
-    "date": {
-      "day": "30",
-      "month": "NOVEMBRO"
-    },
-    "description": "MPV Jandaia do Sul/Cambira"
-  }
-];
+  { "date": { "day": "16", "month": "JANEIRO", "fulldate": "2024-01-16" }, "description": "Prosa - Maringá - toda terça-feira 20h" },
+  { "date": { "day": "20", "month": "JANEIRO", "fulldate": "2024-01-20" }, "description": "Prosa - Londrina - toda sábado 18h" },
+  { "date": { "day": "03", "month": "FEVEREIRO", "fulldate": "2024-02-03" }, "description": "Treinamento de formação de Instrutores para o MPV" },
+  { "date": { "day": "11", "month": "FEVEREIRO", "fulldate": "2024-02-11" }, "description": "Comitiva Mapy (divulgação MPV)" },
+  { "date": { "day": "17", "month": "FEVEREIRO", "fulldate": "2024-02-17" }, "description": "MPV Londrina-PR" },
+  { "date": { "day": "24", "month": "FEVEREIRO", "fulldate": "2024-02-24" }, "description": "Comitiva para Cornélio Procópio" },
+  { "date": { "day": "09", "month": "MARÇO", "fulldate": "2024-03-09" }, "description": "MPV Mulheres em Jandaia do Sul/Cambira" },
+  { "date": { "day": "10", "month": "MARÇO", "fulldate": "2024-03-10" }, "description": "Comitiva Mapy" },
+  { "date": { "day": "23", "month": "MARÇO", "fulldate": "2024-03-23" }, "description": "MPV Medianeira-PR" },
+  { "date": { "day": "07", "month": "ABRIL", "fulldate": "2024-04-07" }, "description": "Comitiva à igreja Geração com Palavra em Maringá - PR" },
+  { "date": { "day": "14", "month": "ABRIL", "fulldate": "2024-04-14" }, "description": "Comitiva Mapy" },
+  { "date": { "day": "20", "month": "ABRIL", "fulldate": "2024-04-20" }, "description": "MPV Medianeira-PR" },
+  { "date": { "day": "04", "month": "MAIO", "fulldate": "2024-05-04" }, "description": "Aniversário de 03 anos do MC" },
+  { "date": { "day": "11", "month": "MAIO", "fulldate": "2024-05-11" }, "description": "MPV Londrina - PR" },
+  { "date": { "day": "19", "month": "MAIO", "fulldate": "2024-05-19" }, "description": "Arena Mapy" },
+  { "date": { "day": "25", "month": "MAIO", "fulldate": "2024-05-25" }, "description": "MPV Medianeira-PR" },
+  { "date": { "day": "30", "month": "MAIO", "fulldate": "2024-05-30" }, "description": "Comitiva de casais" },
+  { "date": { "day": "09", "month": "JUNHO", "fulldate": "2024-06-09" }, "description": "Comitiva Igreja Metodista em Arapongas" },
+  { "date": { "day": "15", "month": "JUNHO", "fulldate": "2024-06-15" }, "description": "MPV Arapongas - PR" },
+  { "date": { "day": "22", "month": "JUNHO", "fulldate": "2024-06-22" }, "description": "MPV Medianeira-PR" },
+  { "date": { "day": "30", "month": "JUNHO", "fulldate": "2024-06-30" }, "description": "Comitiva à Igrejas" },
+  { "date": { "day": "06", "month": "JULHO", "fulldate": "2024-07-06" }, "description": "MPV Jandaia do Sul/Cambira" },
+  { "date": { "day": "14", "month": "JULHO", "fulldate": "2024-07-14" }, "description": "Comitiva Mapy" },
+  { "date": { "day": "20", "month": "JULHO", "fulldate": "2024-07-20" }, "description": "MPV Medianeira-PR" },
+  { "date": { "day": "27", "month": "JULHO", "fulldate": "2024-07-27" }, "description": "Comitiva para o Dia do Motociclista" },
+  { "date": { "day": "03", "month": "AGOSTO", "fulldate": "2024-08-03" }, "description": "MPV Maringá-PR" },
+  { "date": { "day": "11", "month": "AGOSTO", "fulldate": "2024-08-11" }, "description": "Comitiva Mapy" },
+  { "date": { "day": "17", "month": "AGOSTO", "fulldate": "2024-08-17" }, "description": "Comitiva Guarapuava (Jantar PMPR)" },
+  { "date": { "day": "24", "month": "AGOSTO", "fulldate": "2024-08-24" }, "description": "MPV Medianeira-PR" },
+  { "date": { "day": "31", "month": "AGOSTO", "fulldate": "2024-08-31" }, "description": "MPV Londrina-PR" },
+  { "date": { "day": "08", "month": "SETEMBRO", "fulldate": "2024-09-08" }, "description": "Comitiva Mapy" },
+  { "date": { "day": "21", "month": "SETEMBRO", "fulldate": "2024-09-21" }, "description": "MPV Jandaia do Sul/Cambira (especial de 50 anos Auto Escola Jandaia)" },
+  { "date": { "day": "21", "month": "SETEMBRO", "fulldate": "2024-09-21" }, "description": "MPV Medianeira-PR" },
+  { "date": { "day": "29", "month": "SETEMBRO", "fulldate": "2024-09-29" }, "description": "Comitiva à Igrejas" },
+  { "date": { "day": "13", "month": "OUTUBRO", "fulldate": "2024-10-13" }, "description": "Comitiva Mapy" },
+  { "date": { "day": "19", "month": "OUTUBRO", "fulldate": "2024-10-19" }, "description": "MPV Maringá-PR" },
+  { "date": { "day": "19", "month": "OUTUBRO", "fulldate": "2024-10-19" }, "description": "MPV Medianeira-PR" },
+  { "date": { "day": "09", "month": "NOVEMBRO", "fulldate": "2024-11-09" }, "description": "MPV Londrina-PR" },
+  { "date": { "day": "10", "month": "NOVEMBRO", "fulldate": "2024-11-10" }, "description": "Comitiva Mapy" },
+  { "date": { "day": "23", "month": "NOVEMBRO", "fulldate": "2024-11-23" }, "description": "MPV Medianeira-PR" },
+  { "date": { "day": "30", "month": "NOVEMBRO", "fulldate": "2024-11-30" }, "description": "MPV Jandaia do Sul/Cambira" }]
 
 export default schedule;
