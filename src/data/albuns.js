@@ -34,6 +34,12 @@ const albuns = [{
   name: "Off-Road School - Jean Azevedo",
   date: "2023-11-25/26",
   description: "Santa Branca - SP."
-} ];
+},{
+  id: "2rSverNqkkFVmk8t7",
+  name: "Manobras Para a Vida",
+  date: "2024-02-17",
+  description: "Londrina - PR."
+}  ];
+
 
 export default albuns;
