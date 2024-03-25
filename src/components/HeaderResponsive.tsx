@@ -97,7 +97,12 @@ const links = [
   },
   {
     link: "/#contato",
-    label: "Entre em Contato",
+    label: "Contato",
+    target: "_self",
+  },
+  {
+    link: "/#agenda",
+    label: "Agenda",
     target: "_self",
   },
   {

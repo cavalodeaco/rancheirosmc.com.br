@@ -19,12 +19,12 @@ const ranchos = [{
   }
 }, {
   name: "Londrina",
-  prosa: { day: "Todo sábado", time: "18h", address: "Rua Joaquina de Oliveira Perfeito, 416" },
+  prosa: { day: "Toda terça", time: "20h", address: "Rua Deputado Nilson Ribas, 551" },
   contact: {
-    tel: "+5541999175424",
-    label: "(41) 99917-5424",
-    name: "Marcelo",
-    photo: "https://d2er8q8v25uk9z.cloudfront.net/rapa.webp",
+    tel: "+5543999218270",
+    label: "(43) 99921-8270",
+    name: "Pr. João Vitor",
+    photo: "https://d2er8q8v25uk9z.cloudfront.net/prjoao.webp",
   }
 }, {
   name: "Faxinal",
@@ -50,6 +50,32 @@ const ranchos = [{
     name: "Daniel",
     photo: "https://d2er8q8v25uk9z.cloudfront.net/daniel.webp",
   }
+}, {
+  name: "Cornélio Procópio",
+  contact: {
+    tel: "+5543999127881",
+    label: ["(43) 99912-7881", "(43) 98851-8880"],
+    name: "Gabi e Douglas",
+    photo: "https://d2er8q8v25uk9z.cloudfront.net/douglas_gabi.webp",
+  },
+  prosa: { day: "Toda sexta", time: "19h30", address: "Rua Espírito Santo, 255" },
+}, {
+  name: "Nampula (Moçambique)",
+  contact: {
+    tel: "+5544998081276",
+    label: "(44) 99808-1276",
+    name: "Pr. Tiago",
+    photo: "https://d2er8q8v25uk9z.cloudfront.net/tiago.webp",
+  }
+}, {
+  name: "Arapongas",
+  contact: {
+    tel: "+5543991008645",
+    label: "(43) 99100-8645",
+    name: "Bia",
+    photo: "https://d2er8q8v25uk9z.cloudfront.net/bia.webp",
+  },
+  prosa: { day: "Toda segunda (a partir de 8 de abril)", time: "20h", address: "Rua Pica Pau, 1833 (Espaço P Priorize-se)" },
 }];
 
 export default ranchos;
