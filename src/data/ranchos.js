@@ -75,7 +75,7 @@ const ranchos = [{
     name: "Bia",
     photo: "https://d2er8q8v25uk9z.cloudfront.net/bia.webp",
   },
-  prosa: { day: "Toda segunda (a partir de 8 de abril)", time: "20h", address: "Rua Pica Pau, 1833 (Espaço P Priorize-se)" },
+  prosa: { day: "Toda quinta", time: "20h", address: "Rua Pica Pau, 1833 (Espaço P Priorize-se)" },
 }];
 
 export default ranchos;

@@ -25,7 +25,6 @@ const thisMonthEvents = schedule.filter((_event, index) => {
 });
 
 export default function Schedule() {
-  
   const [listedEvents, setListedEvents] = useState(thisMonthEvents);
 
   function updateListedEvents(date: Date) {
@@ -35,12 +34,14 @@ export default function Schedule() {
       const date = scheduleDates[index];
       return date.getFullYear() === year && date.getMonth() === month;
     });
-    setListedEvents(events)
+    setListedEvents(events);
   }
 
   return (
     <Box py={"calc(60px + 2rem)"}>
-      <Title order={2} align="center">Agenda</Title>
+      <Title order={2} align="center">
+        Agenda
+      </Title>
       <Grid mt={"lg"}>
         <Grid.Col md={6}>
           <Center>
@@ -49,6 +50,7 @@ export default function Schedule() {
               static
               weekdayFormat="ddd"
               weekendDays={[]}
+              hideOutsideDates
               onDateChange={(date) => updateListedEvents(date)}
               renderDay={(date) => {
                 if (
