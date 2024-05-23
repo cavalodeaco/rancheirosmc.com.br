@@ -1,4 +1,5 @@
 import {
+  Anchor,
   Avatar,
   Box,
   Center,
@@ -8,9 +9,12 @@ import {
   Table,
   Title,
 } from "@mantine/core";
-import schedule from "../data/schedule2024";
+import schedule_2024 from "../data/schedule2024";
+import schedule_2023 from "../data/schedule2023";
 import { Calendar } from "@mantine/dates";
 import { useState } from "react";
+
+const schedule = [...schedule_2023, ...schedule_2024];
 
 const scheduleDates = schedule.map(
   (event) => new Date(`${event.date.fulldate}T00:00:00-03:00`)
@@ -93,7 +97,18 @@ export default function Schedule() {
                     </Flex>
                   </td>
                   <td>
-                    <Box fz={16}>{event.description}</Box>
+                    <Box fz={16}>
+                      {event.description}{" "}
+                      {event.photo != "" ? (
+                        <Anchor
+                          href={"https://photos.app.goo.gl/" + event.photo}
+                        >
+                          (acessar fotos)
+                        </Anchor>
+                      ) : (
+                        ""
+                      )}
+                    </Box>
                   </td>
                 </tr>
               ))}
