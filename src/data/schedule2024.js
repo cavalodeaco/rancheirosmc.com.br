@@ -18,7 +18,7 @@ const schedule = [
   { "date": { "day": "04", "month": "MAIO", "fulldate": "2024-05-04" }, "photo": "", "description": "Aniversário de 03 anos do MC" },
   { "date": { "day": "11", "month": "MAIO", "fulldate": "2024-05-11" }, "photo": "hTbg4kLGy1Z5Vgir6", "description": "MPV Londrina - PR" },
   { "date": { "day": "19", "month": "MAIO", "fulldate": "2024-05-19" }, "photo": "", "description": "Arena Mapy" },
-  { "date": { "day": "25", "month": "MAIO", "fulldate": "2024-05-25" }, "photo": "", "description": "MPV Medianeira-PR" },
+  { "date": { "day": "25", "month": "MAIO", "fulldate": "2024-05-25" }, "photo": "", "description": "MPV Medianeira-PR (cancelado)" },
   { "date": { "day": "30", "month": "MAIO", "fulldate": "2024-05-30" }, "photo": "", "description": "Comitiva de casais" },
   { "date": { "day": "09", "month": "JUNHO", "fulldate": "2024-06-09" }, "photo": "", "description": "Comitiva Igreja Metodista em Arapongas" },
   { "date": { "day": "15", "month": "JUNHO", "fulldate": "2024-06-15" }, "photo": "", "description": "MPV Arapongas - PR" },
