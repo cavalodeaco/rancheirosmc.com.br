@@ -1,4 +1,5 @@
 import {
+  Anchor,
   Avatar,
   Box,
   Center,
@@ -8,9 +9,12 @@ import {
   Table,
   Title,
 } from "@mantine/core";
-import schedule from "../data/schedule2024";
+import schedule_2024 from "../data/schedule2024";
+import schedule_2023 from "../data/schedule2023";
 import { Calendar } from "@mantine/dates";
 import { useState } from "react";
+
+const schedule = [...schedule_2023, ...schedule_2024];
 
 const scheduleDates = schedule.map(
   (event) => new Date(`${event.date.fulldate}T00:00:00-03:00`)
@@ -25,7 +29,6 @@ const thisMonthEvents = schedule.filter((_event, index) => {
 });
 
 export default function Schedule() {
-  
   const [listedEvents, setListedEvents] = useState(thisMonthEvents);
 
   function updateListedEvents(date: Date) {
@@ -35,12 +38,14 @@ export default function Schedule() {
       const date = scheduleDates[index];
       return date.getFullYear() === year && date.getMonth() === month;
     });
-    setListedEvents(events)
+    setListedEvents(events);
   }
 
   return (
     <Box py={"calc(60px + 2rem)"}>
-      <Title order={2} align="center">Agenda</Title>
+      <Title order={2} align="center">
+        Agenda
+      </Title>
       <Grid mt={"lg"}>
         <Grid.Col md={6}>
           <Center>
@@ -91,7 +96,18 @@ export default function Schedule() {
                     </Flex>
                   </td>
                   <td>
-                    <Box fz={16}>{event.description} {event.photo != "" ? <a href={"https://photos.app.goo.gl/" + event.photo} > (Acessar fotos) </a> : ""}</Box>
+                    <Box fz={16}>
+                      {event.description}{" "}
+                      {event.photo != "" ? (
+                        <Anchor
+                          href={"https://photos.app.goo.gl/" + event.photo}
+                        >
+                          (acessar fotos)
+                        </Anchor>
+                      ) : (
+                        ""
+                      )}
+                    </Box>
                   </td>
                 </tr>
               ))}
