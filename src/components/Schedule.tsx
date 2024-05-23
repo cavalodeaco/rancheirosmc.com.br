@@ -91,7 +91,7 @@ export default function Schedule() {
                     </Flex>
                   </td>
                   <td>
-                    <Box fz={16}>{event.description}</Box>
+                    <Box fz={16}>{event.description} {event.photo != "" ? <a href={"https://photos.app.goo.gl/" + event.photo}>(Fotos)</a> : ""}</Box>
                   </td>
                 </tr>
               ))}
