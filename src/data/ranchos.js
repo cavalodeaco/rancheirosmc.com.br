@@ -19,7 +19,7 @@ const ranchos = [{
   }
 }, {
   name: "Londrina",
-  prosa: { day: "Toda terça", time: "20h", address: "Rua Deputado Nilson Ribas, 551" },
+  prosa: { day: "Toda terceira terça-feira do mês", time: "20h", address: "Rua Deputado Nilson Ribas, 551" },
   contact: {
     tel: "+5543999218270",
     label: "(43) 99921-8270",

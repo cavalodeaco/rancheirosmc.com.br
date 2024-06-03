@@ -54,6 +54,7 @@ export default function Schedule() {
               static
               weekdayFormat="ddd"
               weekendDays={[]}
+              hideOutsideDates
               onDateChange={(date) => updateListedEvents(date)}
               renderDay={(date) => {
                 if (
