@@ -105,19 +105,9 @@ const schedule = [
     description: "MPV Medianeira-PR",
   },
   {
-    date: { day: "30", month: "JUNHO", fulldate: "2024-06-30" },
-    photo: "",
-    description: "Comitiva à Igrejas",
-  },
-  {
     date: { day: "06", month: "JULHO", fulldate: "2024-07-06" },
     photo: "",
     description: "MPV Jandaia do Sul/Cambira",
-  },
-  {
-    date: { day: "14", month: "JULHO", fulldate: "2024-07-14" },
-    photo: "",
-    description: "Comitiva Mapy",
   },
   {
     date: { day: "20", month: "JULHO", fulldate: "2024-07-20" },
@@ -125,9 +115,9 @@ const schedule = [
     description: "MPV Medianeira-PR",
   },
   {
-    date: { day: "27", month: "JULHO", fulldate: "2024-07-27" },
+    date: { day: "28", month: "JULHO", fulldate: "2024-07-28" },
     photo: "",
-    description: "Comitiva para o Dia do Motociclista",
+    description: "Arena Mapy",
   },
   {
     date: { day: "03", month: "AGOSTO", fulldate: "2024-08-03" },
