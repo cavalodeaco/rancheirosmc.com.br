@@ -80,11 +80,6 @@ const schedule = [
     description: "Arena Mapy",
   },
   {
-    date: { day: "25", month: "MAIO", fulldate: "2024-05-25" },
-    photo: "",
-    description: "MPV Medianeira-PR (cancelado)",
-  },
-  {
     date: { day: "30", month: "MAIO", fulldate: "2024-05-30" },
     photo: "",
     description: "Comitiva de casais",
@@ -108,11 +103,6 @@ const schedule = [
     date: { day: "06", month: "JULHO", fulldate: "2024-07-06" },
     photo: "",
     description: "MPV Jandaia do Sul/Cambira",
-  },
-  {
-    date: { day: "20", month: "JULHO", fulldate: "2024-07-20" },
-    photo: "",
-    description: "MPV Medianeira-PR",
   },
   {
     date: { day: "28", month: "JULHO", fulldate: "2024-07-28" },
@@ -156,11 +146,6 @@ const schedule = [
       "MPV Jandaia do Sul/Cambira (especial de 50 anos Auto Escola Jandaia)",
   },
   {
-    date: { day: "21", month: "SETEMBRO", fulldate: "2024-09-21" },
-    photo: "",
-    description: "MPV Medianeira-PR",
-  },
-  {
     date: { day: "29", month: "SETEMBRO", fulldate: "2024-09-29" },
     photo: "",
     description: "Comitiva à Igrejas",
@@ -189,11 +174,6 @@ const schedule = [
     date: { day: "10", month: "NOVEMBRO", fulldate: "2024-11-10" },
     photo: "",
     description: "Comitiva Mapy",
-  },
-  {
-    date: { day: "23", month: "NOVEMBRO", fulldate: "2024-11-23" },
-    photo: "",
-    description: "MPV Medianeira-PR",
   },
   {
     date: { day: "30", month: "NOVEMBRO", fulldate: "2024-11-30" },
