@@ -21,10 +21,10 @@ const ranchos = [{
   name: "Londrina",
   prosa: { day: "Toda terceira terça-feira do mês", time: "20h", address: "Rua Deputado Nilson Ribas, 551" },
   contact: {
-    tel: "+5543999218270",
-    label: "(43) 99921-8270",
-    name: "Pr. João Vitor",
-    photo: "https://d2er8q8v25uk9z.cloudfront.net/prjoao.webp",
+    tel: "+5541999175424",
+    label: "(41) 99917-5424",
+    name: "Marcelo",
+    photo: "https://d2er8q8v25uk9z.cloudfront.net/rapa.webp",
   }
 }, {
   name: "Faxinal",
