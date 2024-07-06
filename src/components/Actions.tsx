@@ -47,15 +47,32 @@ export default function Actions() {
       <Title order={2}>Atividades</Title>
       <Flex justify={"center"} gap={"xl"} wrap={"wrap"} mt={"xl"}>
         <Card shadow="xl" className={classes.card} padding={"md"} withBorder>
-          <Card.Section className={classes.cardImage}>
-            <Image
-              className={classes.image}
-              src="https://d2er8q8v25uk9z.cloudfront.net/mpv.webp"
-              height={rem(207)}
-              alt="Manobras Para Vida"
-            />
+          <Card.Section
+            className={classes.cardImage}
+            style={{
+              // width: "1px",
+              height: "206px",
+              overflow: "hidden",
+              position: "relative",
+            }}
+          >
+            <video
+              autoPlay
+              muted
+              loop
+              height={"200px"}
+              style={{
+                filter: "sepia(100%)",
+                width: "100%",
+                height: "100%",
+                objectFit: "cover",
+                objectPosition: "center 20%",
+              }}
+            >
+              <source src="https://d2er8q8v25uk9z.cloudfront.net/mpv.webm" type="video/mp4" />
+            </video>
             <div className={classes.overlay}>
-              <Title order={3}>Manobras Para Vida</Title>
+              <Title order={3}>Comitiva</Title>
             </div>
           </Card.Section>
           <Card.Section p={"md"}>
@@ -101,7 +118,10 @@ export default function Actions() {
               height={"200px"}
               style={{ filter: "sepia(100%)" }}
             >
-              <source src="https://d2er8q8v25uk9z.cloudfront.net/comitiva2.webm" type="video/mp4" />
+              <source
+                src="https://d2er8q8v25uk9z.cloudfront.net/comitiva2.webm"
+                type="video/mp4"
+              />
             </video>
             <div className={classes.overlay}>
               <Title order={3}>Comitiva</Title>

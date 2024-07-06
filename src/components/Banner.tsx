@@ -1,6 +1,5 @@
 import { Box, Center, createStyles, Grid, Image, Title } from "@mantine/core";
 import { ReactElement } from "react";
-import capa from "../capa2.webp";
 
 const useStyles = createStyles((theme) => ({
   banner: {
