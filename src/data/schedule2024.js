@@ -140,6 +140,18 @@ const schedule = [
     description: "Comitiva Mapy",
   },
   {
+    date: { day: "14", month: "SETEMBRO", fulldate: "2024-09-14" },
+    photo: "",
+    description:
+      "BITES - Siqueira Campos",
+  },
+  {
+    date: { day: "15", month: "SETEMBRO", fulldate: "2024-09-15" },
+    photo: "",
+    description:
+      "BITES - Siqueira Campos",
+  },
+  {
     date: { day: "21", month: "SETEMBRO", fulldate: "2024-09-21" },
     photo: "",
     description:

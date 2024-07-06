@@ -7,7 +7,7 @@ import {
   Text,
   Title,
   createStyles,
-  rem
+  rem,
 } from "@mantine/core";
 
 const useStyles = createStyles((theme) => ({
@@ -51,7 +51,7 @@ export default function Actions() {
             <Image
               className={classes.image}
               src="https://d2er8q8v25uk9z.cloudfront.net/mpv.webp"
-              height={rem(280)}
+              height={rem(207)}
               alt="Manobras Para Vida"
             />
             <div className={classes.overlay}>
@@ -77,7 +77,7 @@ export default function Actions() {
             <Image
               className={classes.image}
               src="https://d2er8q8v25uk9z.cloudfront.net/prosa_y6mjVyDp9wqS.webp"
-              height={rem(280)}
+              height={rem(207)}
               alt="Prosa"
             />
             <div className={classes.overlay}>
@@ -94,12 +94,15 @@ export default function Actions() {
         </Card>
         <Card shadow="xl" className={classes.card} padding={"md"} withBorder>
           <Card.Section className={classes.cardImage}>
-            <Image
-              className={classes.image}
-              src="https://d2er8q8v25uk9z.cloudfront.net/comitiva.webp"
-              height={rem(280)}
-              alt="Comitiva"
-            />
+            <video
+              autoPlay
+              muted
+              loop
+              height={"200px"}
+              style={{ filter: "sepia(100%)" }}
+            >
+              <source src="https://d2er8q8v25uk9z.cloudfront.net/comitiva2.webm" type="video/mp4" />
+            </video>
             <div className={classes.overlay}>
               <Title order={3}>Comitiva</Title>
             </div>

@@ -1,16 +1,11 @@
-import {
-  Center,
-  createStyles,
-  Grid,
-  Image,
-  Title
-} from "@mantine/core";
+import { Box, Center, createStyles, Grid, Image, Title } from "@mantine/core";
 import { ReactElement } from "react";
+import capa from "../capa2.webp";
 
 const useStyles = createStyles((theme) => ({
   banner: {
     minHeight: "calc(min(100vh, 100vw) - 60px)",
-    backgroundImage: `url(https://d2er8q8v25uk9z.cloudfront.net/background_rnqaub.webp)`,
+    backgroundImage: `url(https://d2er8q8v25uk9z.cloudfront.net/capa2.webp)`,
     backgroundSize: "cover",
     backgroundPosition: "50% 100%",
     display: "flex",
@@ -36,10 +31,13 @@ export default function Banner(): ReactElement {
             <Image
               imageProps={{
                 sizes: "(max-width: 100vh) 50vw, 50vh",
-                srcSet: [256, 840, 1150, 1400, 1499, 1700, 1880, 2048].reduce((acc, val) => {
-                  acc += `https://d2er8q8v25uk9z.cloudfront.net/rancheiro/rancheiro_w${val}.webp ${val}w,`;
-                  return acc;
-                }, ""),
+                srcSet: [256, 840, 1150, 1400, 1499, 1700, 1880, 2048].reduce(
+                  (acc, val) => {
+                    acc += `https://d2er8q8v25uk9z.cloudfront.net/rancheiro/rancheiro_w${val}.webp ${val}w,`;
+                    return acc;
+                  },
+                  ""
+                ),
                 src: "https://d2er8q8v25uk9z.cloudfront.net/rancheiro/rancheiro_w2048.webp",
               }}
               alt={"RANCHEIROS MC"}
