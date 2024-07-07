@@ -60,6 +60,7 @@ export default function Actions() {
               autoPlay
               muted
               loop
+              playsInline
               height={"200px"}
               style={{
                 filter: "sepia(100%)",
@@ -69,10 +70,10 @@ export default function Actions() {
                 objectPosition: "center 20%",
               }}
             >
-              <source src="https://d2er8q8v25uk9z.cloudfront.net/mpv.webm" type="video/mp4" />
+              <source src="https://d2er8q8v25uk9z.cloudfront.net/mpv.webm" type="video/webm" />
             </video>
             <div className={classes.overlay}>
-              <Title order={3}>Comitiva</Title>
+              <Title order={3}>Manobras Para Vida</Title>
             </div>
           </Card.Section>
           <Card.Section p={"md"}>
@@ -114,13 +115,14 @@ export default function Actions() {
             <video
               autoPlay
               muted
+              playsInline
               loop
               height={"200px"}
               style={{ filter: "sepia(100%)" }}
             >
               <source
                 src="https://d2er8q8v25uk9z.cloudfront.net/comitiva2.webm"
-                type="video/mp4"
+                type="video/webm"
               />
             </video>
             <div className={classes.overlay}>
