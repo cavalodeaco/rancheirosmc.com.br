@@ -120,11 +120,6 @@ const schedule = [
     description: "Comitiva Mapy",
   },
   {
-    date: { day: "17", month: "AGOSTO", fulldate: "2024-08-17" },
-    photo: "",
-    description: "Comitiva Guarapuava (Jantar PMPR)",
-  },
-  {
     date: { day: "24", month: "AGOSTO", fulldate: "2024-08-24" },
     photo: "",
     description: "MPV Medianeira-PR",
@@ -176,6 +171,11 @@ const schedule = [
     date: { day: "19", month: "OUTUBRO", fulldate: "2024-10-19" },
     photo: "",
     description: "MPV Medianeira-PR",
+  },
+  {
+    date: { day: "26", month: "OUTUBRO", fulldate: "2024-10-26" },
+    photo: "",
+    description: "Comitiva Guarapuava (Jantar PMPR)",
   },
   {
     date: { day: "09", month: "NOVEMBRO", fulldate: "2024-11-09" },
