@@ -25,7 +25,7 @@ export default function App() {
     { id: "comando", component: <Command /> },
     { id: "acoes", component: <Actions /> },
     { id: "ranchos", component: <Ranchos /> },
-    { id: "foto", component: <Foto /> },
+    // { id: "foto", component: <Foto /> }, // remove fotos section for now
     { id: "agenda", component: <Schedule /> },
   ];
   return (
