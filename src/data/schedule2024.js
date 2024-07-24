@@ -173,11 +173,6 @@ const schedule = [
     description: "MPV Medianeira-PR",
   },
   {
-    date: { day: "26", month: "OUTUBRO", fulldate: "2024-10-26" },
-    photo: "",
-    description: "Comitiva Guarapuava (Jantar PMPR)",
-  },
-  {
     date: { day: "09", month: "NOVEMBRO", fulldate: "2024-11-09" },
     photo: "",
     description: "MPV Londrina-PR",
@@ -191,6 +186,11 @@ const schedule = [
     date: { day: "30", month: "NOVEMBRO", fulldate: "2024-11-30" },
     photo: "",
     description: "MPV Jandaia do Sul/Cambira",
+  },
+  {
+    date: { day: "30", month: "NOVEMBRO", fulldate: "2024-11-30" },
+    photo: "",
+    description: "Comitiva Guarapuava (Jantar PMPR)",
   },
 ];
 
