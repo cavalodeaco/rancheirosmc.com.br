@@ -115,11 +115,6 @@ const schedule = [
     description: "MPV Maringá-PR",
   },
   {
-    date: { day: "11", month: "AGOSTO", fulldate: "2024-08-11" },
-    photo: "",
-    description: "Comitiva Mapy",
-  },
-  {
     date: { day: "24", month: "AGOSTO", fulldate: "2024-08-24" },
     photo: "",
     description: "MPV Medianeira-PR",
@@ -128,11 +123,6 @@ const schedule = [
     date: { day: "31", month: "AGOSTO", fulldate: "2024-08-31" },
     photo: "",
     description: "MPV Londrina-PR",
-  },
-  {
-    date: { day: "08", month: "SETEMBRO", fulldate: "2024-09-08" },
-    photo: "",
-    description: "Comitiva Mapy",
   },
   {
     date: { day: "14", month: "SETEMBRO", fulldate: "2024-09-14" },
@@ -158,9 +148,9 @@ const schedule = [
     description: "Comitiva à Igrejas",
   },
   {
-    date: { day: "13", month: "OUTUBRO", fulldate: "2024-10-13" },
+    date: { day: "06", month: "OUTUBRO", fulldate: "2024-10-06" },
     photo: "",
-    description: "Comitiva Mapy",
+    description: "Arena Mapy",
   },
   {
     date: { day: "19", month: "OUTUBRO", fulldate: "2024-10-19" },
@@ -176,11 +166,6 @@ const schedule = [
     date: { day: "09", month: "NOVEMBRO", fulldate: "2024-11-09" },
     photo: "",
     description: "MPV Londrina-PR",
-  },
-  {
-    date: { day: "10", month: "NOVEMBRO", fulldate: "2024-11-10" },
-    photo: "",
-    description: "Comitiva Mapy",
   },
   {
     date: { day: "30", month: "NOVEMBRO", fulldate: "2024-11-30" },
