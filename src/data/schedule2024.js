@@ -125,22 +125,25 @@ const schedule = [
     description: "MPV Londrina-PR",
   },
   {
-    date: { day: "14", month: "SETEMBRO", fulldate: "2024-09-14" },
-    photo: "",
-    description:
-      "BITES - Siqueira Campos",
-  },
-  {
-    date: { day: "15", month: "SETEMBRO", fulldate: "2024-09-15" },
-    photo: "",
-    description:
-      "BITES - Siqueira Campos",
-  },
-  {
     date: { day: "21", month: "SETEMBRO", fulldate: "2024-09-21" },
     photo: "",
     description:
       "MPV Jandaia do Sul/Cambira (especial de 50 anos Auto Escola Jandaia)",
+  },
+  {
+    date: { day: "27", month: "SETEMBRO", fulldate: "2024-09-27" },
+    photo: "",
+    description: "BITES - Siqueira Campos",
+  },
+  {
+    date: { day: "28", month: "SETEMBRO", fulldate: "2024-09-28" },
+    photo: "",
+    description: "BITES - Siqueira Campos",
+  },
+  {
+    date: { day: "29", month: "SETEMBRO", fulldate: "2024-09-29" },
+    photo: "",
+    description: "BITES - Siqueira Campos",
   },
   {
     date: { day: "29", month: "SETEMBRO", fulldate: "2024-09-29" },
