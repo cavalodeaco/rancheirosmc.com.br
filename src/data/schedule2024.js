@@ -146,11 +146,6 @@ const schedule = [
     description: "BITES - Siqueira Campos",
   },
   {
-    date: { day: "29", month: "SETEMBRO", fulldate: "2024-09-29" },
-    photo: "",
-    description: "Comitiva à Igrejas",
-  },
-  {
     date: { day: "06", month: "OUTUBRO", fulldate: "2024-10-06" },
     photo: "",
     description: "Arena Mapy",
