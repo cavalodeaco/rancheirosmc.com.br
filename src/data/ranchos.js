@@ -60,7 +60,7 @@ const ranchos = [
       photo: "",
     },
     prosa: {
-      day: "Toda segunda",
+      day: "Toda quinta",
       time: "20h",
       address: "",
     },
