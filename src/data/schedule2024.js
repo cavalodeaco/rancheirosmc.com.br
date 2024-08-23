@@ -166,7 +166,7 @@ const schedule = [
     description: "MPV Londrina-PR",
   },
   {
-    date: { day: "16", month: "NOVEMBRO", fulldate: "2024-11-30" },
+    date: { day: "16", month: "NOVEMBRO", fulldate: "2024-11-16" },
     photo: "",
     description: "Comitiva Guarapuava (Jantar PMPR)",
   },
