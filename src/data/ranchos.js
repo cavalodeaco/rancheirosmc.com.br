@@ -57,7 +57,7 @@ const ranchos = [
       tel: "+5543999039452",
       label: "(43) 99903-9452",
       name: "Representante – Júnior",
-      photo: "",
+      photo: "https://d2er8q8v25uk9z.cloudfront.net/juniorquadrado.webp",
     },
     prosa: {
       day: "Toda quinta",
@@ -71,7 +71,7 @@ const ranchos = [
       tel: "+5545999651117",
       label: "(45) 99965-1117",
       name: "Diretor – Pr Júnior",
-      photo: "",
+      photo: "https://d2er8q8v25uk9z.cloudfront.net/pjjr_uyigpzkgob.webp",
     },
     prosa: {
       day: "Toda terça",
@@ -85,7 +85,7 @@ const ranchos = [
       tel: "+5543999792559",
       label: "(43) 99979-2559",
       name: "Representante – C. Tiago",
-      photo: "",
+      photo: "https://d2er8q8v25uk9z.cloudfront.net/ctiagoquadrado.webp",
     },
   },
   {
