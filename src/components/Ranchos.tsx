@@ -58,7 +58,7 @@ export default function Ranchos() {
                 <Anchor href={`tel:${contact.tel}`}>
                   <ContactLabel label={contact.label} />
                 </Anchor>
-                <Text mt={"xs"}>({contact.name})</Text>
+                <Text mt={"xs"}>{contact.name}</Text>
               </Flex>
             </Flex>
             {prosa ? (
