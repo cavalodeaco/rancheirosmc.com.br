@@ -194,8 +194,8 @@ export default function About() {
                 mudaram para a região centro-norte do estado, estabelecendo-se e
                 dando continuidade aos treinamentos de pilotagem defensiva, que
                 haviam iniciado na capital, ainda no ano de 2017. Ao longo de
-                2022 e 2023, as cidades de Cambira, Maringá e Jandaia do Sul
-                foram contempladas com o treinamento.
+                2022 e 2023, as cidades de Cambira, Maringá, Londrina e Jandaia
+                do Sul foram contempladas com o treinamento.
               </RancheirosText>
               <RancheirosText
                 highlight={["RANCHEIROS MC", "apaixonados por Jesus Cristo"]}
