@@ -11,12 +11,12 @@ import {
   Text,
   ThemeIcon,
   Title,
-  createStyles
+  createStyles,
 } from "@mantine/core";
 import {
   IconBrandFacebook,
   IconBrandInstagram,
-  IconLink
+  IconLink,
 } from "@tabler/icons-react";
 import RancheirosText from "./RancheirosText";
 
@@ -47,10 +47,10 @@ export default function About() {
               hideLabel="Ocultar"
             >
               <RancheirosText highlight={["com Jesus"]}>
-                Somos um clube de motociclistas cristãos fundado em 2023 em
-                Cambira, Paraná. Nosso propósito é, com Jesus, ensinar as
-                pessoas a pilotarem com segurança, otimismo e liberdade suas
-                motos e suas vidas.
+                Somos um clube de motociclistas cristãos fundado em Cambira,
+                Paraná. Nosso propósito é, com Jesus, ensinar as pessoas a
+                pilotarem com segurança, otimismo e liberdade suas motos e suas
+                vidas.
               </RancheirosText>
               <RancheirosText highlight={["vida na vida"]}>
                 Vivemos o discipulado cristão, buscando verdadeiramente
@@ -187,27 +187,25 @@ export default function About() {
               hideLabel="Ocultar"
             >
               <RancheirosText highlight={["direção divina"]}>
-                A história do RANCHEIROS MC é relativamente recente. Essa
-                jornada teve início em 2020, na cidade de Curitiba, quando, como
-                membros de outro moto clube, guiados pela direção divina,
-                decidimos expandir nossa missão para a cidade de Cambira, no
-                interior do Paraná. Aos poucos, oito famílias se mudaram para a
-                região centro-norte do estado, estabelecendo-se e dando
-                continuidade aos treinamentos de pilotagem defensiva, que haviam
-                iniciado na capital, ainda no ano de 2017. Ao longo de 2022 e
-                2023, as cidades de Cambira, Maringá e Jandaia do Sul foram
-                contempladas com o treinamento.
+                A história do RANCHEIROS MC tem início em 2020, na cidade de
+                Curitiba, quando, como membros de outro moto clube, guiados pela
+                direção divina, decidimos expandir nossa missão para a cidade de
+                Cambira, no interior do Paraná. Aos poucos, oito famílias se
+                mudaram para a região centro-norte do estado, estabelecendo-se e
+                dando continuidade aos treinamentos de pilotagem defensiva, que
+                haviam iniciado na capital, ainda no ano de 2017. Ao longo de
+                2022 e 2023, as cidades de Cambira, Maringá e Jandaia do Sul
+                foram contempladas com o treinamento.
               </RancheirosText>
               <RancheirosText
                 highlight={["RANCHEIROS MC", "apaixonados por Jesus Cristo"]}
               >
-                Após divergências administrativas com o antigo clube, surge em 6
-                de maio de 2023 o RANCHEIROS MC. O nome faz referência ao
-                rancho, destino inicial das oito famílias que vieram de
-                Curitiba. Somos uma reunião de pessoas simples e trabalhadoras,
-                motociclistas ou simpatizantes, que amam uma prosa, se movem em
-                comitiva, respeitando tradições e, acima de tudo, apaixonados
-                por Jesus Cristo.
+                Em 6 de maio de 2023 passamos a nos denominar RANCHEIROS MC. O
+                nome faz referência ao rancho, destino inicial das oito famílias
+                que vieram de Curitiba. Somos uma reunião de pessoas simples e
+                trabalhadoras, motociclistas ou simpatizantes, que amam uma
+                prosa, se movem em comitiva, respeitando tradições e, acima de
+                tudo, apaixonados por Jesus Cristo.
               </RancheirosText>
             </Spoiler>
           </Grid.Col>
