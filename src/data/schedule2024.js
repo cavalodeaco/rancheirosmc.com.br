@@ -171,11 +171,6 @@ const schedule = [
     description: "Comitiva Guarapuava (Jantar PMPR)",
   },
   {
-    date: { day: "30", month: "NOVEMBRO", fulldate: "2024-11-30" },
-    photo: "",
-    description: "MPV Jandaia do Sul/Cambira",
-  },
-  {
     date: { day: "07", month: "DEZEMBRO", fulldate: "2024-12-07" },
     photo: "",
     description: "Confraternização de final de ano",
