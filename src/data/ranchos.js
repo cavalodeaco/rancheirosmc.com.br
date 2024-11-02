@@ -10,6 +10,20 @@ const ranchos = [
     },
   },
   {
+    name: "Medianeira-PR",
+    contact: {
+      tel: "+5545999651117",
+      label: "(45) 99965-1117",
+      name: "Diretor – Pr Júnior",
+      photo: "https://d2er8q8v25uk9z.cloudfront.net/pjjr_uyigpzkgob.webp",
+    },
+    prosa: {
+      day: "Toda terça",
+      time: "20h",
+      address: "",
+    },
+  },
+  {
     name: "Maringá-PR",
     prosa: {
       day: "Toda terça",
@@ -66,17 +80,12 @@ const ranchos = [
     },
   },
   {
-    name: "Medianeira-PR",
+    name: "Apucarana-PR",
     contact: {
-      tel: "+5545999651117",
-      label: "(45) 99965-1117",
-      name: "Diretor – Pr Júnior",
-      photo: "https://d2er8q8v25uk9z.cloudfront.net/pjjr_uyigpzkgob.webp",
-    },
-    prosa: {
-      day: "Toda terça",
-      time: "20h",
-      address: "",
+      tel: "+554396424555",
+      label: "(43) 9642-4555",
+      name: "Diretor – Robert",
+      photo: "https://d2er8q8v25uk9z.cloudfront.net/robert.webp",
     },
   },
   {
@@ -113,6 +122,15 @@ const ranchos = [
       label: "(11) 91550-3938",
       name: "Representante – Bia",
       photo: "https://d2er8q8v25uk9z.cloudfront.net/bia.webp",
+    },
+  },
+  {
+    name: "Jaguariaíva-PR",
+    contact: {
+      tel: "+554396418396",
+      label: "(43) 9641-8396",
+      name: "Representante – Pr. Garret",
+      photo: "https://d2er8q8v25uk9z.cloudfront.net/garret.webp",
     },
   },
 ];
