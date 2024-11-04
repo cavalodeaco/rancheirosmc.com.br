@@ -82,8 +82,8 @@ const ranchos = [
   {
     name: "Apucarana-PR",
     contact: {
-      tel: "+554396424555",
-      label: "(43) 9642-4555",
+      tel: "+5543996424555",
+      label: "(43) 99642-4555",
       name: "Diretor – Robert",
       photo: "https://d2er8q8v25uk9z.cloudfront.net/robert.webp",
     },
@@ -127,8 +127,8 @@ const ranchos = [
   {
     name: "Jaguariaíva-PR",
     contact: {
-      tel: "+554396418396",
-      label: "(43) 9641-8396",
+      tel: "+5543996418396",
+      label: "(43) 99641-8396",
       name: "Representante – Pr. Garret",
       photo: "https://d2er8q8v25uk9z.cloudfront.net/garret.webp",
     },
