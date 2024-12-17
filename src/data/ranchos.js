@@ -23,21 +23,7 @@ const ranchos = [
       address: "",
     },
   },
-  {
-    name: "Maringá-PR",
-    prosa: {
-      day: "Toda terça",
-      time: "20h",
-      address: "Rua Evaristo da Veiga, 143",
-    },
-    contact: {
-      tel: "+5541998048668",
-      label: "(41) 99804-8668",
-      name: "Representante – Roberto (Robocop)",
-      photo: "https://d2er8q8v25uk9z.cloudfront.net/robo.webp",
-    },
-  },
-  {
+ {
     name: "Londrina-PR",
     prosa: {
       day: "Toda terceira terça-feira do mês",
@@ -77,6 +63,15 @@ const ranchos = [
       day: "Toda quinta",
       time: "20h",
       address: "",
+    },
+  },  
+  {
+    name: "Maringá-PR",
+    contact: {
+      tel: "+5541998048668",
+      label: "(41) 99804-8668",
+      name: "Representante – Roberto (Robocop)",
+      photo: "https://d2er8q8v25uk9z.cloudfront.net/robo.webp",
     },
   },
   {
