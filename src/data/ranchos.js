@@ -54,9 +54,9 @@ const ranchos = [
   {
     name: "Cornélio Procópio-PR",
     contact: {
-      tel: "+5543999127881",
-      label: "(43) 99912-7881",
-      name: "Representante – Gabi",
+      tel: "+5543988518880",
+      label: "(43) 98851-8880",
+      name: "Representante – Douglas",
       photo: "https://d2er8q8v25uk9z.cloudfront.net/douglas_gabi.webp",
     },
     prosa: {
