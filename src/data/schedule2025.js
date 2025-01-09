@@ -29,7 +29,7 @@ const schedule = [
   },
   {
     date: { day: "01", month: "MAIO", fulldate: "2025-05-01" },
-    description: "Motociata Cristã de Londrina/Maringá-PR",
+    description: "Motociata para Jesus",
   },
   {
     date: { day: "03", month: "MAIO", fulldate: "2025-05-03" },
@@ -69,7 +69,7 @@ const schedule = [
   },
   {
     date: { day: "06", month: "DEZEMBRO", fulldate: "2025-12-06" },
-    description: "Confraternização final do ano",
+    description: "Confraternizações final de ano",
   },
 ];
 
