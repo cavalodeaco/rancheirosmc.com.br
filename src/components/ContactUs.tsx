@@ -18,6 +18,7 @@ import { useForm } from "@mantine/form";
 import {
   IconBrandFacebook,
   IconBrandInstagram,
+  IconBrandWhatsapp,
   IconLink,
 } from "@tabler/icons-react";
 import { theme } from "../utils/theme";
@@ -84,6 +85,8 @@ export default function ContactUs() {
                   <Anchor
                     href="https://mpv.rancheirosmc.com.br/"
                     target="_blank"
+                    color="gray.1"
+                    td="underline"
                   >
                     treinamento de pilotagem defensiva gratuito
                   </Anchor>
@@ -92,22 +95,36 @@ export default function ContactUs() {
               <List.Item>
                 <Text color="white">
                   Conecte-se conosco nas redes sociais onde compartilhamos
-                  nossos eventos e mensagens de sabedoria e inspiração:
+                  nossos eventos e mensagens:
                   <Group my={"xl"} position={"center"} spacing={"xl"} noWrap>
+                    <Anchor
+                      href={
+                        /Android|webOS|iPhone|iPad|iPod|Opera Mini/i.test(
+                          navigator.userAgent
+                        )
+                          ? "whatsapp://wa.me/5543991636339"
+                          : "https://wa.me/5543991636339"
+                      }
+                      target="_blank"
+                    >
+                      <ActionIcon size="xl" color="gray.1">
+                        <IconBrandWhatsapp size="2.5rem" stroke={1.5} />
+                      </ActionIcon>
+                    </Anchor>
                     <Anchor
                       href="https://www.facebook.com/rancheirosmc"
                       target="_blank"
                     >
-                      <ActionIcon size="xl" color="brand.4">
-                        <IconBrandFacebook size="2.5rem" stroke={2} />
+                      <ActionIcon size="xl" color="gray.1">
+                        <IconBrandFacebook size="2.5rem" stroke={1.5} />
                       </ActionIcon>
                     </Anchor>
                     <Anchor
                       href="https://www.instagram.com/rancheirosmc/"
                       target="_blank"
                     >
-                      <ActionIcon size="xl" color="brand.4">
-                        <IconBrandInstagram size="2.5rem" stroke={2} />
+                      <ActionIcon size="xl" color="gray.1">
+                        <IconBrandInstagram size="2.5rem" stroke={1.5} />
                       </ActionIcon>
                     </Anchor>
                   </Group>

@@ -27,7 +27,7 @@ function ContactLabel({ label }: { label: string | string[] }) {
   return (
     <Stack spacing="xs">
       {label.map((i) => (
-        <span>{i}</span>
+        <span key={i}>{i}</span>
       ))}
     </Stack>
   );
@@ -39,7 +39,7 @@ export default function Ranchos() {
       <Title order={2}>Ranchos (sedes)</Title>
       <Flex mt={"xl"} gap={".5rem"} justify={"center"} wrap={"wrap"}>
         {ranchos.map(({ name, prosa, contact }) => (
-          <Card withBorder sx={{ width: "300px" }}>
+          <Card key={name} withBorder sx={{ width: "300px" }}>
             <Title align="center" order={3}>
               {name}
             </Title>

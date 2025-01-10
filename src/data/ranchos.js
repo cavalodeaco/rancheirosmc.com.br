@@ -23,7 +23,7 @@ const ranchos = [
       address: "",
     },
   },
- {
+  {
     name: "Londrina-PR",
     prosa: {
       day: "Toda terceira terça-feira do mês",
@@ -63,15 +63,6 @@ const ranchos = [
       day: "Toda quinta",
       time: "20h",
       address: "",
-    },
-  },  
-  {
-    name: "Maringá-PR",
-    contact: {
-      tel: "+5541998048668",
-      label: "(41) 99804-8668",
-      name: "Representante – Roberto (Robocop)",
-      photo: "https://d2er8q8v25uk9z.cloudfront.net/robo.webp",
     },
   },
   {
@@ -126,6 +117,13 @@ const ranchos = [
       label: "(43) 99641-8396",
       name: "Representante – Pr. Garret",
       photo: "https://d2er8q8v25uk9z.cloudfront.net/garret.webp",
+    },
+  },
+  {
+    name: "Maringá-PR",
+    contact: {
+      tel: "+5543991636339",
+      label: "(43) 99163-6339",
     },
   },
 ];

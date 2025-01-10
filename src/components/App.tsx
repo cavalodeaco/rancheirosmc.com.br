@@ -15,7 +15,7 @@ import Ranchos from "./Ranchos";
 import Schedule from "./Schedule";
 import Foto from "./Foto";
 import { DatesProvider } from "@mantine/dates";
-import 'dayjs/locale/pt-br';
+import "dayjs/locale/pt-br";
 
 export default function App() {
   document.title = "RANCHEIROS MC";
@@ -48,7 +48,9 @@ export default function App() {
           </Linkable>
           <Container>
             {sections.map((section) => (
-              <Linkable id={section.id}>{section.component}</Linkable>
+              <Linkable id={section.id} key={section.id}>
+                {section.component}
+              </Linkable>
             ))}
           </Container>
           <Linkable id="contato">
