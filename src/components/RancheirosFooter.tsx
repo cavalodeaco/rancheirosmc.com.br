@@ -10,9 +10,6 @@ import {
   Space,
   Text,
   Title,
-  Stack,
-  List,
-  ThemeIcon,
 } from "@mantine/core";
 import classes from "./Footer.module.css";
 import {
@@ -59,96 +56,70 @@ export default function RancheirosFooter() {
             </div>
           </Center>
           <Center w={"100%"}>
-            <Title order={4} transform="uppercase" color="gray.4">
-              <Center>
-                <img
-                  sizes="32px"
-                  src="https://d2er8q8v25uk9z.cloudfront.net/rancheiro/rancheiro_w64.webp"
-                  alt="RANCHEIROS MC"
-                  width={32}
-                  height={34}
-                />
-                <Space w="xs" />
-                RANCHEIROS MC
-              </Center>
-            </Title>
+            <Center>
+              <img
+                src="https://mpv.rancheirosmc.com.br/static/media/brasao.c8dca87db86c1c99e6ff.webp"
+                alt="RANCHEIROS MC"
+                width={"160px"}
+                style={{
+                  maxWidth: "100%",
+                }}
+              />
+              <Space w="xs" />
+            </Center>
           </Center>
           <Center w={"100%"}>
-            <Stack spacing={"xs"} align="center">
-              <List>
-                <List.Item
-                  icon={
-                    <ThemeIcon size={20} radius="xl" variant="outline">
-                      <IconPhone size="0.8rem" />
-                    </ThemeIcon>
-                  }
-                >
-                  <Anchor
-                    size={"sm"}
-                    align="center"
-                    href={"tel:+5543991636339"}
-                    target="_blank"
-                    color="gray.1"
-                  >
-                    (43) 99163-6339
-                  </Anchor>
-                </List.Item>
-                <List.Item
-                  icon={
-                    <ThemeIcon size={20} radius="xl" variant="outline">
-                      <IconMail size="0.8rem" />
-                    </ThemeIcon>
-                  }
-                >
-                  <Anchor
-                    size={"sm"}
-                    align="center"
-                    href={"mailto:contato@rancheirosmc.com.br"}
-                    color="gray.1"
-                  >
-                    contato@rancheirosmc.com.br
-                  </Anchor>
-                </List.Item>
-              </List>
-              <Group spacing={"sm"} className={classes.social} position="right">
-                <Anchor
-                  href={
-                    /Android|webOS|iPhone|iPad|iPod|Opera Mini/i.test(
-                      navigator.userAgent
-                    )
-                      ? "whatsapp://wa.me/5543991636339"
-                      : "https://wa.me/5543991636339"
-                  }
-                  target="_blank"
-                >
-                  <ActionIcon size="lg" color="gray" variant="subtle">
-                    <IconBrandWhatsapp size={18} stroke={1.5} />
-                  </ActionIcon>
-                </Anchor>
-                <Anchor
-                  href="https://www.facebook.com/rancheirosmc"
-                  target="_blank"
-                >
-                  <ActionIcon size="lg" color="gray" variant="subtle">
-                    <IconBrandFacebook size={18} stroke={1.5} />
-                  </ActionIcon>
-                </Anchor>
-                <Anchor
-                  href="https://www.instagram.com/rancheirosmc/"
-                  target="_blank"
-                >
-                  <ActionIcon size="lg" color="gray" variant="subtle">
-                    <IconBrandInstagram size={18} stroke={1.5} />
-                  </ActionIcon>
-                </Anchor>
-              </Group>
-            </Stack>
+            <Group spacing={"xs"} className={classes.social} position="right">
+              <Anchor
+                href={
+                  /Android|webOS|iPhone|iPad|iPod|Opera Mini/i.test(
+                    navigator.userAgent
+                  )
+                    ? "whatsapp://wa.me/5543991636339"
+                    : "https://wa.me/5543991636339"
+                }
+                target="_blank"
+              >
+                <ActionIcon size="lg" color="gray" variant="subtle">
+                  <IconBrandWhatsapp size={18} stroke={1.5} />
+                </ActionIcon>
+              </Anchor>
+              <Anchor
+                href="https://www.facebook.com/rancheirosmc"
+                target="_blank"
+              >
+                <ActionIcon size="lg" color="gray" variant="subtle">
+                  <IconBrandFacebook size={18} stroke={1.5} />
+                </ActionIcon>
+              </Anchor>
+              <Anchor
+                href="https://www.instagram.com/rancheirosmc/"
+                target="_blank"
+              >
+                <ActionIcon size="lg" color="gray" variant="subtle">
+                  <IconBrandInstagram size={18} stroke={1.5} />
+                </ActionIcon>
+              </Anchor>
+              <Anchor href={"tel:+5543991636339"} target="_blank">
+                <ActionIcon size="lg" color="gray" variant="subtle">
+                  <IconPhone size={18} stroke={1.5} />
+                </ActionIcon>
+              </Anchor>
+              <Anchor
+                href={"mailto:contato@rancheirosmc.com.br"}
+                target="_blank"
+              >
+                <ActionIcon size="lg" color="gray" variant="subtle">
+                  <IconMail size={18} stroke={1.5} />
+                </ActionIcon>
+              </Anchor>
+            </Group>
           </Center>
         </Flex>
 
         <Container className={classes.afterFooter}>
           <Text c="dimmed" size="xs">
-            CAVALO DE ACO SISTEMAS LTDA © 2025
+            CAVALO DE ACO SISTEMAS LTDA
           </Text>
         </Container>
       </div>
