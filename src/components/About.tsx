@@ -19,6 +19,7 @@ import {
   IconLink,
 } from "@tabler/icons-react";
 import RancheirosText from "./RancheirosText";
+import { IconBrandWhatsapp } from "@tabler/icons";
 
 const useStyles = createStyles((theme) => ({
   highlight: {
@@ -104,14 +105,28 @@ export default function About() {
               </List.Item>
               <List.Item>
                 Conecte-se conosco nas redes sociais onde compartilhamos nossos
-                eventos e mensagens de sabedoria e inspiração:
+                eventos e mensagens:
                 <Group my={"xl"} position={"center"} spacing={"xl"} noWrap>
+                  <Anchor
+                    href={
+                      /Android|webOS|iPhone|iPad|iPod|Opera Mini/i.test(
+                        navigator.userAgent
+                      )
+                        ? "whatsapp://wa.me/5543991636339"
+                        : "https://wa.me/5543991636339"
+                    }
+                    target="_blank"
+                  >
+                    <ActionIcon size="xl" color="brand.4">
+                      <IconBrandWhatsapp size="2.5rem" stroke={1.5} />
+                    </ActionIcon>
+                  </Anchor>
                   <Anchor
                     href="https://www.facebook.com/rancheirosmc"
                     target="_blank"
                   >
                     <ActionIcon size="xl" color="brand.4">
-                      <IconBrandFacebook size="2.5rem" stroke={2} />
+                      <IconBrandFacebook size="2.5rem" stroke={1.5} />
                     </ActionIcon>
                   </Anchor>
                   <Anchor
@@ -119,7 +134,7 @@ export default function About() {
                     target="_blank"
                   >
                     <ActionIcon size="xl" color="brand.4">
-                      <IconBrandInstagram size="2.5rem" stroke={2} />
+                      <IconBrandInstagram size="2.5rem" stroke={1.5} />
                     </ActionIcon>
                   </Anchor>
                 </Group>
