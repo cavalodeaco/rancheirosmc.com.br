@@ -27,7 +27,6 @@ const useStyles = createStyles((theme) => ({
   wrapper: {
     paddingTop: "calc(60px + 2rem)",
     paddingBottom: `calc(${theme.spacing.xl} * 2.5)`,
-    marginTop: theme.spacing.xl,
     minHeight: 400,
     boxSizing: "border-box",
     backgroundImage: `linear-gradient(-60deg, ${
@@ -74,8 +73,8 @@ export default function ContactUs() {
               spacing="xl"
               size="md"
               icon={
-                <ThemeIcon size={20} radius="xl">
-                  <IconLink />
+                <ThemeIcon size={20} radius="xl" color="gray.1" c={"brand.6"}>
+                  <IconLink size={16} />
                 </ThemeIcon>
               }
             >
@@ -89,6 +88,25 @@ export default function ContactUs() {
                     td="underline"
                   >
                     treinamento de pilotagem defensiva gratuito
+                  </Anchor>
+                </Text>
+              </List.Item>
+              <List.Item>
+                <Text color="white">
+                  Salve nosso contato no Whatsapp:{" "}
+                  <Anchor
+                    href={
+                      /Android|webOS|iPhone|iPad|iPod|Opera Mini/i.test(
+                        navigator.userAgent
+                      )
+                        ? "whatsapp://wa.me/5543991636339"
+                        : "https://wa.me/5543991636339"
+                    }
+                    target="_blank"
+                    color="gray.1"
+                    td="underline"
+                  >
+                    (43) 99163-6339
                   </Anchor>
                 </Text>
               </List.Item>
