@@ -145,13 +145,13 @@ export function HeaderResponsive(): ReactElement {
             close();
           }}
         >
-          <Title order={2} transform="uppercase" color="gray.2">
+          <Title order={3} transform="uppercase" color="gray.2">
             <Center>
               <img
                 src="https://d2er8q8v25uk9z.cloudfront.net/rancheiro/rancheiro_w90.webp"
                 alt="RANCHEIROS MC"
-                height={48}
-                width={45}
+                height={36}
+                width={34}
               />
               <Space w="xs" />
               RANCHEIROS MC

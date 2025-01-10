@@ -1,4 +1,4 @@
-import { AppShell, Container } from "@mantine/core";
+import { AppShell, Box, Container } from "@mantine/core";
 import { MantineProvider } from "@mantine/styles";
 import { theme } from "../utils/theme";
 import About from "./About";
@@ -13,7 +13,6 @@ import MPVAlert from "./MPVAlert";
 import RancheirosFooter from "./RancheirosFooter";
 import Ranchos from "./Ranchos";
 import Schedule from "./Schedule";
-import Foto from "./Foto";
 import { DatesProvider } from "@mantine/dates";
 import "dayjs/locale/pt-br";
 
@@ -41,21 +40,24 @@ export default function App() {
           header={<HeaderResponsive />}
           footer={<RancheirosFooter />}
           padding={0}
+          mb={"400px"}
         >
-          <MPVAlert />
-          <Linkable id="">
-            <Banner />
-          </Linkable>
-          <Container>
-            {sections.map((section) => (
-              <Linkable id={section.id} key={section.id}>
-                {section.component}
-              </Linkable>
-            ))}
-          </Container>
-          <Linkable id="contato">
-            <ContactUs />
-          </Linkable>
+          <Box bg={"dark.7"}>
+            <MPVAlert />
+            <Linkable id="">
+              <Banner />
+            </Linkable>
+            <Container bg={"dark.7"}>
+              {sections.map((section) => (
+                <Linkable id={section.id} key={section.id}>
+                  {section.component}
+                </Linkable>
+              ))}
+            </Container>
+            <Linkable id="contato">
+              <ContactUs />
+            </Linkable>
+          </Box>
         </AppShell>
       </DatesProvider>
     </MantineProvider>

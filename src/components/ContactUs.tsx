@@ -27,7 +27,6 @@ const useStyles = createStyles((theme) => ({
   wrapper: {
     paddingTop: "calc(60px + 2rem)",
     paddingBottom: `calc(${theme.spacing.xl} * 2.5)`,
-    marginTop: theme.spacing.xl,
     minHeight: 400,
     boxSizing: "border-box",
     backgroundImage: `linear-gradient(-60deg, ${
