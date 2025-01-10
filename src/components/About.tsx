@@ -17,6 +17,8 @@ import {
   IconBrandFacebook,
   IconBrandInstagram,
   IconLink,
+  IconMail,
+  IconPhone,
 } from "@tabler/icons-react";
 import RancheirosText from "./RancheirosText";
 import { IconBrandWhatsapp } from "@tabler/icons";
@@ -88,7 +90,7 @@ export default function About() {
               size="md"
               icon={
                 <ThemeIcon size={20} radius="xl" color="brand.9">
-                  <IconLink size={16}/>
+                  <IconLink size={16} />
                 </ThemeIcon>
               }
             >
@@ -104,24 +106,9 @@ export default function About() {
                 juntos.
               </List.Item>
               <List.Item>
-                Salve nosso contato no Whatsapp:{" "}
-                <Anchor
-                  href={
-                    /Android|webOS|iPhone|iPad|iPod|Opera Mini/i.test(
-                      navigator.userAgent
-                    )
-                      ? "whatsapp://wa.me/5543991636339"
-                      : "https://wa.me/5543991636339"
-                  }
-                  target="_blank"
-                >
-                  (43) 99163-6339
-                </Anchor>
-              </List.Item>
-              <List.Item>
                 Conecte-se conosco nas redes sociais onde compartilhamos nossos
                 eventos e mensagens:
-                <Group my={"xl"} position={"center"} spacing={"xl"} noWrap>
+                <Group my={"xl"} position={"center"} spacing={"lg"} noWrap>
                   <Anchor
                     href={
                       /Android|webOS|iPhone|iPad|iPod|Opera Mini/i.test(
@@ -150,6 +137,19 @@ export default function About() {
                   >
                     <ActionIcon size="xl" color="brand.4">
                       <IconBrandInstagram size="2.5rem" stroke={1.5} />
+                    </ActionIcon>
+                  </Anchor>
+                  <Anchor href={"tel:+5543991636339"} target="_blank">
+                    <ActionIcon size="xl" color="brand.4">
+                      <IconPhone size="2.5rem" stroke={1.5} />
+                    </ActionIcon>
+                  </Anchor>
+                  <Anchor
+                    href={"mailto:contato@rancheirosmc.com.br"}
+                    target="_blank"
+                  >
+                    <ActionIcon size="xl" color="brand.4">
+                      <IconMail size="2.5rem" stroke={1.5} />
                     </ActionIcon>
                   </Anchor>
                 </Group>

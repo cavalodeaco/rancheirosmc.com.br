@@ -40,7 +40,7 @@ export default function App() {
           header={<HeaderResponsive />}
           footer={<RancheirosFooter />}
           padding={0}
-          mb={"440px"}
+          mb={"540px"}
         >
           <Box bg={"dark.7"}>
             <MPVAlert />
