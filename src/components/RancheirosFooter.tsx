@@ -10,14 +10,17 @@ import {
   Space,
   Text,
   Title,
+  Stack,
+  List,
+  ThemeIcon,
 } from "@mantine/core";
 import classes from "./Footer.module.css";
 import {
-  IconBrandTwitter,
-  IconBrandYoutube,
   IconBrandInstagram,
   IconBrandWhatsapp,
   IconBrandFacebook,
+  IconPhone,
+  IconMail,
 } from "@tabler/icons-react";
 
 export default function RancheirosFooter() {
@@ -71,38 +74,75 @@ export default function RancheirosFooter() {
             </Title>
           </Center>
           <Center w={"100%"}>
-            <Group spacing={"sm"} className={classes.social} position="right">
-              <Anchor
-                href={
-                  /Android|webOS|iPhone|iPad|iPod|Opera Mini/i.test(
-                    navigator.userAgent
-                  )
-                    ? "whatsapp://wa.me/5543991636339"
-                    : "https://wa.me/5543991636339"
-                }
-                target="_blank"
-              >
-                <ActionIcon size="lg" color="gray" variant="subtle">
-                  <IconBrandWhatsapp size={18} stroke={1.5} />
-                </ActionIcon>
-              </Anchor>
-              <Anchor
-                href="https://www.facebook.com/rancheirosmc"
-                target="_blank"
-              >
-                <ActionIcon size="lg" color="gray" variant="subtle">
-                  <IconBrandFacebook size={18} stroke={1.5} />
-                </ActionIcon>
-              </Anchor>
-              <Anchor
-                href="https://www.instagram.com/rancheirosmc/"
-                target="_blank"
-              >
-                <ActionIcon size="lg" color="gray" variant="subtle">
-                  <IconBrandInstagram size={18} stroke={1.5} />
-                </ActionIcon>
-              </Anchor>
-            </Group>
+            <Stack spacing={"xs"} align="center">
+              <List>
+                <List.Item
+                  icon={
+                    <ThemeIcon size={20} radius="xl" variant="outline">
+                      <IconPhone size="0.8rem" />
+                    </ThemeIcon>
+                  }
+                >
+                  <Anchor
+                    size={"sm"}
+                    align="center"
+                    href={"tel:+5543991636339"}
+                    target="_blank"
+                    color="gray.1"
+                  >
+                    (43) 99163-6339
+                  </Anchor>
+                </List.Item>
+                <List.Item
+                  icon={
+                    <ThemeIcon size={20} radius="xl" variant="outline">
+                      <IconMail size="0.8rem" />
+                    </ThemeIcon>
+                  }
+                >
+                  <Anchor
+                    size={"sm"}
+                    align="center"
+                    href={"mailto:contato@rancheirosmc.com.br"}
+                    color="gray.1"
+                  >
+                    contato@rancheirosmc.com.br
+                  </Anchor>
+                </List.Item>
+              </List>
+              <Group spacing={"sm"} className={classes.social} position="right">
+                <Anchor
+                  href={
+                    /Android|webOS|iPhone|iPad|iPod|Opera Mini/i.test(
+                      navigator.userAgent
+                    )
+                      ? "whatsapp://wa.me/5543991636339"
+                      : "https://wa.me/5543991636339"
+                  }
+                  target="_blank"
+                >
+                  <ActionIcon size="lg" color="gray" variant="subtle">
+                    <IconBrandWhatsapp size={18} stroke={1.5} />
+                  </ActionIcon>
+                </Anchor>
+                <Anchor
+                  href="https://www.facebook.com/rancheirosmc"
+                  target="_blank"
+                >
+                  <ActionIcon size="lg" color="gray" variant="subtle">
+                    <IconBrandFacebook size={18} stroke={1.5} />
+                  </ActionIcon>
+                </Anchor>
+                <Anchor
+                  href="https://www.instagram.com/rancheirosmc/"
+                  target="_blank"
+                >
+                  <ActionIcon size="lg" color="gray" variant="subtle">
+                    <IconBrandInstagram size={18} stroke={1.5} />
+                  </ActionIcon>
+                </Anchor>
+              </Group>
+            </Stack>
           </Center>
         </Flex>
 

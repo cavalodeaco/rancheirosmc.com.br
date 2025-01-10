@@ -87,8 +87,8 @@ export default function About() {
               spacing="xl"
               size="md"
               icon={
-                <ThemeIcon size={20} radius="xl">
-                  <IconLink />
+                <ThemeIcon size={20} radius="xl" color="brand.9">
+                  <IconLink size={16}/>
                 </ThemeIcon>
               }
             >
@@ -102,6 +102,21 @@ export default function About() {
                 <Anchor href="#contato">Entre em contato.</Anchor> Estamos
                 ansiosos para conhecer você e compartilhar a estrada da vida
                 juntos.
+              </List.Item>
+              <List.Item>
+                Salve nosso contato no Whatsapp:{" "}
+                <Anchor
+                  href={
+                    /Android|webOS|iPhone|iPad|iPod|Opera Mini/i.test(
+                      navigator.userAgent
+                    )
+                      ? "whatsapp://wa.me/5543991636339"
+                      : "https://wa.me/5543991636339"
+                  }
+                  target="_blank"
+                >
+                  (43) 99163-6339
+                </Anchor>
               </List.Item>
               <List.Item>
                 Conecte-se conosco nas redes sociais onde compartilhamos nossos
