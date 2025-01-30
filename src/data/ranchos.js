@@ -24,20 +24,6 @@ const ranchos = [
     },
   },
   {
-    name: "Londrina-PR",
-    prosa: {
-      day: "Toda terceira terça-feira do mês",
-      time: "20h",
-      address: "Rua Deputado Nilson Ribas, 551",
-    },
-    contact: {
-      tel: "+5541999175424",
-      label: "(41) 99917-5424",
-      name: "Representante – Marcelo (Rapa)",
-      photo: "https://d2er8q8v25uk9z.cloudfront.net/rapa.webp",
-    },
-  },
-  {
     name: "Cornélio Procópio-PR",
     contact: {
       tel: "+5543988518880",
@@ -117,6 +103,14 @@ const ranchos = [
       label: "(43) 99641-8396",
       name: "Representante – Pr. Garret",
       photo: "https://d2er8q8v25uk9z.cloudfront.net/garret.webp",
+    },
+  },
+  {
+    name: "Londrina-PR",
+    contact: {
+      tel: "+5543999812887",
+      label: "(43) 99981-2887",
+      name: "Representante – Wilson Kaba",
     },
   },
   {
