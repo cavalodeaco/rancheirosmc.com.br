@@ -40,12 +40,12 @@ const schedule = [
     description: "MPV Arapongas-PR",
   },
   {
-    date: { day: "14", month: "JUNHO", fulldate: "2025-06-14" },
-    description: "MPV Maringá-PR",
-  },
-  {
     date: { day: "19 à 22", month: "JUNHO", fulldate: "2025-06-19" },
     description: "Comitiva à definir",
+  },
+  {
+    date: { day: "05", month: "JULHO", fulldate: "2025-07-05" },
+    description: "MPV Maringá-PR",
   },
   {
     date: { day: "19", month: "JULHO", fulldate: "2025-07-19" },
