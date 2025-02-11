@@ -61,15 +61,6 @@ const ranchos = [
     },
   },
   {
-    name: "Faxinal-PR",
-    contact: {
-      tel: "+5543999792559",
-      label: "(43) 99979-2559",
-      name: "Representante – C. Tiago",
-      photo: "https://d2er8q8v25uk9z.cloudfront.net/ctiagoquadrado.webp",
-    },
-  },
-  {
     name: "São José dos Pinhais - PR",
     contact: {
       tel: "+5541991170055",
@@ -103,6 +94,14 @@ const ranchos = [
       label: "(43) 99641-8396",
       name: "Representante – Pr. Garret",
       photo: "https://d2er8q8v25uk9z.cloudfront.net/garret.webp",
+    },
+  },
+  {
+    name: "Faxinal-PR",
+    contact: {
+      tel: "+5543998294939",
+      label: "(43) 99829-4939",
+      name: "Representante – Marcos Robson Galvão",
     },
   },
   {
