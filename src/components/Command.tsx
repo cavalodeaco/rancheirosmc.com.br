@@ -99,7 +99,7 @@ function CommandItem({ item }: { item: CommandItemType }) {
         src={img}
         component="span"
         alt={name}
-        size="4rem"
+        size="6rem"
       />
       <Flex direction={"column"}>
         <Title order={4}>{name}</Title>

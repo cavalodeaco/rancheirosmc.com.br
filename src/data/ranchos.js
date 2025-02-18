@@ -5,7 +5,7 @@ const ranchos = [
     contact: {
       tel: "+5541988435201",
       label: "(41) 98843-5201",
-      name: "Diretor – Rogério (Pinduca)",
+      name: "Diretor – Pinduca",
       photo: "https://d2er8q8v25uk9z.cloudfront.net/pinduca.webp",
     },
   },
@@ -28,7 +28,7 @@ const ranchos = [
     contact: {
       tel: "+5543988518880",
       label: "(43) 98851-8880",
-      name: "Representante – Douglas",
+      name: "Rep. -  Douglas",
       photo: "https://d2er8q8v25uk9z.cloudfront.net/douglas_gabi.webp",
     },
     prosa: {
@@ -42,7 +42,7 @@ const ranchos = [
     contact: {
       tel: "+5543999039452",
       label: "(43) 99903-9452",
-      name: "Representante – Júnior",
+      name: "Rep. -  Júnior",
       photo: "https://d2er8q8v25uk9z.cloudfront.net/juniorquadrado.webp",
     },
     prosa: {
@@ -65,7 +65,7 @@ const ranchos = [
     contact: {
       tel: "+5541991170055",
       label: "(41) 99117-0055",
-      name: "Representante – Pr Daniel",
+      name: "Rep. -  Pr Daniel",
       photo: "https://d2er8q8v25uk9z.cloudfront.net/daniel.webp",
     },
   },
@@ -74,7 +74,7 @@ const ranchos = [
     contact: {
       tel: "+5544998081276",
       label: "(44) 99808-1276",
-      name: "Representante – Tiago Bastos",
+      name: "Rep. -  Tiago Bastos",
       photo: "https://d2er8q8v25uk9z.cloudfront.net/tiago.webp",
     },
   },
@@ -83,7 +83,7 @@ const ranchos = [
     contact: {
       tel: "+5511915503938",
       label: "(11) 91550-3938",
-      name: "Representante – Bia",
+      name: "Rep. -  Bia",
       photo: "https://d2er8q8v25uk9z.cloudfront.net/bia.webp",
     },
   },
@@ -92,7 +92,7 @@ const ranchos = [
     contact: {
       tel: "+5543996418396",
       label: "(43) 99641-8396",
-      name: "Representante – Pr. Garret",
+      name: "Rep. -  Pr. Garret",
       photo: "https://d2er8q8v25uk9z.cloudfront.net/garret.webp",
     },
   },
@@ -101,7 +101,8 @@ const ranchos = [
     contact: {
       tel: "+5543998294939",
       label: "(43) 99829-4939",
-      name: "Representante – Marcos Robson Galvão",
+      name: "Rep. -  Marcos",
+      photo: "https://placehold.co/600x600?text=Faxinal",
     },
   },
   {
@@ -109,7 +110,8 @@ const ranchos = [
     contact: {
       tel: "+5543999812887",
       label: "(43) 99981-2887",
-      name: "Representante – Wilson Kaba",
+      name: "Rep. -  Wilson Kaba",
+      photo: "https://d2er8q8v25uk9z.cloudfront.net/kaba1.webp",
     },
   },
   {
@@ -117,6 +119,7 @@ const ranchos = [
     contact: {
       tel: "+5543991636339",
       label: "(43) 99163-6339",
+      photo: "https://placehold.co/600x600?text=Maringá",
     },
   },
 ];
