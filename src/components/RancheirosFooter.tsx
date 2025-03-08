@@ -18,6 +18,7 @@ import {
   IconBrandFacebook,
   IconPhone,
   IconMail,
+  IconMapPin,
 } from "@tabler/icons-react";
 
 export default function RancheirosFooter() {
@@ -111,6 +112,14 @@ export default function RancheirosFooter() {
               >
                 <ActionIcon size="lg" color="gray" variant="subtle">
                   <IconMail size={18} stroke={1.5} />
+                </ActionIcon>
+              </Anchor>
+              <Anchor
+                href={"https://maps.app.goo.gl/3ckZAmMx2GojywYj9"}
+                target="_blank"
+              >
+                <ActionIcon size="lg" color="gray" variant="subtle">
+                  <IconMapPin size={18} stroke={1.5} />
                 </ActionIcon>
               </Anchor>
             </Group>

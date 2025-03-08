@@ -54,6 +54,22 @@ export default function App() {
                 </Linkable>
               ))}
             </Container>
+            <Linkable id="endereco">
+              <div
+                style={{
+                  width: "100vw",
+                  height: "66vh",
+                }}
+              >
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1105.640117612078!2d-51.57976813036294!3d-23.60037406973828!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ec9149ebe08c03%3A0x79debe9d00839b9e!2sR.%20Para%C3%ADba%2C%2080%2C%20Cambira%20-%20PR%2C%2086890-000!5e1!3m2!1spt-BR!2sbr!4v1741463804683!5m2!1spt-BR!2sbr"
+                  width="100%"
+                  height="100%"
+                  style={{ border: 0 }}
+                  loading="lazy"
+                />
+              </div>
+            </Linkable>
             <Linkable id="contato">
               <ContactUs />
             </Linkable>

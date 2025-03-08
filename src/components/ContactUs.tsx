@@ -21,6 +21,7 @@ import {
   IconBrandWhatsapp,
   IconLink,
   IconMail,
+  IconMapPin,
   IconPhone,
 } from "@tabler/icons-react";
 import { theme } from "../utils/theme";
@@ -97,7 +98,7 @@ export default function ContactUs() {
                 <Text color="white">
                   Conecte-se conosco nas redes sociais onde compartilhamos
                   nossos eventos e mensagens:
-                  <Group my={"xl"} position={"center"} spacing={"lg"} noWrap>
+                  <Group my={"xl"} position={"left"} spacing={"lg"} noWrap>
                     <Anchor
                       href={
                         /Android|webOS|iPhone|iPad|iPod|Opera Mini/i.test(
@@ -139,6 +140,14 @@ export default function ContactUs() {
                     >
                       <ActionIcon size="xl" color="gray.1">
                         <IconMail size="2.5rem" stroke={1.5} />
+                      </ActionIcon>
+                    </Anchor>
+                    <Anchor
+                      href={"https://maps.app.goo.gl/3ckZAmMx2GojywYj9"}
+                      target="_blank"
+                    >
+                      <ActionIcon size="xl" color="gray.1">
+                        <IconMapPin size="2.5rem" stroke={1.5} />
                       </ActionIcon>
                     </Anchor>
                   </Group>

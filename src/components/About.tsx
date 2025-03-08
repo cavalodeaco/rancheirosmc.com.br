@@ -18,6 +18,7 @@ import {
   IconBrandInstagram,
   IconLink,
   IconMail,
+  IconMapPin,
   IconPhone,
 } from "@tabler/icons-react";
 import RancheirosText from "./RancheirosText";
@@ -150,6 +151,14 @@ export default function About() {
                   >
                     <ActionIcon size="xl" color="brand.4">
                       <IconMail size="2.5rem" stroke={1.5} />
+                    </ActionIcon>
+                  </Anchor>
+                  <Anchor
+                    href={"https://maps.app.goo.gl/3ckZAmMx2GojywYj9"}
+                    target="_blank"
+                  >
+                    <ActionIcon size="xl" color="brand.4">
+                      <IconMapPin size="2.5rem" stroke={1.5} />
                     </ActionIcon>
                   </Anchor>
                 </Group>
