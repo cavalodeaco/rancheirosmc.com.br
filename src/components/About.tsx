@@ -121,7 +121,7 @@ export default function About() {
                     target="_blank"
                   >
                     <ActionIcon size="xl" color="brand.4">
-                      <IconBrandWhatsapp size="2.5rem" stroke={1.5} />
+                      <IconBrandWhatsapp size="2rem" stroke={1.5} />
                     </ActionIcon>
                   </Anchor>
                   <Anchor
@@ -129,7 +129,7 @@ export default function About() {
                     target="_blank"
                   >
                     <ActionIcon size="xl" color="brand.4">
-                      <IconBrandFacebook size="2.5rem" stroke={1.5} />
+                      <IconBrandFacebook size="2rem" stroke={1.5} />
                     </ActionIcon>
                   </Anchor>
                   <Anchor
@@ -137,12 +137,12 @@ export default function About() {
                     target="_blank"
                   >
                     <ActionIcon size="xl" color="brand.4">
-                      <IconBrandInstagram size="2.5rem" stroke={1.5} />
+                      <IconBrandInstagram size="2rem" stroke={1.5} />
                     </ActionIcon>
                   </Anchor>
                   <Anchor href={"tel:+5543991636339"} target="_blank">
                     <ActionIcon size="xl" color="brand.4">
-                      <IconPhone size="2.5rem" stroke={1.5} />
+                      <IconPhone size="2rem" stroke={1.5} />
                     </ActionIcon>
                   </Anchor>
                   <Anchor
@@ -150,7 +150,7 @@ export default function About() {
                     target="_blank"
                   >
                     <ActionIcon size="xl" color="brand.4">
-                      <IconMail size="2.5rem" stroke={1.5} />
+                      <IconMail size="2rem" stroke={1.5} />
                     </ActionIcon>
                   </Anchor>
                   <Anchor
@@ -158,7 +158,7 @@ export default function About() {
                     target="_blank"
                   >
                     <ActionIcon size="xl" color="brand.4">
-                      <IconMapPin size="2.5rem" stroke={1.5} />
+                      <IconMapPin size="2rem" stroke={1.5} />
                     </ActionIcon>
                   </Anchor>
                 </Group>
