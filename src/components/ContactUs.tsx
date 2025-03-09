@@ -110,7 +110,7 @@ export default function ContactUs() {
                       target="_blank"
                     >
                       <ActionIcon size="xl" color="gray.1">
-                        <IconBrandWhatsapp size="2.5rem" stroke={1.5} />
+                        <IconBrandWhatsapp size="2rem" stroke={1.5} />
                       </ActionIcon>
                     </Anchor>
                     <Anchor
@@ -118,7 +118,7 @@ export default function ContactUs() {
                       target="_blank"
                     >
                       <ActionIcon size="xl" color="gray.1">
-                        <IconBrandFacebook size="2.5rem" stroke={1.5} />
+                        <IconBrandFacebook size="2rem" stroke={1.5} />
                       </ActionIcon>
                     </Anchor>
                     <Anchor
@@ -126,12 +126,12 @@ export default function ContactUs() {
                       target="_blank"
                     >
                       <ActionIcon size="xl" color="gray.1">
-                        <IconBrandInstagram size="2.5rem" stroke={1.5} />
+                        <IconBrandInstagram size="2rem" stroke={1.5} />
                       </ActionIcon>
                     </Anchor>
                     <Anchor href={"tel:+5543991636339"} target="_blank">
                       <ActionIcon size="xl" color="gray.1">
-                        <IconPhone size="2.5rem" stroke={1.5} />
+                        <IconPhone size="2rem" stroke={1.5} />
                       </ActionIcon>
                     </Anchor>
                     <Anchor
@@ -139,7 +139,7 @@ export default function ContactUs() {
                       target="_blank"
                     >
                       <ActionIcon size="xl" color="gray.1">
-                        <IconMail size="2.5rem" stroke={1.5} />
+                        <IconMail size="2rem" stroke={1.5} />
                       </ActionIcon>
                     </Anchor>
                     <Anchor
@@ -147,7 +147,7 @@ export default function ContactUs() {
                       target="_blank"
                     >
                       <ActionIcon size="xl" color="gray.1">
-                        <IconMapPin size="2.5rem" stroke={1.5} />
+                        <IconMapPin size="2rem" stroke={1.5} />
                       </ActionIcon>
                     </Anchor>
                   </Group>

@@ -102,7 +102,7 @@ const ranchos = [
       tel: "+5543998294939",
       label: "(43) 99829-4939",
       name: "Rep. -  Marcos",
-      photo: "https://placehold.co/600x600?text=Faxinal",
+      photo: "https://d2er8q8v25uk9z.cloudfront.net/faxinal.webp",
     },
   },
   {
@@ -112,6 +112,15 @@ const ranchos = [
       label: "(43) 99981-2887",
       name: "Rep. -  Wilson Kaba",
       photo: "https://d2er8q8v25uk9z.cloudfront.net/kaba1.webp",
+    },
+  },
+  {
+    name: "Asunción (Paraguay)",
+    contact: {
+      tel: "+595981242256",
+      label: "+595 981 242256",
+      name: "Rep. -  Mario Ayala",
+      photo: "https://d2er8q8v25uk9z.cloudfront.net/paraguay.webp",
     },
   },
   {
