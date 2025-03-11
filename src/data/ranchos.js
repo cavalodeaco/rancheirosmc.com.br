@@ -32,8 +32,8 @@ const ranchos = [
       photo: "https://d2er8q8v25uk9z.cloudfront.net/douglas_gabi.webp",
     },
     prosa: {
-      day: "Toda quarta",
-      time: "19h30",
+      day: "",
+      time: "",
       address: "Rua Espírito Santo, 255",
     },
   },
