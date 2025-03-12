@@ -126,9 +126,10 @@ const ranchos = [
   {
     name: "Maringá-PR",
     contact: {
-      tel: "+5543991636339",
-      label: "(43) 99163-6339",
-      photo: "https://placehold.co/600x600?text=Maringá",
+      tel: "+5544997511100",
+      name: "Rep. - Ademir Kunkel",
+      label: "(44) 99751-1100",
+      photo: "https://d2er8q8v25uk9z.cloudfront.net/kunkel.webp",
     },
   },
 ];
