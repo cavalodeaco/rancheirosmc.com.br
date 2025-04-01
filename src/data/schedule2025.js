@@ -40,6 +40,10 @@ const schedule = [
     description: "MPV Arapongas-PR",
   },
   {
+    date: { day: "14", month: "JUNHO", fulldate: "2025-06-14" },
+    description: "MPV Cornélio Procópio-PR",
+  },
+  {
     date: { day: "19 à 22", month: "JUNHO", fulldate: "2025-06-19" },
     description: "Comitiva à definir",
   },
@@ -53,7 +57,7 @@ const schedule = [
   },
   {
     date: { day: "23", month: "AGOSTO", fulldate: "2025-08-23" },
-    description: "MPV Cornélio Procópio-PR",
+    description: "MPV Faxinal-PR",
   },
   {
     date: { day: "20", month: "SETEMBRO", fulldate: "2025-09-20" },
