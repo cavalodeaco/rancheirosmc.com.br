@@ -1,7 +1,7 @@
 const ranchos = [
   {
     name: "Cambira-PR",
-    prosa: { day: "Toda segunda", time: "20h", address: "Rua Paraiba, 90" },
+    prosa: { day: "Toda segunda", time: "20h", address: "Rua Paraiba, 80" },
     contact: {
       tel: "+5541988435201",
       label: "(41) 98843-5201",
