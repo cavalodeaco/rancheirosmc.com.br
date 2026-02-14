@@ -1,11 +1,9 @@
 import {
-  Anchor,
   Avatar,
   Box,
   Center,
   Flex,
   Grid,
-  ScrollArea,
   Table,
   Title,
 } from "@mantine/core";
