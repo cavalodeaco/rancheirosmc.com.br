@@ -9,13 +9,14 @@ import {
   Table,
   Title,
 } from "@mantine/core";
+import schedule_2026 from "../data/schedule2026";
 import schedule_2025 from "../data/schedule2025";
 import schedule_2024 from "../data/schedule2024";
 import schedule_2023 from "../data/schedule2023";
 import { Calendar } from "@mantine/dates";
 import { useState } from "react";
 
-const schedule = [...schedule_2023, ...schedule_2024, ...schedule_2025];
+const schedule = [...schedule_2023, ...schedule_2024, ...schedule_2025, ...schedule_2026];
 
 const scheduleDates = schedule.map(
   (event) => new Date(`${event.date.fulldate}T00:00:00-03:00`)
