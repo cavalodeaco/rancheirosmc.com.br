@@ -38,6 +38,16 @@ const ranchos = [
     },
   },
   {
+    name: "Mandaguari-PR",
+    prosa: { day: "Toda segunda", time: "20h", address: "" },
+    contact: {
+      tel: "+5544988482548",
+      label: "(44) 98848-2548",
+      name: "Rep. - Pr. Vital",
+      photo: "https://d2er8q8v25uk9z.cloudfront.net/vital.webp",
+    },
+  },
+  {
     name: "Apucarana-PR",
     contact: {
       tel: "+5543996424555",
