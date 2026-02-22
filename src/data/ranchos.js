@@ -24,20 +24,6 @@ const ranchos = [
     },
   },
   {
-    name: "Cornélio Procópio-PR",
-    contact: {
-      tel: "+5543988518880",
-      label: "(43) 98851-8880",
-      name: "Rep. -  Douglas",
-      photo: "https://d2er8q8v25uk9z.cloudfront.net/douglas_gabi.webp",
-    },
-    prosa: {
-      day: "",
-      time: "",
-      address: "Rua Espírito Santo, 255",
-    },
-  },
-  {
     name: "Arapongas-PR",
     contact: {
       tel: "+5543999039452",
@@ -67,15 +53,6 @@ const ranchos = [
       label: "(41) 99117-0055",
       name: "Rep. -  Pr Daniel",
       photo: "https://d2er8q8v25uk9z.cloudfront.net/daniel.webp",
-    },
-  },
-  {
-    name: "Nampula (Moçambique)",
-    contact: {
-      tel: "+5544998081276",
-      label: "(44) 99808-1276",
-      name: "Rep. -  Tiago Bastos",
-      photo: "https://d2er8q8v25uk9z.cloudfront.net/tiago.webp",
     },
   },
   {
