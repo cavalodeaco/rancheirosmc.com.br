@@ -10,6 +10,20 @@ const ranchos = [
     },
   },
   {
+    name: "Mandaguari-PR",
+    prosa: {
+      day: "Toda terça",
+      time: "20h",
+      address: "Rua Arlindo Gabriel da Silva, 8 - Popular 1",
+    },
+    contact: {
+      tel: "+5544988482548",
+      label: "(44) 98848-2548",
+      name: "Rep. - Pr. Vital",
+      photo: "https://d2er8q8v25uk9z.cloudfront.net/vital.webp",
+    },
+  },
+  {
     name: "Medianeira-PR",
     contact: {
       tel: "+5545999651117",
@@ -35,16 +49,6 @@ const ranchos = [
       day: "Toda quinta",
       time: "20h",
       address: "",
-    },
-  },
-  {
-    name: "Mandaguari-PR",
-    prosa: { day: "Toda segunda", time: "20h", address: "" },
-    contact: {
-      tel: "+5544988482548",
-      label: "(44) 98848-2548",
-      name: "Rep. - Pr. Vital",
-      photo: "https://d2er8q8v25uk9z.cloudfront.net/vital.webp",
     },
   },
   {
@@ -117,6 +121,15 @@ const ranchos = [
       name: "Rep. - Ademir Kunkel",
       label: "(44) 99751-1100",
       photo: "https://d2er8q8v25uk9z.cloudfront.net/kunkel.webp",
+    },
+  },
+  {
+    name: "Campo Mourão-PR",
+    contact: {
+      tel: "+5543991143393",
+      name: "Rep. - Pr. Maurício",
+      label: "(43) 99114-3393",
+      photo: "https://d2er8q8v25uk9z.cloudfront.net/mauricio.webp",
     },
   },
 ];
