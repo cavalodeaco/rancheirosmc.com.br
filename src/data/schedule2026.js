@@ -17,11 +17,11 @@ const schedule = [
   },
   {
     date: { day: "04 a 07", month: "JUNHO", fulldate: "2026-06-04" },
-    description: "Comitiva Casais - À definir",
+    description: "Comitiva Casais - Barra Bonita-SP",
   },
   {
     date: { day: "20", month: "JUNHO", fulldate: "2026-06-20" },
-    description: "MPV - À definir",
+    description: "MPV - SRM Maringá-PR",
   },
   {
     date: { day: "11", month: "JULHO", fulldate: "2026-07-11" },
@@ -29,7 +29,7 @@ const schedule = [
   },
   {
     date: { day: "15", month: "AGOSTO", fulldate: "2026-08-15" },
-    description: "MPV - À definir",
+    description: "MPV - SRM Maringá-PR",
   },
   {
     date: { day: "12", month: "SETEMBRO", fulldate: "2026-09-12" },
