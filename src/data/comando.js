@@ -14,11 +14,11 @@ const comando = [
     name: 'Pr. Vital',
     role: 'Brandeiro',
   },
-  {
-    img: 'https://d2er8q8v25uk9z.cloudfront.net/wesley.webp',
-    name: 'Wesley',
-    role: 'SGT de Armas',
-  },
+  // {
+  //   img: 'https://d2er8q8v25uk9z.cloudfront.net/wesley.webp',
+  //   name: 'Wesley',
+  //   role: 'SGT de Armas',
+  // },
 ]
 
 export default comando;
