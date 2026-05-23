@@ -28,12 +28,24 @@ const schedule = [
     description: "MPV - SRP Londrina-PR",
   },
   {
+    date: { day: "01", month: "AGOSTO", fulldate: "2026-08-01" },
+    description: "MPV - Medianeira-PR",
+  },
+  {
     date: { day: "15", month: "AGOSTO", fulldate: "2026-08-15" },
     description: "MPV - SRM Maringá-PR",
   },
   {
+    date: { day: "05", month: "SETEMBRO", fulldate: "2026-09-05" },
+    description: "MPV - Medianeira-PR",
+  },
+  {
     date: { day: "12", month: "SETEMBRO", fulldate: "2026-09-12" },
     description: "MPV - SRP Londrina-PR",
+  },
+  {
+    date: { day: "17", month: "OUTUBRO", fulldate: "2026-10-17" },
+    description: "MPV - Medianeira-PR",
   },
   {
     date: { day: "31", month: "OUTUBRO", fulldate: "2026-10-31" },
