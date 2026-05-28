@@ -15,6 +15,7 @@ import Ranchos from "./Ranchos";
 import Schedule from "./Schedule";
 import { DatesProvider } from "@mantine/dates";
 import "dayjs/locale/pt-br";
+import Feedback from "./Feedback";
 
 export default function App() {
   document.title = "RANCHEIROS MC";
@@ -26,6 +27,7 @@ export default function App() {
     { id: "ranchos", component: <Ranchos /> },
     // { id: "foto", component: <Foto /> }, // remove fotos section for now
     { id: "agenda", component: <Schedule /> },
+    { id: "Feedback", component: <Feedback />}
   ];
   return (
     <MantineProvider theme={{ ...theme }} withGlobalStyles withNormalizeCSS>
