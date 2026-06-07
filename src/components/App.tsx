@@ -27,7 +27,6 @@ export default function App() {
     { id: "ranchos", component: <Ranchos /> },
     // { id: "foto", component: <Foto /> }, // remove fotos section for now
     { id: "agenda", component: <Schedule /> },
-    { id: "Feedback", component: <Feedback />}
   ];
   return (
     <MantineProvider theme={{ ...theme }} withGlobalStyles withNormalizeCSS>
@@ -74,6 +73,9 @@ export default function App() {
             </Linkable>
             <Linkable id="contato">
               <ContactUs />
+            </Linkable>
+            <Linkable id="feedback">
+              <Feedback />
             </Linkable>
           </Box>
         </AppShell>
