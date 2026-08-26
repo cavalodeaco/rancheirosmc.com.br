@@ -10,7 +10,7 @@ const comando = [
     role: 'Coord. Técnica',
   },
   {
-    img: '',
+    img: 'https://d2er8q8v25uk9z.cloudfront.net/pinduca.webp',
     name: 'Rogério',
     role: 'Road Captain',
   },
