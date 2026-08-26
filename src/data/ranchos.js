@@ -5,8 +5,8 @@ const ranchos = [
     contact: {
       tel: "+5541988435201",
       label: "(41) 98843-5201",
-      name: "Diretor – Pinduca",
-      photo: "https://d2er8q8v25uk9z.cloudfront.net/pinduca.webp",
+      name: "Diretor – Luiz Chicarelli",
+      photo: "/images/luiz.png",
     },
   },
   {
@@ -130,6 +130,24 @@ const ranchos = [
       name: "Rep. - Pr. Maurício",
       label: "(43) 99114-3393",
       photo: "https://d2er8q8v25uk9z.cloudfront.net/mauricio.webp",
+    },
+  },
+  {
+    name: "Volta Redonda-RJ",
+    contact: {
+      tel: "+5524998359993",
+      label: "(24) 99835-9993",
+      name: "Rep. - Ottoni",
+      photo: "/images/ottoni.png",
+    },
+  },
+  {
+    name: "Foz do Iguaçu-PR",
+    contact: {
+      tel: "+5545991569460",
+      label: "(45) 99156-9460",
+      name: "Rep. - Deibity",
+      photo: "",
     },
   },
 ];

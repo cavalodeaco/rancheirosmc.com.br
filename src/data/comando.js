@@ -1,8 +1,18 @@
 const comando = [
   {
+    img: 'https://d2er8q8v25uk9z.cloudfront.net/juniorquadrado.webp',
+    name: 'Júnior',
+    role: 'Vice-presidente',
+  },
+  {
     img: 'https://d2er8q8v25uk9z.cloudfront.net/giovanna_eNFVjKYbC3XT.webp',
     name: 'Giovanna',
-    role: 'Vice-presidente',
+    role: 'Coord. Técnica',
+  },
+  {
+    img: '',
+    name: 'Rogério',
+    role: 'Road Captain',
   },
   {
     img: 'https://d2er8q8v25uk9z.cloudfront.net/alex_47qrhnHgQsGv.webp',
