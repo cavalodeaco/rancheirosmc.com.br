@@ -3,10 +3,10 @@ const ranchos = [
     name: "Cambira-PR",
     prosa: { day: "Toda segunda", time: "20h", address: "Rua Paraiba, 80" },
     contact: {
-      tel: "+5541988435201",
-      label: "(41) 98843-5201",
-      name: "Diretor – Luiz Chicarelli",
-      photo: "/images/luiz.png",
+      tel: "+5543998200290",
+      label: "(43) 99820-0290",
+      name: "Diretor – Luizão",
+      photo: "/images/luiz.webp",
     },
   },
   {
@@ -138,7 +138,7 @@ const ranchos = [
       tel: "+5524998359993",
       label: "(24) 99835-9993",
       name: "Rep. - Ottoni",
-      photo: "/images/ottoni.png",
+      photo: "/images/ottoni.webp",
     },
   },
   {
