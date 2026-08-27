@@ -6,7 +6,7 @@ const ranchos = [
       tel: "+5543998200290",
       label: "(43) 99820-0290",
       name: "Diretor – Luizão",
-      photo: "/images/luiz.png",
+      photo: "/images/luiz.webp",
     },
   },
   {
