@@ -138,7 +138,7 @@ const ranchos = [
       tel: "+5524998359993",
       label: "(24) 99835-9993",
       name: "Rep. - Ottoni",
-      photo: "/images/ottoni.png",
+      photo: "/images/ottoni.webp",
     },
   },
   {
