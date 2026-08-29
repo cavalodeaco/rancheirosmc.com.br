@@ -15,6 +15,7 @@ import Ranchos from "./Ranchos";
 import Schedule from "./Schedule";
 import { DatesProvider } from "@mantine/dates";
 import "dayjs/locale/pt-br";
+import Feedback from "./Feedback";
 
 export default function App() {
   document.title = "RANCHEIROS MC";
@@ -72,6 +73,9 @@ export default function App() {
             </Linkable>
             <Linkable id="contato">
               <ContactUs />
+            </Linkable>
+            <Linkable id="feedback">
+              <Feedback />
             </Linkable>
           </Box>
         </AppShell>
