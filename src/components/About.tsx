@@ -176,10 +176,12 @@ export default function About() {
               </Title>
 
               <Text align="center">
-                <RancheirosText highlight={["reconciliados com Deus"]}>
-                  Contribuir com a construção de uma sociedade onde todos
-                  entendam a importância de caminhar juntos, reconciliados com
-                  Deus, sentindo a completude que vem de Cristo.
+                <RancheirosText
+                  highlight={["relacionamento genuíno com Jesus"]}
+                >
+                  Ver a nação de motociclistas transformada, onde cada piloto
+                  e garupa, desfrutem com segurança, otimismo e liberdade de
+                  um relacionamento genuíno com Jesus.
                 </RancheirosText>
               </Text>
 
