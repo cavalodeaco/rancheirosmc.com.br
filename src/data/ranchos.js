@@ -147,7 +147,7 @@ const ranchos = [
       tel: "+5545991569460",
       label: "(45) 99156-9460",
       name: "Rep. - Deibity",
-      photo: "",
+      photo: "/images/deibity.webp",
     },
   },
 ];
